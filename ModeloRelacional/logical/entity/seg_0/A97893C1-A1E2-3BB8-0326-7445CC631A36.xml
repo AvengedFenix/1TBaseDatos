@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A97893C1-A1E2-3BB8-0326-7445CC631A36" name="EMPLEADO">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>84746CBE-7C5A-1C3F-BDE1-7D3009B9CBDF</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID EMPLEADO" id="8679B820-2BF0-59D8-ADFF-77778B7CC918">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>75FA200B-12E8-8140-90C0-1AAEF7BF1156</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="49D1C9C2-1FA3-BF94-4BC6-E92AE443AE6B">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>BFC0ED2B-E99B-E205-A0E2-1C57F239BD3A</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SEGUNDO NOMBRE" id="CFC40FFE-38D2-D8DE-0AD0-74F56AB19F38">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>1412510F-9546-8688-3534-1EE8E1374FD4</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="APELLIDO" id="04CCF42A-3DF3-D0BD-D499-A6732040008C">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>0C0AF266-5638-3981-DD75-8E2755DA09FE</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SEGUNDO APELLIDO" id="5AAC4588-5E23-B0E7-C9A4-61128551DBCC">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>7F57AEFF-3D7E-4E22-BB02-E512B8657586</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DIRECCION" id="10E1A29E-4A57-1996-6B2C-092B52B1EF7D">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>4DC2D5DA-9441-5B3F-033A-2666E080CEDB</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OTROS DETALLES" id="F2CC8A49-8E6D-270F-3273-8D19E2A4F490">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>DFDDD38F-3133-CDAE-9C8C-7D14EDACE485</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PUESTO" id="65A787F4-6CC3-8AA6-8D29-73BA2276DC16">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>D6CD8EEC-FB95-F3AA-5C7A-564C3E873460</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USUARIO ID USER" id="5FF7B8CE-113E-E9EC-FB1A-164B0EE9DC0A">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>DC08063A-8DCA-C028-A1F8-57C7F4025984</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<referedAttribute>841FFC2C-71D9-D31E-389C-FDC144186B44</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="37E67266-075D-18F3-9097-A0B4EFA07D35" name="EMPLEADO PK">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>517E0307-495B-584F-D83B-D6014587716E</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8679B820-2BF0-59D8-ADFF-77778B7CC918</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

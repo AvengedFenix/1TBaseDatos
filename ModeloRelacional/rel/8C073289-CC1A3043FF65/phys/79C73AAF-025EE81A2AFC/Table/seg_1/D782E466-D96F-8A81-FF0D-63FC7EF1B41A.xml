@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PRODUCTO" directorySegmentName="seg_1" id="D782E466-D96F-8A81-FF0D-63FC7EF1B41A">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<schemaObject>BBFFE701-1512-0752-745E-6DC7C4027903</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_PRODUCTO" id="095E8484-2203-9E32-DFD6-8A0CC020331A">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMUNIDADES_ID_COMUNIDAD" id="1E18B764-A96A-AAF2-E853-28F9BE0F38F0">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="3C6603F7-A3CE-A48E-A1D5-DBC2C8662873">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OTROS_DETALLES" id="507D5DC8-D1EF-2278-EBC0-87C784B9887B">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="70DBC6CC-A2CC-E214-6943-B27B46ADD017">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ALMACEN_ID_ALMACEN" id="F1031356-3E64-8B86-FAEE-A67BA754DFB7">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRODUCTO_PK" id="EEA3323B-2D47-4EF6-E292-0C5D744CA20B">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<schemaObject>BBFFE701-1512-0752-745E-6DC7C4027903</schemaObject>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRODUCTO_ALMACEN_FK" id="08080CCE-D586-7FD5-4659-DAD583ED31CD">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRODUCTO_COMUNIDADES_FK" id="584E7CAE-1740-9ECC-7E96-82B625043DF3">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRODUCTO_PK" id="DB8AC2EE-8F85-B3EE-4A19-8865352A327E">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

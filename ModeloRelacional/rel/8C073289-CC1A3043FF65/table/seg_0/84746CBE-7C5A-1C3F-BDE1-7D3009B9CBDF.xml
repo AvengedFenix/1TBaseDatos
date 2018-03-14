@@ -1,0 +1,188 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84746CBE-7C5A-1C3F-BDE1-7D3009B9CBDF" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="EMPLEADO">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>EMPLEADO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:35 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_EMPLEADO" id="75FA200B-12E8-8140-90C0-1AAEF7BF1156">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>EMPLEADO</sourceObjSchema>
+<sourceObjName>ID_EMPLEADO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="BFC0ED2B-E99B-E205-A0E2-1C57F239BD3A">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>EMPLEADO</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_NOMBRE" id="1412510F-9546-8688-3534-1EE8E1374FD4">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>EMPLEADO</sourceObjSchema>
+<sourceObjName>SEGUNDO_NOMBRE</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APELLIDO" id="0C0AF266-5638-3981-DD75-8E2755DA09FE">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>EMPLEADO</sourceObjSchema>
+<sourceObjName>APELLIDO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_APELLIDO" id="7F57AEFF-3D7E-4E22-BB02-E512B8657586">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>EMPLEADO</sourceObjSchema>
+<sourceObjName>SEGUNOD_APELLIDO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIRECCION" id="4DC2D5DA-9441-5B3F-033A-2666E080CEDB">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>EMPLEADO</sourceObjSchema>
+<sourceObjName>DIRECCION</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OTROS_DETALLES" id="DFDDD38F-3133-CDAE-9C8C-7D14EDACE485">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>EMPLEADO</sourceObjSchema>
+<sourceObjName>OTROS_DETALLES</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PUESTO" id="D6CD8EEC-FB95-F3AA-5C7A-564C3E873460">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>EMPLEADO</sourceObjSchema>
+<sourceObjName>PUESTO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_ID_USER" id="2CBDD605-23BA-6A88-F0D8-57F8800C81F1">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>EMPLEADO</sourceObjSchema>
+<sourceObjName>USUARIO_ID_USER</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:57:11 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="057651E3-7E40-4A54-7229-7B7CE78CEB8C" referredColumn="043595E1-B1E7-6555-71B5-16CBE9B2147F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="517E0307-495B-584F-D83B-D6014587716E" name="EMPLEADO_PK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>EMPLEADO_PK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:37 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75FA200B-12E8-8140-90C0-1AAEF7BF1156"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C63777E1-608E-F01D-1E42-FF898FBF04CB" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="EMPLEADO_PK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>EMPLEADO_PK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75FA200B-12E8-8140-90C0-1AAEF7BF1156"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A24A35AC-920B-041A-F3D5-AFFD990EC6F1" name="EMPLEADO_USUARIO_FK">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:57:11 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CBDD605-23BA-6A88-F0D8-57F8800C81F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

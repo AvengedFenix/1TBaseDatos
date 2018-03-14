@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COMUNIDADES_PRODUCTO_FK" directorySegmentName="seg_0" id="EFBF39FA-2F59-D67E-42D8-425B22DCF251">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>C0D3F0F8-BB6F-370F-CC19-4A7F87F0CE60</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<sourcePk>9D7989DE-E17B-9F49-32C4-75F281E43C48</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7FA1FE4C-A71C-2AA6-935C-879A09FAC734</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>64782708-5D4A-86EE-6D8C-0A5E67F80833</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

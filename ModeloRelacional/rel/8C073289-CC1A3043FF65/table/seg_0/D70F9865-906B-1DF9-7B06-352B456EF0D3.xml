@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D70F9865-906B-1DF9-7B06-352B456EF0D3" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="USUARIO">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>USUARIO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:35 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USER" id="043595E1-B1E7-6555-71B5-16CBE9B2147F">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>ID_USER</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<commentInRDBMS>Id de usuario</commentInRDBMS>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRST_NAME" id="F2408A0B-9DD3-443C-50F9-F6E47473555A">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>FIRST_NAME</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SECOND_NAME" id="D395B7E0-01B1-023D-8807-B151DA1EAF37">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>SECOND_NAME</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME1" id="5537E367-8EA1-BF41-7F7F-7794E08B873F">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>LAST_NAME1</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME2" id="F2D06E8D-3548-EC9D-5774-536F52858FEF">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>LAST_NAME2</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="0C6C2BAD-3267-32CC-F9D0-4D6B44E2C065">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>ADDRESS</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OTHER_DETAILS" id="44A6FA65-F77A-7159-E827-DB31A2DD1D0B">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>OTHER_DETAILS</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMUNIDADES_ID_COMUNIDAD" id="CD3F3C18-D4F1-7D33-0794-75600F529B6D">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>COMUNIDADES_ID_COMUNIDAD</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 01:13:28 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE65ADB1-A505-58AC-7CF1-BE67AEE3B4D5" referredColumn="4916D9F0-7BCF-EE76-4E96-88C41165D00A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="119B13F7-533E-CD10-7DF1-5E46047BEE7C" name="USUARIO_PK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>USUARIO_PK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:37 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="043595E1-B1E7-6555-71B5-16CBE9B2147F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EEB95AA9-56A8-D5D6-C2BA-A448193A75BD" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="USUARIO_PK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>USUARIO_PK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="043595E1-B1E7-6555-71B5-16CBE9B2147F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="377CC812-EDA1-A71F-356A-872FEE15AC31" name="USUARIO_COMUNIDADES_FK">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 01:13:28 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD3F3C18-D4F1-7D33-0794-75600F529B6D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

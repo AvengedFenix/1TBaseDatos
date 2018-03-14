@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA04E32A-A11E-9F99-D8EA-76AA732DAB8A" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="ADMINISTRADOR">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>ADMINISTRADOR</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:35 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DESCRIPCION" id="D482B1A4-AF24-061F-D578-FD790D449414">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>ADMINISTRADOR</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OTROS_DETALLES" id="BACD26EA-82BE-00ED-8D62-962696BBCE99">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>ADMINISTRADOR</sourceObjSchema>
+<sourceObjName>OTROS_DETALLES</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLEADO_ID_EMPLEADO" id="286CC134-3F55-FB23-8A64-85E271FE1321">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>ADMINISTRADOR</sourceObjSchema>
+<sourceObjName>EMPLEADO_ID_EMPLEADO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:53:14 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D8A5A3D-32EE-F3B0-609A-9311544B86DE" referredColumn="75FA200B-12E8-8140-90C0-1AAEF7BF1156"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1E7D14AA-76EC-4558-CF58-23BFDFFD270B" name="ADMINISTRADOR_EMPLEADO_FK">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:53:14 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="286CC134-3F55-FB23-8A64-85E271FE1321"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

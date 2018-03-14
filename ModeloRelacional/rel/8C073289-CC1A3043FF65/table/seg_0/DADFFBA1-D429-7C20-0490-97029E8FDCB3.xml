@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DADFFBA1-D429-7C20-0490-97029E8FDCB3" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="TIPO_DISPOSITIVO">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>TIPO_DISPOSITIVO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:35 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CATEGORIA" id="08E9631F-89F3-642B-CC89-2867731536D2">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>TIPO_DISPOSITIVO</sourceObjSchema>
+<sourceObjName>CATEGORIA</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTO_ID_PRODUCTO" id="F735B67B-9CAD-B567-3351-7C37EE5D973E">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>TIPO_DISPOSITIVO</sourceObjSchema>
+<sourceObjName>PRODUCTO_ID_PRODUCTO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 01:22:57 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0367197D-FB65-F4D3-81FB-1FFB921AAC72" referredColumn="095E8484-2203-9E32-DFD6-8A0CC020331A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="98168D3B-EF7F-2E72-4C13-BB644B80940D" name="TIPO_DISPOSITIVO_PRODUCTO_FK">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 01:22:57 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F735B67B-9CAD-B567-3351-7C37EE5D973E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A8156C8-DCD6-99FC-EDF2-7AACEFF68B11" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="JEFATURA">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>JEFATURA</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:35 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DESCRIPCION" id="8073E597-8402-0A67-2CBE-5CCD5217FF05">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>JEFATURA</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OTROS_DETALLES" id="97DEB81E-5E47-10BD-5222-DDC66DF7B637">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>JEFATURA</sourceObjSchema>
+<sourceObjName>OTROS_DETALLES</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLEADO_ID_EMPLEADO" id="0F89D8B9-95CF-8B5A-F5D7-D55149891B68">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>JEFATURA</sourceObjSchema>
+<sourceObjName>EMPLEADO_ID_EMPLEADO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:54:28 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="689FA14A-41C8-6DEB-0B2A-D93AA989C8EC" referredColumn="75FA200B-12E8-8140-90C0-1AAEF7BF1156"/>
+</associations>
+</Column>
+<Column name="ALMACEN_ID_ALMACEN" id="D88AEFDF-4E4D-A71F-3756-87A359EFFA9E">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>JEFATURA</sourceObjSchema>
+<sourceObjName>ALMACEN_ID_ALMACEN</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 02:20:37 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="657CF1CC-5507-E666-C964-9DF2210808BF" referredColumn="F2F5F628-2ABE-5B8D-ED02-7AE6474F8624"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE38B8DF-2D58-FF3B-32F5-4623EA898F4D" name="JEFATURA_EMPLEADO_FK">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:54:28 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F89D8B9-95CF-8B5A-F5D7-D55149891B68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87EC4BDC-DD5F-9FDE-E7EE-F5A72CDE524A" name="JEFATURA_ALMACEN_FK">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 02:20:37 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D88AEFDF-4E4D-A71F-3756-87A359EFFA9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

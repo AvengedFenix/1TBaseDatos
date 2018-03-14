@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B702BA60-155F-F143-4EC4-F520D0D17DDD" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="COMUNIDADES">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>COMUNIDADES</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:35 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_COMUNIDAD" id="4916D9F0-7BCF-EE76-4E96-88C41165D00A">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>COMUNIDADES</sourceObjSchema>
+<sourceObjName>ID_COMUNIDAD</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="029AE13E-0E7B-91DD-ABD8-7A917CA1DE55">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>COMUNIDADES</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTAMENTO" id="A23A7722-B9C6-23A4-F734-F27B43AC48D3">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>COMUNIDADES</sourceObjSchema>
+<sourceObjName>DEPARTAMENTO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OTROS_DETALLES" id="CB6FF215-43C1-02BD-BD72-8BD7EA6DBA80">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>COMUNIDADES</sourceObjSchema>
+<sourceObjName>OTROS_DETALLES</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAP_INSTALADA_USUARIOS" id="E10FB439-70DD-122A-994F-BB956286101C">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>COMUNIDADES</sourceObjSchema>
+<sourceObjName>CAP_INSTALADA_USUARIOS</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTO_ID_PRODUCTO" id="CDD835AC-8307-FBDD-9C1A-47919BD80913">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>COMUNIDADES</sourceObjSchema>
+<sourceObjName>PRODUCTO_ID_PRODUCTO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 02:32:56 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0D3F0F8-BB6F-370F-CC19-4A7F87F0CE60" referredColumn="095E8484-2203-9E32-DFD6-8A0CC020331A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="227C18DB-86CB-8809-D31C-2DFEDA5425B3" name="COMUNIDADES_PK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>COMUNIDADES_PK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:37 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4916D9F0-7BCF-EE76-4E96-88C41165D00A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="849A4D0E-BFC1-1399-7E70-064BD8D6CAD6" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="COMUNIDADES_PK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>COMUNIDADES_PK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4916D9F0-7BCF-EE76-4E96-88C41165D00A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E83A0B7-80C5-00D2-9011-6618769D3F16" name="COMUNIDADES_PRODUCTO_FK">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 02:32:56 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDD835AC-8307-FBDD-9C1A-47919BD80913"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

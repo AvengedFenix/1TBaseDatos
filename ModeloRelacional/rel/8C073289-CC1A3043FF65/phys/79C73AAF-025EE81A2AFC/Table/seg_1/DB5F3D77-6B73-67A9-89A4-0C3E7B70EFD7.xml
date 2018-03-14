@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TELEFONO" directorySegmentName="seg_1" id="DB5F3D77-6B73-67A9-89A4-0C3E7B70EFD7">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<schemaObject>BBFFE701-1512-0752-745E-6DC7C4027903</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="USUARIO_ID_USER" id="6E2FC602-42AA-3BAD-C24A-55A07C632DFE">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TEL_NUMBER" id="A5F3F879-5126-B541-8CF0-9717DDA35330">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAR_INTERNO" id="BB34597E-B3C0-58A6-DC6B-163F28EC64D5">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAR_EXTERNO" id="C98ED452-5242-2686-9452-6BD8C5FA3D79">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CKTO" id="E7C53AE7-299B-EB2E-7E7D-4DB4C2AA9F69">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TELEFONO_PK" id="57F2A0BE-57D6-F824-1A82-3AB6C199A24D">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<schemaObject>BBFFE701-1512-0752-745E-6DC7C4027903</schemaObject>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TELEFONO_USUARIO_FK" id="4C37456C-524C-A25A-E142-68982C3B07F1">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TELEFONO_PK" id="362A7207-E192-649F-48EB-5803C577AD77">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

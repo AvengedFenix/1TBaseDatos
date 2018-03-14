@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5241E2F7-94F2-1C4C-E3F2-38213FD146BD" name="MOVIMIENTO">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>D79FF424-F361-51DD-C1DE-1C456404F6AB</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="FECHA INGRESO" id="87363364-6DB2-1BD1-EF34-28F1B587ADDF">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>9B9F8ED1-960F-CCFB-8A28-B1842B36ABDA</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OTROS DETALLES" id="0916FB68-6731-3E84-347B-6C8C7CBD0600">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>32409C10-16F8-D469-5531-DE6CD824E843</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA EGRESO" id="57E7257F-5C61-6F2C-F96A-030D9FEA1D8D">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>BC5D13CD-DD68-1833-252C-540CCE84968A</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ESTADO" id="70A86FA4-47F5-55EA-F6EF-ED03F27195FB">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>6F63F642-B74B-57DC-0F27-19012E3B2ACF</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCTO ID PRODUCTO" id="C91F3C99-AC4B-ADDF-5D99-A01F105DC211">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>12539F82-EDBD-43B2-BD2F-893AA1081F56</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<referedAttribute>ADC576F4-8321-BA8F-437B-F4BBFA7E2F32</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

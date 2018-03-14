@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="USUARIO" directorySegmentName="seg_1" id="D70F9865-906B-1DF9-7B06-352B456EF0D3">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<schemaObject>BBFFE701-1512-0752-745E-6DC7C4027903</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_USER" id="043595E1-B1E7-6555-71B5-16CBE9B2147F">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDRESS" id="0C6C2BAD-3267-32CC-F9D0-4D6B44E2C065">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OTHER_DETAILS" id="44A6FA65-F77A-7159-E827-DB31A2DD1D0B">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_NAME1" id="5537E367-8EA1-BF41-7F7F-7794E08B873F">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMUNIDADES_ID_COMUNIDAD" id="CD3F3C18-D4F1-7D33-0794-75600F529B6D">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SECOND_NAME" id="D395B7E0-01B1-023D-8807-B151DA1EAF37">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FIRST_NAME" id="F2408A0B-9DD3-443C-50F9-F6E47473555A">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_NAME2" id="F2D06E8D-3548-EC9D-5774-536F52858FEF">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="USUARIO_PK" id="EEB95AA9-56A8-D5D6-C2BA-A448193A75BD">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<schemaObject>BBFFE701-1512-0752-745E-6DC7C4027903</schemaObject>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="USUARIO_COMUNIDADES_FK" id="377CC812-EDA1-A71F-356A-872FEE15AC31">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="USUARIO_PK" id="119B13F7-533E-CD10-7DF1-5E46047BEE7C">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

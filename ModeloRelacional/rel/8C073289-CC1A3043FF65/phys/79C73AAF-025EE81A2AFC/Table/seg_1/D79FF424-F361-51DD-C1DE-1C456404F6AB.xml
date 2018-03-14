@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="MOVIMIENTO" directorySegmentName="seg_1" id="D79FF424-F361-51DD-C1DE-1C456404F6AB">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<schemaObject>BBFFE701-1512-0752-745E-6DC7C4027903</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="OTROS_DETALLES" id="32409C10-16F8-D469-5531-DE6CD824E843">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTADO" id="6F63F642-B74B-57DC-0F27-19012E3B2ACF">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRODUCTO_ID_PRODUCTO" id="8D00650F-DE7D-856E-CD55-99FFD09A9C92">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_INGRESO" id="9B9F8ED1-960F-CCFB-8A28-B1842B36ABDA">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_EGRESO" id="BC5D13CD-DD68-1833-252C-540CCE84968A">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="MOVIMIENTO_PRODUCTO_FK" id="DDF4A1AE-E2F8-84DD-2FC3-0A3E463816EF">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev12c>

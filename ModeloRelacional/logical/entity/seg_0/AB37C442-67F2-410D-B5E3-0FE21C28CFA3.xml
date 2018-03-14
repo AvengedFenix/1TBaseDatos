@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AB37C442-67F2-410D-B5E3-0FE21C28CFA3" name="JEFATURA">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>5A8156C8-DCD6-99FC-EDF2-7AACEFF68B11</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DESCRIPCION" id="E05311C4-9E67-A7B1-D2F7-F7408A2FE407">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>8073E597-8402-0A67-2CBE-5CCD5217FF05</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OTROS DETALLES" id="CE066131-4D76-7DDC-B449-FAD627A722CA">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>97DEB81E-5E47-10BD-5222-DDC66DF7B637</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMPLEADO ID EMPLEADO" id="D2E9FC65-CC09-E1FD-F615-BC4937F31494">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>6AFFD259-A578-4DEA-2921-4FC8FF714203</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<referedAttribute>8679B820-2BF0-59D8-ADFF-77778B7CC918</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ALMACEN ID ALMACEN" id="4ED4FF6B-8B80-C3B3-AFBB-2E6AD83ADB97">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>B42985A1-5442-3C72-6FA7-6DBF7FC00B3F</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<referedAttribute>AAD8E040-C2B5-346C-DEFE-6C168875FA9D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FE65ADB1-A505-58AC-7CF1-BE67AEE3B4D5" containerWithKeyObject="D70F9865-906B-1DF9-7B06-352B456EF0D3" localFKIndex="377CC812-EDA1-A71F-356A-872FEE15AC31" name="USUARIO_COMUNIDADES_FK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>USUARIO_COMUNIDADES_FK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 01:13:28 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<referredTableLongName>SYSTEM.COMUNIDADES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B702BA60-155F-F143-4EC4-F520D0D17DDD</referredTableID>
+<keyObject>227C18DB-86CB-8809-D31C-2DFEDA5425B3</keyObject>
+<referredKeyID>227C18DB-86CB-8809-D31C-2DFEDA5425B3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_COMUNIDAD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

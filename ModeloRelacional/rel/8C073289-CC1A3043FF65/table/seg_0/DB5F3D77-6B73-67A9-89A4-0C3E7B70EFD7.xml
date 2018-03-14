@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB5F3D77-6B73-67A9-89A4-0C3E7B70EFD7" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="TELEFONO">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>TELEFONO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:35 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TEL_NUMBER" id="A5F3F879-5126-B541-8CF0-9717DDA35330">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>TELEFONO</sourceObjSchema>
+<sourceObjName>TEL_NUMBER</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CKTO" id="E7C53AE7-299B-EB2E-7E7D-4DB4C2AA9F69">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>TELEFONO</sourceObjSchema>
+<sourceObjName>CKTO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<commentInRDBMS>Circuito</commentInRDBMS>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAR_INTERNO" id="BB34597E-B3C0-58A6-DC6B-163F28EC64D5">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>TELEFONO</sourceObjSchema>
+<sourceObjName>PAR_INTERNO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAR_EXTERNO" id="C98ED452-5242-2686-9452-6BD8C5FA3D79">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>TELEFONO</sourceObjSchema>
+<sourceObjName>PAR_EXTERNO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_ID_USER" id="6E2FC602-42AA-3BAD-C24A-55A07C632DFE">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>TELEFONO</sourceObjSchema>
+<sourceObjName>USUARIO_ID_USER</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:59:10 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D8EC6E8C-5460-8A74-0BB8-C80A5584579B" referredColumn="043595E1-B1E7-6555-71B5-16CBE9B2147F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="362A7207-E192-649F-48EB-5803C577AD77" name="TELEFONO_PK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>TELEFONO_PK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:37 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5F3F879-5126-B541-8CF0-9717DDA35330"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57F2A0BE-57D6-F824-1A82-3AB6C199A24D" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="TELEFONO_PK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>TELEFONO_PK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5F3F879-5126-B541-8CF0-9717DDA35330"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C37456C-524C-A25A-E142-68982C3B07F1" name="TELEFONO_USUARIO_FK">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:59:10 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E2FC602-42AA-3BAD-C24A-55A07C632DFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

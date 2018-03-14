@@ -19,6 +19,12 @@ import javax.swing.UnsupportedLookAndFeelException;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
+
+import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import mdlaf.DropShadowBorder;
 import mdlaf.MaterialUIMovement;
 
@@ -50,21 +56,33 @@ public class GUI extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jp_menu = new javax.swing.JPanel();
+        bt_connect = new javax.swing.JButton();
+        bt_list = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        bt_search = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBorder(border);
+        jp_menu.setBorder(border);
 
-        jButton1.setText("Click Me");
+        bt_connect.setText("Connect to database");
+        bt_connect.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_connectActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("Base de Datos llamadas");
+        bt_list.setText("List Items");
+        bt_list.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_listActionPerformed(evt);
+            }
+        });
 
         jButton3.setFont(new java.awt.Font("Roboto", 1, 36)); // NOI18N
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/ic_menu_black_48dp_1x.png"))); // NOI18N
@@ -78,28 +96,51 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        bt_search.setText("Search");
+        bt_search.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_searchActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jp_menuLayout = new javax.swing.GroupLayout(jp_menu);
+        jp_menu.setLayout(jp_menuLayout);
+        jp_menuLayout.setHorizontalGroup(
+            jp_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jp_menuLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jp_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(bt_connect, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.CENTER, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
+                    .addComponent(bt_list, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(bt_search, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        jp_menuLayout.setVerticalGroup(
+            jp_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jp_menuLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton3)
-                .addGap(18, 28, Short.MAX_VALUE)
-                .addComponent(jButton2)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addGap(594, 594, 594))
+                .addComponent(bt_connect)
+                .addGap(18, 18, 18)
+                .addComponent(bt_list)
+                .addGap(18, 18, 18)
+                .addComponent(bt_search)
+                .addContainerGap(561, Short.MAX_VALUE))
+        );
+
+        jPanel3.setBorder(border);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1266, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -108,14 +149,18 @@ public class GUI extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1290, Short.MAX_VALUE))
+                .addComponent(jp_menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jp_menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -146,7 +191,42 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        if (jp_menu.getWidth() == 211 && jp_menu.getHeight() == 750) {
+            jp_menu.setSize(66, 750);
+            bt_connect.setVisible(false);
+            bt_search.setVisible(false);
+            bt_list.setVisible(false);
+        } else {
+            jp_menu.setSize(211, 750);
+            bt_connect.setVisible(true);
+            bt_search.setVisible(true);
+            bt_list.setVisible(true);
+        }
+
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void bt_connectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_connectActionPerformed
+        try {
+            databaseCon = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "system", "TeoriaBD1");
+            databaseState= databaseCon.createStatement();
+            databaseRes = databaseState.executeQuery("select id_user from usuario");
+            while(databaseRes.next()){
+                String result = databaseRes.getString("id_user");
+                System.out.println(result);
+            }
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_bt_connectActionPerformed
+
+    private void bt_listActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_listActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_listActionPerformed
+
+    private void bt_searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_searchActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_searchActionPerformed
 
     /**
      * @param args the command line arguments
@@ -186,14 +266,20 @@ public class GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton bt_connect;
+    private javax.swing.JButton bt_list;
+    private javax.swing.JButton bt_search;
     private javax.swing.JButton jButton3;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jp_menu;
     // End of variables declaration//GEN-END:variables
 DropShadowBorder border = new DropShadowBorder();
+
+    Connection databaseCon = null;
+    Statement databaseState = null;
+    ResultSet databaseRes = null;
 }

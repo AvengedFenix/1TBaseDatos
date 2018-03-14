@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="47CBA5C7-009E-FFDF-7AFB-33446EFD6E6D" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="ALMACEN">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>ALMACEN</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 02:18:43 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<importedID>1488C81F-2F17-68F3-08A0-84F33B2041BE</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ALMACEN" id="F2F5F628-2ABE-5B8D-ED02-7AE6474F8624">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>ALMACEN</sourceObjSchema>
+<sourceObjName>ID_ALMACEN</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 02:18:43 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<importedID>CD4CEA7E-B2DF-19D5-E1AB-9118D468AD83</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="1E5FA2AC-C02E-FEE4-7C8B-BA6A6EE20B9B">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>ALMACEN</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 02:18:43 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<importedID>ACDA88B5-FDE8-B468-E105-D28B286A0DF5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="4812D917-93F3-52D5-42B8-D3E5A689B8B2">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>ALMACEN</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 02:18:43 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<importedID>3D0A2714-F448-50BC-79FE-A7DCF63BEAF7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E4396D69-6ED0-1B46-5789-76EC77BF606E" name="ALMACEN_PK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>ALMACEN_PK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 02:18:43 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<importedID>69CA149F-4DBD-159E-D707-6A25B959D5AC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2F5F628-2ABE-5B8D-ED02-7AE6474F8624"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2293510-403B-5EAF-D6F2-DD3FB67E67FF" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="ALMACEN_PK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>ALMACEN_PK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 02:18:43 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<importedID>AA8B37C9-F46E-B883-3649-20166C87C49C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2F5F628-2ABE-5B8D-ED02-7AE6474F8624"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

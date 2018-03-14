@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ALMACEN" directorySegmentName="seg_1" id="47CBA5C7-009E-FFDF-7AFB-33446EFD6E6D">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<schemaObject>BBFFE701-1512-0752-745E-6DC7C4027903</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOMBRE" id="1E5FA2AC-C02E-FEE4-7C8B-BA6A6EE20B9B">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="4812D917-93F3-52D5-42B8-D3E5A689B8B2">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ALMACEN" id="F2F5F628-2ABE-5B8D-ED02-7AE6474F8624">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ALMACEN_PK" id="C2293510-403B-5EAF-D6F2-DD3FB67E67FF">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<schemaObject>BBFFE701-1512-0752-745E-6DC7C4027903</schemaObject>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ALMACEN_PK" id="E4396D69-6ED0-1B46-5789-76EC77BF606E">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:12:31 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

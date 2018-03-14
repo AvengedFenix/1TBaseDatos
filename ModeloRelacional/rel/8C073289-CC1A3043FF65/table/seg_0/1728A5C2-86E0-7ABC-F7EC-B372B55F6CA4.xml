@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1728A5C2-86E0-7ABC-F7EC-B372B55F6CA4" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="TECNICO">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>TECNICO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:35 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DESCRIPCION" id="349F772D-1AC5-E9BF-504E-8617B4035451">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>TECNICO</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OTROS_DETALLES" id="06DF1EBF-F48D-727D-F874-7D676CE90F43">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>TECNICO</sourceObjSchema>
+<sourceObjName>OTROS_DETALLES</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLEADO_ID_EMPLEADO" id="5D5DE0E2-27C4-3FF7-B081-CF38985951CA">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>TECNICO</sourceObjSchema>
+<sourceObjName>EMPLEADO_ID_EMPLEADO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:54:07 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B20AF01B-DFFE-77AF-1D99-71C659496753" referredColumn="75FA200B-12E8-8140-90C0-1AAEF7BF1156"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C1DFC150-685E-8796-5FF4-FEBDB728B477" name="TECNICO_EMPLEADO_FK">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:54:07 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D5DE0E2-27C4-3FF7-B081-CF38985951CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

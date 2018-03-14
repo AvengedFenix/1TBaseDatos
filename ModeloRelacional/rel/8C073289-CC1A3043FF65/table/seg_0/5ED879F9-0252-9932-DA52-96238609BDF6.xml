@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5ED879F9-0252-9932-DA52-96238609BDF6" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="COS">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>COS</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:35 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CLASS" id="ED4A8C20-756F-4ECC-40C1-53C53F323908">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>COS</sourceObjSchema>
+<sourceObjName>ID_CLASS</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="C76E7752-0AE0-296A-BA60-2A96FD75CC00">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>COS</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OTROS_DETALLES" id="4EEF0AB1-706F-6963-0DD4-56FCDD8136B5">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>COS</sourceObjSchema>
+<sourceObjName>OTROS_DETALLES</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO_TEL_NUMBER" id="D981C955-5CF2-0FEC-52AF-01EECE5716F2">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>COS</sourceObjSchema>
+<sourceObjName>TELEFONO_TEL_NUMBER</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 01:00:52 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9AFD415-D432-50AA-4B90-B7F6A9C6655D" referredColumn="A5F3F879-5126-B541-8CF0-9717DDA35330"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E045C5C-5FE2-657D-0E20-0A984EFE12CE" name="COS_PK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>COS_PK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:37 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED4A8C20-756F-4ECC-40C1-53C53F323908"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D1D0419-E814-55EB-1FB6-B39AD6B7B4E1" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="COS_PK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>COS_PK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED4A8C20-756F-4ECC-40C1-53C53F323908"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C6C2A49-910B-5917-62D7-8B6FA843CE61" name="COS_TELEFONO_FK">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 01:00:52 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D981C955-5CF2-0FEC-52AF-01EECE5716F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

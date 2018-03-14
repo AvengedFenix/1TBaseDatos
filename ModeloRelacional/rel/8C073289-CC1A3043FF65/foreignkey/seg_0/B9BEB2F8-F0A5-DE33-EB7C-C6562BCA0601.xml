@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B9BEB2F8-F0A5-DE33-EB7C-C6562BCA0601" containerWithKeyObject="D782E466-D96F-8A81-FF0D-63FC7EF1B41A" localFKIndex="08080CCE-D586-7FD5-4659-DAD583ED31CD" name="PRODUCTO_ALMACEN_FK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PRODUCTO_ALMACEN_FK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 02:21:12 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<referredTableLongName>SYSTEM.ALMACEN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>47CBA5C7-009E-FFDF-7AFB-33446EFD6E6D</referredTableID>
+<keyObject>E4396D69-6ED0-1B46-5789-76EC77BF606E</keyObject>
+<referredKeyID>E4396D69-6ED0-1B46-5789-76EC77BF606E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ALMACEN</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

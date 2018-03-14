@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D79FF424-F361-51DD-C1DE-1C456404F6AB" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="MOVIMIENTO">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>MOVIMIENTO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:35 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FECHA_INGRESO" id="9B9F8ED1-960F-CCFB-8A28-B1842B36ABDA">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>MOVIMIENTO</sourceObjSchema>
+<sourceObjName>FECHA_INGRESO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OTROS_DETALLES" id="32409C10-16F8-D469-5531-DE6CD824E843">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>MOVIMIENTO</sourceObjSchema>
+<sourceObjName>OTROS_DETALLES</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_EGRESO" id="BC5D13CD-DD68-1833-252C-540CCE84968A">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>MOVIMIENTO</sourceObjSchema>
+<sourceObjName>FECHA_EGRESO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO" id="6F63F642-B74B-57DC-0F27-19012E3B2ACF">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>MOVIMIENTO</sourceObjSchema>
+<sourceObjName>ESTADO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTO_ID_PRODUCTO" id="8D00650F-DE7D-856E-CD55-99FFD09A9C92">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>MOVIMIENTO</sourceObjSchema>
+<sourceObjName>PRODUCTO_ID_PRODUCTO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 01:24:50 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B677794B-98B4-9732-C707-9BCA4C4BC913" referredColumn="095E8484-2203-9E32-DFD6-8A0CC020331A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DDF4A1AE-E2F8-84DD-2FC3-0A3E463816EF" name="MOVIMIENTO_PRODUCTO_FK">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 01:24:50 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D00650F-DE7D-856E-CD55-99FFD09A9C92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

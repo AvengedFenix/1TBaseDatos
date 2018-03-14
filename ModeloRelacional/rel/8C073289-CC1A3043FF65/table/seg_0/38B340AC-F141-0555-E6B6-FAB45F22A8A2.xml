@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="38B340AC-F141-0555-E6B6-FAB45F22A8A2" schemaObject="BBFFE701-1512-0752-745E-6DC7C4027903" name="MARCA">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>MARCA</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:35 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FABRICANTE" id="E64F55B7-486C-61C9-4486-527F1DBB96E4">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>MARCA</sourceObjSchema>
+<sourceObjName>FABRICANTE</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODELO" id="A1CCBB31-F377-99B0-FA34-EF7B167EC8DA">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>MARCA</sourceObjSchema>
+<sourceObjName>MODELO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:24:36 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTO_ID_PRODUCTO" id="F33EA7E4-6E86-7EBF-8698-4607B0A21EA5">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>MARCA</sourceObjSchema>
+<sourceObjName>PRODUCTO_ID_PRODUCTO</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 01:22:46 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="640BE9AB-998C-E0C2-6210-F778ED18ED2D" referredColumn="095E8484-2203-9E32-DFD6-8A0CC020331A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3B874EB-3D51-7540-0A5C-907360D1D8FF" name="MARCA_PRODUCTO_FK">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 01:22:46 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F33EA7E4-6E86-7EBF-8698-4607B0A21EA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

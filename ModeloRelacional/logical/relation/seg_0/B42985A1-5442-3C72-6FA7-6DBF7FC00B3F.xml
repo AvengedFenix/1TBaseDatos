@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="JEFATURA_ALMACEN_FK" directorySegmentName="seg_0" id="B42985A1-5442-3C72-6FA7-6DBF7FC00B3F">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>657CF1CC-5507-E666-C964-9DF2210808BF</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<sourcePk>E8CD6A6C-BD04-345D-1178-34CD58D42E31</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EF2FBD34-DD19-4DD8-C5DD-6BC06C36EAC0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AB37C442-67F2-410D-B5E3-0FE21C28CFA3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ModeloRelacional" id="8F348136-8EB3-B050-FBD8-EAF7053B26A9" version="3.5">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 00:15:53 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>8F348136-8EB3-B050-FBD8-EAF7053B26A9</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="3D715303-968D-2B9A-F33F-BFD9446FD11C">
+<designStoragePath>C:\Users\Maslz\OneDrive\Documents\UNITEC\Teoría de Base de Datos I\1TBaseDatos</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="891F15CE-571A-1702-785A-D8FD2308016C">
+<designStoragePath>C:\Users\Maslz\OneDrive\Documents\UNITEC\Teoría de Base de Datos I\1TBaseDatos</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="28388977-489C-3AB0-A75D-D57591883D28">
+<designStoragePath>C:\Users\Maslz\OneDrive\Documents\UNITEC\Teoría de Base de Datos I\1TBaseDatos</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="B6D238BF-2BC2-78AB-A49E-E7DBC67B51AC">
+<designStoragePath>C:\Users\Maslz\OneDrive\Documents\UNITEC\Teoría de Base de Datos I\1TBaseDatos</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

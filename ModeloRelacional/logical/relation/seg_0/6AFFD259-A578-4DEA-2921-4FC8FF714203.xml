@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="JEFATURA_EMPLEADO_FK" directorySegmentName="seg_0" id="6AFFD259-A578-4DEA-2921-4FC8FF714203">
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 04:13:37 UTC</createdTime>
+<generatorID>689FA14A-41C8-6DEB-0B2A-D93AA989C8EC</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="8C073289-B6A5-BB62-7F8B-CC1A3043FF65" value="true"/>
+</engineerTo>
+<sourcePk>37E67266-075D-18F3-9097-A0B4EFA07D35</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A97893C1-A1E2-3BB8-0326-7445CC631A36</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AB37C442-67F2-410D-B5E3-0FE21C28CFA3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

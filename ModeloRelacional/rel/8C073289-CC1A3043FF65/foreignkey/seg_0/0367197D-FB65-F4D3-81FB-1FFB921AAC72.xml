@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0367197D-FB65-F4D3-81FB-1FFB921AAC72" containerWithKeyObject="DADFFBA1-D429-7C20-0490-97029E8FDCB3" localFKIndex="98168D3B-EF7F-2E72-4C13-BB644B80940D" name="TIPO_DISPOSITIVO_PRODUCTO_FK">
+<sourceConnName>BaseDeDatosI</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>TIPO_DISPOSITIVO_PRODUCTO_FK</sourceObjName>
+<createdBy>Maslz</createdBy>
+<createdTime>2018-02-19 01:22:57 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<referredTableLongName>SYSTEM.PRODUCTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D782E466-D96F-8A81-FF0D-63FC7EF1B41A</referredTableID>
+<keyObject>DB8AC2EE-8F85-B3EE-4A19-8865352A327E</keyObject>
+<referredKeyID>DB8AC2EE-8F85-B3EE-4A19-8865352A327E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PRODUCTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
