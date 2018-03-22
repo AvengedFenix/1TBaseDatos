@@ -80,6 +80,11 @@ public class GUI extends javax.swing.JFrame {
         tf_address = new javax.swing.JTextField();
         tf_details = new javax.swing.JTextField();
         jButton5 = new javax.swing.JButton();
+        jd_addEmpleado = new javax.swing.JDialog();
+        jPanel4 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jt_addEmpleado = new javax.swing.JTable();
+        jButton4 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jp_menu = new javax.swing.JPanel();
         bt_connect = new javax.swing.JButton();
@@ -93,10 +98,10 @@ public class GUI extends javax.swing.JFrame {
         jt_list = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jb_addEmpleado = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu2 = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
 
         jPanel3.setBorder(border);
 
@@ -198,6 +203,69 @@ public class GUI extends javax.swing.JFrame {
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jPanel4.setBorder(border);
+
+        jt_addEmpleado.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {},
+                {},
+                {},
+                {}
+            },
+            new String [] {
+
+            }
+        ));
+        jScrollPane2.setViewportView(jt_addEmpleado);
+
+        jButton4.setText("Promote");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap(52, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(45, 45, 45))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(199, 199, 199))))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton4)
+                .addGap(17, 17, 17))
+        );
+
+        javax.swing.GroupLayout jd_addEmpleadoLayout = new javax.swing.GroupLayout(jd_addEmpleado.getContentPane());
+        jd_addEmpleado.getContentPane().setLayout(jd_addEmpleadoLayout);
+        jd_addEmpleadoLayout.setHorizontalGroup(
+            jd_addEmpleadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_addEmpleadoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jd_addEmpleadoLayout.setVerticalGroup(
+            jd_addEmpleadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_addEmpleadoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jp_menu.setBorder(border);
@@ -252,8 +320,8 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(bt_connect, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton3, javax.swing.GroupLayout.Alignment.CENTER, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
                     .addComponent(bt_list, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bt_search, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(bt_search, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jp_menuLayout.setVerticalGroup(
@@ -263,12 +331,12 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jButton3)
                 .addGap(18, 18, 18)
                 .addComponent(bt_connect)
-                .addGap(18, 18, 18)
-                .addComponent(bt_list)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(bt_search)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bt_list)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -304,7 +372,7 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(jp_listLayout.createSequentialGroup()
                 .addGap(43, 43, 43)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(280, Short.MAX_VALUE))
+                .addContainerGap(282, Short.MAX_VALUE))
         );
 
         jButton2.setText("Add User");
@@ -314,7 +382,12 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setText("Add Administrator");
+        jb_addEmpleado.setText("Add Empleado");
+        jb_addEmpleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_addEmpleadoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -322,9 +395,9 @@ public class GUI extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
+                    .addComponent(jb_addEmpleado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(255, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -333,7 +406,7 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jButton2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton4)
+                .addComponent(jb_addEmpleado)
                 .addContainerGap(127, Short.MAX_VALUE))
         );
 
@@ -383,12 +456,13 @@ public class GUI extends javax.swing.JFrame {
 
         jMenuBar1.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
 
+        jMenu1.setText("File");
+        jMenu1.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        jMenuBar1.add(jMenu1);
+
         jMenu2.setText("Edit");
         jMenu2.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
         jMenuBar1.add(jMenu2);
-
-        jMenu1.setText("File");
-        jMenuBar1.add(jMenu1);
 
         setJMenuBar(jMenuBar1);
 
@@ -424,15 +498,13 @@ public class GUI extends javax.swing.JFrame {
 
     private void bt_connectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_connectActionPerformed
         try {
-            databaseCon = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "system", "TeoriaBD1");
+            databaseCon = DriverManager.getConnection("jdbc:sqlserver://FENIX-PC\\SQLEXPRESS:1433;databaseName=BaseRedomsat", "Test", "TeoriaBD1");
             databaseState = databaseCon.createStatement();
             databaseRes = databaseState.executeQuery("select id_user from usuario");
             while (databaseRes.next()) {
                 String result = databaseRes.getString("id_user");
                 System.out.println(result);
             }
-            
-           databaseState = null;
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -467,11 +539,7 @@ public class GUI extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         String query = "insert into usuario(id_user, first_name, second_name, last_name1, last_name2, address, other_details)"
                 + "values ('" + tf_id.getText() + "','" + tf_name1.getText() + "','" + tf_name2.getText() + "','" + tf_lastname1.getText() + "','" + tf_lastname2.getText() + "','" + tf_address.getText() + "','" + tf_details.getText() + "')";
-        try {
-            databaseState = databaseCon.createStatement();
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
-        }
+
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -485,6 +553,43 @@ public class GUI extends javax.swing.JFrame {
         jd_AddUser.setLocationRelativeTo(null);
         jd_AddUser.pack();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jb_addEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_addEmpleadoActionPerformed
+        // TODO add your handling code here:
+        ResultSet rs;
+
+        jd_addEmpleado.setVisible(true);
+        jd_addEmpleado.setLocationRelativeTo(null);
+        jd_addEmpleado.pack();
+        try {
+            rs = databaseState.executeQuery("select * from Usuario");
+            jt_addEmpleado.setModel(buildTableModel(rs));
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jb_addEmpleadoActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        ResultSet rs;
+
+        try {
+            rs = databaseState.executeQuery("insert into empleado(nombre, segundo_nombre, apellido, segundo_apellido, id_empleado, puesto, otros_detalles, direccion)"
+                    + "values('" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 1)
+                    + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 2)
+                    + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 3)
+                    + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 4)
+                    + "','" + "10" //jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 0)
+                    + "','" + "TEMPORAL"
+                    + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 6)
+                    + "','" + "TEMPORAL')");
+            rs = databaseState.executeQuery("select * from Empleado");
+            jt_list = new JTable(buildTableModel(rs));
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        JOptionPane.showMessageDialog(null, new JScrollPane(jt_list));
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -545,11 +650,16 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JButton jb_addEmpleado;
     private javax.swing.JDialog jd_AddUser;
+    private javax.swing.JDialog jd_addEmpleado;
     private javax.swing.JPanel jp_list;
     private javax.swing.JPanel jp_main;
     private javax.swing.JPanel jp_menu;
+    private javax.swing.JTable jt_addEmpleado;
     private javax.swing.JTable jt_list;
     private javax.swing.JTextField tf_address;
     private javax.swing.JTextField tf_details;

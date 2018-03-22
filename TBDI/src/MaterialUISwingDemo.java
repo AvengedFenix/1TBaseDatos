@@ -1,7 +1,5 @@
-
 import mdlaf.MaterialLookAndFeel;
 import mdlaf.MaterialUIMovement;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
