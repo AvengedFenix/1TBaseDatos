@@ -80,6 +80,8 @@ public class GUI extends javax.swing.JFrame {
         tf_address = new javax.swing.JTextField();
         tf_details = new javax.swing.JTextField();
         jButton5 = new javax.swing.JButton();
+        tf_comunidad = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
         jd_addEmpleado = new javax.swing.JDialog();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -126,28 +128,32 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jLabel8.setText("COMUNIDAD");
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(tf_details, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(tf_comunidad, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 140, Short.MAX_VALUE)
                         .addComponent(jButton5))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tf_details, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tf_id, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tf_name1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tf_name2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -187,7 +193,11 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(tf_details, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tf_details, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_comunidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8)
                     .addComponent(jButton5))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -537,9 +547,18 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        String query = "insert into usuario(id_user, first_name, second_name, last_name1, last_name2, address, other_details)"
-                + "values ('" + tf_id.getText() + "','" + tf_name1.getText() + "','" + tf_name2.getText() + "','" + tf_lastname1.getText() + "','" + tf_lastname2.getText() + "','" + tf_address.getText() + "','" + tf_details.getText() + "')";
+//        String query = "insert into usuario(id_user, first_name, second_name, last_name1, last_name2, address, other_details)"
+//                + "values ('" + tf_id.getText() + "','" + tf_name1.getText() + "','" + tf_name2.getText() + "','" + tf_lastname1.getText() + "','" + tf_lastname2.getText() + "','" + tf_address.getText() + "','" + tf_details.getText() + "')";
 
+        String query = "EXEC ADD_USUARIO"
+                + "@ID = " + tf_id.getText() + ","
+                + "@FNAME = '" +  tf_name1.getText() + "',"
+                + "@SNAME = '" + tf_name2.getText() + "',"
+                + "@LNAME = '" + tf_lastname1.getText() + "',"
+                + "@LNAME2 = '" + tf_lastname2.getText() + "',"
+                + "@DIRECCION = '" + tf_address.getText() + "',"
+                + "@OTHER_DETAILS = '" + tf_details.getText() + "',"
+                + "@COMUNIDAD = " + tf_comunidad.getText() + ";";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -644,6 +663,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
@@ -662,6 +682,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTable jt_addEmpleado;
     private javax.swing.JTable jt_list;
     private javax.swing.JTextField tf_address;
+    private javax.swing.JTextField tf_comunidad;
     private javax.swing.JTextField tf_details;
     private javax.swing.JTextField tf_id;
     private javax.swing.JTextField tf_lastname1;
