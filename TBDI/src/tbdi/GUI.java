@@ -87,6 +87,19 @@ public class GUI extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jt_addEmpleado = new javax.swing.JTable();
         jButton4 = new javax.swing.JButton();
+        jd_addCommunity = new javax.swing.JDialog();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        tf_idCommunity = new javax.swing.JTextField();
+        tf_communityName = new javax.swing.JTextField();
+        tf_department = new javax.swing.JTextField();
+        tf_otherdetails = new javax.swing.JTextField();
+        tf_capinstalada = new javax.swing.JTextField();
+        jButton10 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jp_menu = new javax.swing.JPanel();
         bt_connect = new javax.swing.JButton();
@@ -101,6 +114,10 @@ public class GUI extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
         jb_addEmpleado = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -276,6 +293,90 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel5.setBorder(border);
+
+        jLabel9.setText("ID COMMUNITY");
+
+        jLabel10.setText("COMMUNITY NAME");
+
+        jLabel11.setText("DEPARTMENT");
+
+        jLabel12.setText("OTHER_DETAILS");
+
+        jLabel13.setText("CAP_INSTALLED");
+
+        jButton10.setText("ADD");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel9))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(tf_capinstalada, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 126, Short.MAX_VALUE)
+                        .addComponent(jButton10))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tf_idCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_communityName, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_department, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_otherdetails, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(tf_idCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(tf_communityName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(tf_department, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(tf_otherdetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(tf_capinstalada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton10))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jd_addCommunityLayout = new javax.swing.GroupLayout(jd_addCommunity.getContentPane());
+        jd_addCommunity.getContentPane().setLayout(jd_addCommunityLayout);
+        jd_addCommunityLayout.setHorizontalGroup(
+            jd_addCommunityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jd_addCommunityLayout.setVerticalGroup(
+            jd_addCommunityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jp_menu.setBorder(border);
@@ -392,12 +493,25 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        jb_addEmpleado.setText("Add Empleado");
+        jb_addEmpleado.setText("Add Employee");
         jb_addEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_addEmpleadoActionPerformed(evt);
             }
         });
+
+        jButton6.setText("Add Community");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
+        jButton7.setText("Add Product");
+
+        jButton8.setText("Add COS");
+
+        jButton9.setText("Add Number");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -405,10 +519,17 @@ public class GUI extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
-                    .addComponent(jb_addEmpleado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(255, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
+                            .addComponent(jb_addEmpleado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -417,7 +538,15 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jButton2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jb_addEmpleado)
-                .addContainerGap(127, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton9)
+                .addContainerGap(275, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jp_mainLayout = new javax.swing.GroupLayout(jp_main);
@@ -427,7 +556,7 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_mainLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 175, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 419, Short.MAX_VALUE)
                 .addComponent(jp_list, javax.swing.GroupLayout.PREFERRED_SIZE, 518, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -550,15 +679,15 @@ public class GUI extends javax.swing.JFrame {
 //        String query = "insert into usuario(id_user, first_name, second_name, last_name1, last_name2, address, other_details)"
 //                + "values ('" + tf_id.getText() + "','" + tf_name1.getText() + "','" + tf_name2.getText() + "','" + tf_lastname1.getText() + "','" + tf_lastname2.getText() + "','" + tf_address.getText() + "','" + tf_details.getText() + "')";
 
-        String query = "EXEC ADD_USUARIO"
-                + "@ID = " + tf_id.getText() + ","
-                + "@FNAME = '" +  tf_name1.getText() + "',"
-                + "@SNAME = '" + tf_name2.getText() + "',"
-                + "@LNAME = '" + tf_lastname1.getText() + "',"
-                + "@LNAME2 = '" + tf_lastname2.getText() + "',"
-                + "@DIRECCION = '" + tf_address.getText() + "',"
-                + "@OTHER_DETAILS = '" + tf_details.getText() + "',"
-                + "@COMUNIDAD = " + tf_comunidad.getText() + ";";
+        String query = "EXEC ADD_USUARIO\n"
+                + "@ID = \"" + tf_id.getText() + "\","
+                + "@FNAME = \"" +  tf_name1.getText() + "\","
+                + "@SNAME = \"" + tf_name2.getText() + "\","
+                + "@LNAME = \"" + tf_lastname1.getText() + "\","
+                + "@LNAME2 = \"" + tf_lastname2.getText() + "\","
+                + "@DIRECCION = \"" + tf_address.getText() + "\","
+                + "@OTHER_DETAILS = \"" + tf_details.getText() + "\","
+                + "@COMUNIDAD = \"" + tf_comunidad.getText() + "\";";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -610,6 +739,29 @@ public class GUI extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, new JScrollPane(jt_list));
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        jd_addCommunity.setVisible(true);
+        jd_addCommunity.setLocationRelativeTo(null);
+        jd_addCommunity.pack();
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+                        String query = "EXEC InsertarComunidad\n"
+                + "@ID_COMUNIDAD = " + Integer.parseInt(tf_idCommunity.getText()) + ", "
+                + "@C_NAME = '" +  tf_communityName.getText() + "', "
+                + "@DEPARTAMENTO = '" + tf_department.getText() + "', "
+                + "@OTHER_DETAILS = '" + tf_otherdetails.getText() + "', "
+                + "@CAP_INSTALADA = '" + tf_capinstalada.getText() + "';";
+                        System.out.println(query);
+        try {
+            ResultSet rs = databaseState.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton10ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -652,11 +804,20 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton bt_list;
     private javax.swing.JButton bt_search;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -664,6 +825,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
@@ -671,10 +833,12 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JButton jb_addEmpleado;
     private javax.swing.JDialog jd_AddUser;
+    private javax.swing.JDialog jd_addCommunity;
     private javax.swing.JDialog jd_addEmpleado;
     private javax.swing.JPanel jp_list;
     private javax.swing.JPanel jp_main;
@@ -682,13 +846,18 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTable jt_addEmpleado;
     private javax.swing.JTable jt_list;
     private javax.swing.JTextField tf_address;
+    private javax.swing.JTextField tf_capinstalada;
+    private javax.swing.JTextField tf_communityName;
     private javax.swing.JTextField tf_comunidad;
+    private javax.swing.JTextField tf_department;
     private javax.swing.JTextField tf_details;
     private javax.swing.JTextField tf_id;
+    private javax.swing.JTextField tf_idCommunity;
     private javax.swing.JTextField tf_lastname1;
     private javax.swing.JTextField tf_lastname2;
     private javax.swing.JTextField tf_name1;
     private javax.swing.JTextField tf_name2;
+    private javax.swing.JTextField tf_otherdetails;
     // End of variables declaration//GEN-END:variables
 DropShadowBorder border = new DropShadowBorder();
 
