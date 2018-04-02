@@ -35,6 +35,29 @@ String query = "EXEC InsertarTelefono\n"
             Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
         }
 		
+String query = "EXEC InsertarAlmacen\n"
+                + "@ID_ALMACEN = \"" + tf_idALMACEN.getText() + "\","
+                + "@NOMBRE = \"" +  tf_nombreALMACEN.getText() + "\","
+                + "@DESCRIPCION= \"" + tf_descALMACEN.getText() + "\",";
+        try {
+            ResultSet rs = databaseState.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+		
+String query = "EXEC InsertarMovimiento\n"
+                + "@FECHA_INGRESO = \"" + tf_ingresoMOVI.getText() + "\","
+                + "@OTHER_DETAILS = \"" +  tf_detailsMOVI.getText() + "\","
+				+ "@FECHA_EGRESO = \"" + tf_egresoMOVI.getText() + "\","
+                + "@ESTADO = \"" + tf_estadoMOVI.getText() + "\","
+				+ "@ID_PRODUCTO = \"" + tf_idMOVI.getText() + "\",";
+
+        try {
+            ResultSet rs = databaseState.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+		
 String query = "EXEC ActualizarAlmacen\n"
                 + "@ID_ALMACEN = \"" + tf_idUPDalmacen.getText() + "\","
                 + "@NOMBRE = \"" +  tf_nombreUPDalmacen.getText() + "\","
@@ -65,6 +88,19 @@ String query = "EXEC ActualizarCOS\n"
                 + "@DESCRIP = \"" +  tf_descripUPDcos.getText() + "\","
                 + "@OTHER_DETAILS = \"" + tf_detailsUPDcos.getText() + "\","
                 + "@TEL_NUMBER = \"" + tf_numberUPDcos.getText() + "\";";
+        try {
+            ResultSet rs = databaseState.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+		
+String query = "EXEC ActualizarMovimiento\n"
+                + "@FECHA_INGRESO = \"" + tf_ingresoMOVI.getText() + "\","
+                + "@OTHER_DETAILS = \"" +  tf_detailsMOVI.getText() + "\","
+				+ "@FECHA_EGRESO = \"" + tf_egresoMOVI.getText() + "\","
+                + "@ESTADO = \"" + tf_estadoMOVI.getText() + "\","
+				+ "@ID_PRODUCTO = \"" + tf_idMOVI.getText() + "\",";
+
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {

@@ -1,5 +1,6 @@
+
 CREATE PROCEDURE deleteAlmacen
-	@ID int,
+	@ID int
 	
 	AS
 	BEGIN
@@ -9,8 +10,10 @@ CREATE PROCEDURE deleteAlmacen
 	
 	END
 	
+GO
+
 CREATE PROCEDURE deleteCLASS
-	@ID int,
+	@ID int
 	
 	AS
 	BEGIN
@@ -19,9 +22,11 @@ CREATE PROCEDURE deleteCLASS
 	WHERE ID_CLASS = @ID
 	
 	END
+
+GO
 	
 CREATE PROCEDURE deleteCOMUNIDAD
-	@ID int,
+	@ID int
 	
 	AS
 	BEGIN
@@ -31,11 +36,11 @@ CREATE PROCEDURE deleteCOMUNIDAD
 	
 	END
 	
-
+GO
 	
 	
 CREATE PROCEDURE deleteEMPLEADO
-	@ID int,
+	@ID int
 	
 	AS
 	BEGIN
@@ -44,10 +49,11 @@ CREATE PROCEDURE deleteEMPLEADO
 	WHERE ID_EMPLEADO = @ID
 	
 	END
-	
+
+GO	
 	
 CREATE PROCEDURE deletePRODUCTO
-	@ID int,
+	@ID int
 	
 	AS
 	BEGIN
@@ -57,9 +63,10 @@ CREATE PROCEDURE deletePRODUCTO
 	
 	END
 	
+GO	
 	
 CREATE PROCEDURE deleteAlmacen
-	@ID int,
+	@ID int
 	
 	AS
 	BEGIN
@@ -69,9 +76,11 @@ CREATE PROCEDURE deleteAlmacen
 	
 	END
 	
+GO	
+	
 	
 CREATE PROCEDURE deleteTELEFONO
-	@ID int,
+	@ID int
 	
 	AS
 	BEGIN
@@ -81,9 +90,11 @@ CREATE PROCEDURE deleteTELEFONO
 	
 	END
 	
+GO	
+	
 	
 CREATE PROCEDURE deleteUSUARIO
-	@ID int,
+	@ID int
 	
 	AS
 	BEGIN
@@ -92,3 +103,5 @@ CREATE PROCEDURE deleteUSUARIO
 	WHERE ID_USER = @ID
 	
 	END
+	
+GO
