@@ -112,9 +112,7 @@ String query = "EXEC ActualizarUSUARIO\n"
 		
 		
 String query = "EXEC deleteAlmacen\n"
-                + "@ID_ALMACEN = \"" + tf_idDELalmacen.getText() + "\","
-                + "@NOMBRE = \"" +  tf_nombreDELalmacen.getText() + "\","
-                + "@DESCRIPCION = \"" + tf_descDELalmacen.getText() + "\",";
+                + "@ID_ALMACEN = \"" + tf_idDELalmacen.getText() + "\",";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -123,12 +121,7 @@ String query = "EXEC deleteAlmacen\n"
 
 		
 String query = "EXEC deleteComunidad\n"
-                + "@ID_COMUNIDAD = \"" + tf_idDELcom.getText() + "\","
-                + "@C_NAME = \"" +  tf_nombreDELcom.getText() + "\","
-				+ "@DEPARTAMENTO = \"" + tf_depDELcom.getText() + "\","
-                + "@OTHER_DETAILS = \"" + tf_detDELcom.getText() + "\","
-				+ "@CAP_INSTALADA = \"" + tf_capDELcom.getText() + "\","
-				+ "@ID_PRODUCTO = \"" + tf_idProdDELcom.getText() + "\",";
+                + "@ID_COMUNIDAD = \"" + tf_idDELcom.getText() + "\",";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -137,10 +130,7 @@ String query = "EXEC deleteComunidad\n"
 		
 		
 String query = "EXEC deleteCOS\n"
-                + "@ID_CLASS = \"" + tf_idDELcos.getText() + "\","
-                + "@DESCRIP = \"" +  tf_descripDELcos.getText() + "\","
-                + "@OTHER_DETAILS = \"" + tf_detailsDELcos.getText() + "\","
-                + "@TEL_NUMBER = \"" + tf_numberDELcos.getText() + "\";";
+                + "@ID_CLASS = \"" + tf_idDELcos.getText() + "\",";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -148,11 +138,7 @@ String query = "EXEC deleteCOS\n"
         }
 		
 String query = "EXEC deleteProducto\n"
-                + "@ID_PRODUCTO = \"" + tf_idDELprod.getText() + "\","
-                + "@P_NAME = \"" +  tf_nameDELprod.getText() + "\","
-                + "@DESCRIPCION =\"" + tf_descripcionDELprod.getText() + "\',"
-                + "@OTHER_DETAILS = \"" + tf_detailsDELprod.getText() + "\","
-                + "@ID_COMUNIDAD = \"" + tf_comunidadDELprod.getText() + "\";";
+                + "@ID_PRODUCTO = \"" + tf_idDELprod.getText() + "\",";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -160,11 +146,7 @@ String query = "EXEC deleteProducto\n"
         }
 		
 String query = "EXEC deleteTelefono\n"
-                + "@TEL_NUMBER = \"" + tf_idDELnumber.getText() + "\","
-                + "@CKTO = \"" +  tf_cktoDELnumber.getText() + "\","
-                + "@PAR_INTERNO= \"" + tf_piDELnumber.getText() + "\","
-                + "@PAR_EXTERNO = \"" + tf_peDELnumber.getText() + "\";"
-				+ "@ID_USER = \"" + tf_userDELnumber.getText() + "\";";
+                + "@TEL_NUMBER = \"" + tf_idDELnumber.getText() + "\",";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -172,14 +154,8 @@ String query = "EXEC deleteTelefono\n"
         }
 		
 		
-String query = "EXEC ActualizarUSUARIO\n"
-                + "@ID_USER = \"" + tf_id.getText() + "\","
-                + "@FIRST_NAME = \"" +  tf_name1UPDus.getText() + "\","
-                + "@SECOND_NAME = \"" + tf_name2UPDus.getText() + "\","
-                + "@LAST_NAME = \"" + tf_lastname1UPDus.getText() + "\","
-                + "@LAST_NAME2 = \"" + tf_lastname2UPDus.getText() + "\","
-                + "@USER_ADDRESS = \"" + tf_addressUPDus.getText() + "\","
-                + "@ID_COMUNIDAD = \"" + tf_idComUPDus.getText() + "\";";
+String query = "EXEC deleteUSUARIO\n"
+                + "@ID_USER = \"" + tf_id.getText() + "\",";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
