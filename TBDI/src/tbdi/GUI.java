@@ -1418,7 +1418,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void bt_connectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_connectActionPerformed
         try {
-            databaseCon = DriverManager.getConnection("jdbc:sqlserver://FENIX-PC\\SQLEXPRESS:1433;databaseName=BaseRedomsat", "Test", "TeoriaBD1");
+            databaseCon = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BaseRedomsat", "sa", "TeoriaBD1");
             databaseState = databaseCon.createStatement();
             databaseRes = databaseState.executeQuery("select id_user from usuario");
             while (databaseRes.next()) {
@@ -1460,15 +1460,15 @@ public class GUI extends javax.swing.JFrame {
 //        String query = "insert into usuario(id_user, first_name, second_name, last_name1, last_name2, address, other_details)"
 //                + "values ('" + tf_id.getText() + "','" + tf_name1.getText() + "','" + tf_name2.getText() + "','" + tf_lastname1.getText() + "','" + tf_lastname2.getText() + "','" + tf_address.getText() + "','" + tf_details.getText() + "')";
 
-        String query = "EXEC ADD_USUARIO\n"
-                + "@ID = \"" + tf_id.getText() + "\","
-                + "@FNAME = \"" +  tf_name1.getText() + "\","
-                + "@SNAME = \"" + tf_name2.getText() + "\","
-                + "@LNAME = \"" + tf_lastname1.getText() + "\","
-                + "@LNAME2 = \"" + tf_lastname2.getText() + "\","
-                + "@DIRECCION = \"" + tf_address.getText() + "\","
-                + "@OTHER_DETAILS = \"" + tf_details.getText() + "\","
-                + "@COMUNIDAD = \"" + tf_comunidad.getText() + "\";";
+        String query = "EXEC InsertarUsuario\n"
+                + "@ID_USER = \"" + tf_id.getText() + "\","
+                + "@FIRST_NAME = \"" +  tf_name1.getText() + "\","
+                + "@SECOND_NAME = \"" + tf_name2.getText() + "\","
+                + "@LAST_NAME = \"" + tf_lastname1.getText() + "\","
+                + "@LAST_NAME2 = \"" + tf_lastname2.getText() + "\","
+                + "@USER_ADDRESS = \"" + tf_address.getText() + "\","
+                + "@ID_COMUNIDAD = \"" + tf_comunidad.getText() + "\","
+                + "@OTHER_DETAILS = \"" + tf_details.getText() + "\";";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
