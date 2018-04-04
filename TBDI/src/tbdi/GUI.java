@@ -256,6 +256,46 @@ public class GUI extends javax.swing.JFrame {
         tf_CKTO1 = new javax.swing.JTextField();
         tf_parExterno1 = new javax.swing.JTextField();
         jButton41 = new javax.swing.JButton();
+        jd_deleteUsuario = new javax.swing.JDialog();
+        jPanel2 = new javax.swing.JPanel();
+        tf_deleteUsuario = new javax.swing.JTextField();
+        jLabel74 = new javax.swing.JLabel();
+        jb_deleteUsuario = new javax.swing.JButton();
+        jd_deleteEmpleado = new javax.swing.JDialog();
+        jPanel19 = new javax.swing.JPanel();
+        tf_deleteEmpleado = new javax.swing.JTextField();
+        jLabel75 = new javax.swing.JLabel();
+        jb_deleteEmployee = new javax.swing.JButton();
+        jd_deleteComunidad = new javax.swing.JDialog();
+        jPanel20 = new javax.swing.JPanel();
+        tf_deleteComunidad = new javax.swing.JTextField();
+        jLabel76 = new javax.swing.JLabel();
+        jb_deleteComunidad = new javax.swing.JButton();
+        jd_deleteAlmacen = new javax.swing.JDialog();
+        jPanel21 = new javax.swing.JPanel();
+        tf_deleteAlmacen = new javax.swing.JTextField();
+        jLabel77 = new javax.swing.JLabel();
+        jb_deleteAlmacen = new javax.swing.JButton();
+        jd_deleteCOS = new javax.swing.JDialog();
+        jPanel22 = new javax.swing.JPanel();
+        tf_deleteCOS = new javax.swing.JTextField();
+        jLabel78 = new javax.swing.JLabel();
+        jb_deleteCOS = new javax.swing.JButton();
+        jd_deleteMovimiento = new javax.swing.JDialog();
+        jPanel23 = new javax.swing.JPanel();
+        tf_deleteMovimiento = new javax.swing.JTextField();
+        jLabel79 = new javax.swing.JLabel();
+        jb_deleteMovimiento = new javax.swing.JButton();
+        jd_deleteProducto = new javax.swing.JDialog();
+        jPanel24 = new javax.swing.JPanel();
+        tf_deleteProducto = new javax.swing.JTextField();
+        jLabel80 = new javax.swing.JLabel();
+        jb_deleteProducto = new javax.swing.JButton();
+        jd_deleteTelefono = new javax.swing.JDialog();
+        jPanel25 = new javax.swing.JPanel();
+        tf_deleteTelefono = new javax.swing.JTextField();
+        jLabel81 = new javax.swing.JLabel();
+        jb_deleteTelefono = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jp_menu = new javax.swing.JPanel();
         bt_connect = new javax.swing.JButton();
@@ -291,7 +331,7 @@ public class GUI extends javax.swing.JFrame {
         jLabel36 = new javax.swing.JLabel();
         jp_delete = new javax.swing.JPanel();
         jButton27 = new javax.swing.JButton();
-        jb_addEmpleado2 = new javax.swing.JButton();
+        jb_deleteEmpleado = new javax.swing.JButton();
         jButton28 = new javax.swing.JButton();
         jButton29 = new javax.swing.JButton();
         jButton30 = new javax.swing.JButton();
@@ -1671,6 +1711,438 @@ public class GUI extends javax.swing.JFrame {
             .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jLabel74.setText("ID USUARIO");
+
+        jb_deleteUsuario.setText("DELETE");
+        jb_deleteUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_deleteUsuarioActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel74)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(tf_deleteUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(127, 127, 127)
+                        .addComponent(jb_deleteUsuario)))
+                .addContainerGap(129, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_deleteUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel74))
+                .addGap(56, 56, 56)
+                .addComponent(jb_deleteUsuario)
+                .addContainerGap(88, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jd_deleteUsuarioLayout = new javax.swing.GroupLayout(jd_deleteUsuario.getContentPane());
+        jd_deleteUsuario.getContentPane().setLayout(jd_deleteUsuarioLayout);
+        jd_deleteUsuarioLayout.setHorizontalGroup(
+            jd_deleteUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteUsuarioLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jd_deleteUsuarioLayout.setVerticalGroup(
+            jd_deleteUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteUsuarioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jLabel75.setText("ID Empleado");
+
+        jb_deleteEmployee.setText("DELETE");
+        jb_deleteEmployee.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_deleteEmployeeActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
+        jPanel19.setLayout(jPanel19Layout);
+        jPanel19Layout.setHorizontalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel19Layout.createSequentialGroup()
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel19Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel75)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(tf_deleteEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel19Layout.createSequentialGroup()
+                        .addGap(127, 127, 127)
+                        .addComponent(jb_deleteEmployee)))
+                .addContainerGap(129, Short.MAX_VALUE))
+        );
+        jPanel19Layout.setVerticalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel19Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_deleteEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel75))
+                .addGap(56, 56, 56)
+                .addComponent(jb_deleteEmployee)
+                .addContainerGap(88, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jd_deleteEmpleadoLayout = new javax.swing.GroupLayout(jd_deleteEmpleado.getContentPane());
+        jd_deleteEmpleado.getContentPane().setLayout(jd_deleteEmpleadoLayout);
+        jd_deleteEmpleadoLayout.setHorizontalGroup(
+            jd_deleteEmpleadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteEmpleadoLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jd_deleteEmpleadoLayout.setVerticalGroup(
+            jd_deleteEmpleadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteEmpleadoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jLabel76.setText("ID Comunidad");
+
+        jb_deleteComunidad.setText("DELETE");
+        jb_deleteComunidad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_deleteComunidadActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
+        jPanel20.setLayout(jPanel20Layout);
+        jPanel20Layout.setHorizontalGroup(
+            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel20Layout.createSequentialGroup()
+                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel20Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel76)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(tf_deleteComunidad, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel20Layout.createSequentialGroup()
+                        .addGap(127, 127, 127)
+                        .addComponent(jb_deleteComunidad)))
+                .addContainerGap(122, Short.MAX_VALUE))
+        );
+        jPanel20Layout.setVerticalGroup(
+            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel20Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_deleteComunidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel76))
+                .addGap(56, 56, 56)
+                .addComponent(jb_deleteComunidad)
+                .addContainerGap(88, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jd_deleteComunidadLayout = new javax.swing.GroupLayout(jd_deleteComunidad.getContentPane());
+        jd_deleteComunidad.getContentPane().setLayout(jd_deleteComunidadLayout);
+        jd_deleteComunidadLayout.setHorizontalGroup(
+            jd_deleteComunidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteComunidadLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jd_deleteComunidadLayout.setVerticalGroup(
+            jd_deleteComunidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteComunidadLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jLabel77.setText("ID ALMACEN");
+
+        jb_deleteAlmacen.setText("DELETE");
+        jb_deleteAlmacen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_deleteAlmacenActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
+        jPanel21.setLayout(jPanel21Layout);
+        jPanel21Layout.setHorizontalGroup(
+            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel21Layout.createSequentialGroup()
+                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel21Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel77)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(tf_deleteAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel21Layout.createSequentialGroup()
+                        .addGap(127, 127, 127)
+                        .addComponent(jb_deleteAlmacen)))
+                .addContainerGap(125, Short.MAX_VALUE))
+        );
+        jPanel21Layout.setVerticalGroup(
+            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel21Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_deleteAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel77))
+                .addGap(56, 56, 56)
+                .addComponent(jb_deleteAlmacen)
+                .addContainerGap(88, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jd_deleteAlmacenLayout = new javax.swing.GroupLayout(jd_deleteAlmacen.getContentPane());
+        jd_deleteAlmacen.getContentPane().setLayout(jd_deleteAlmacenLayout);
+        jd_deleteAlmacenLayout.setHorizontalGroup(
+            jd_deleteAlmacenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteAlmacenLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jd_deleteAlmacenLayout.setVerticalGroup(
+            jd_deleteAlmacenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteAlmacenLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jLabel78.setText("ID COS");
+
+        jb_deleteCOS.setText("DELETE");
+        jb_deleteCOS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_deleteCOSActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
+        jPanel22.setLayout(jPanel22Layout);
+        jPanel22Layout.setHorizontalGroup(
+            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel22Layout.createSequentialGroup()
+                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel22Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel78)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(tf_deleteCOS, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel22Layout.createSequentialGroup()
+                        .addGap(127, 127, 127)
+                        .addComponent(jb_deleteCOS)))
+                .addContainerGap(153, Short.MAX_VALUE))
+        );
+        jPanel22Layout.setVerticalGroup(
+            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel22Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_deleteCOS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel78))
+                .addGap(56, 56, 56)
+                .addComponent(jb_deleteCOS)
+                .addContainerGap(88, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jd_deleteCOSLayout = new javax.swing.GroupLayout(jd_deleteCOS.getContentPane());
+        jd_deleteCOS.getContentPane().setLayout(jd_deleteCOSLayout);
+        jd_deleteCOSLayout.setHorizontalGroup(
+            jd_deleteCOSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteCOSLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jd_deleteCOSLayout.setVerticalGroup(
+            jd_deleteCOSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteCOSLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jLabel79.setText("ID Movimiento");
+
+        jb_deleteMovimiento.setText("DELETE");
+        jb_deleteMovimiento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_deleteMovimientoActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
+        jPanel23.setLayout(jPanel23Layout);
+        jPanel23Layout.setHorizontalGroup(
+            jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel23Layout.createSequentialGroup()
+                .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel23Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel79)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(tf_deleteMovimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel23Layout.createSequentialGroup()
+                        .addGap(127, 127, 127)
+                        .addComponent(jb_deleteMovimiento)))
+                .addContainerGap(122, Short.MAX_VALUE))
+        );
+        jPanel23Layout.setVerticalGroup(
+            jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel23Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_deleteMovimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel79))
+                .addGap(56, 56, 56)
+                .addComponent(jb_deleteMovimiento)
+                .addContainerGap(88, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jd_deleteMovimientoLayout = new javax.swing.GroupLayout(jd_deleteMovimiento.getContentPane());
+        jd_deleteMovimiento.getContentPane().setLayout(jd_deleteMovimientoLayout);
+        jd_deleteMovimientoLayout.setHorizontalGroup(
+            jd_deleteMovimientoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteMovimientoLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jd_deleteMovimientoLayout.setVerticalGroup(
+            jd_deleteMovimientoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteMovimientoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jLabel80.setText("ID Producto");
+
+        jb_deleteProducto.setText("DELETE");
+        jb_deleteProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_deleteProductoActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
+        jPanel24.setLayout(jPanel24Layout);
+        jPanel24Layout.setHorizontalGroup(
+            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel24Layout.createSequentialGroup()
+                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel24Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel80)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(tf_deleteProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel24Layout.createSequentialGroup()
+                        .addGap(127, 127, 127)
+                        .addComponent(jb_deleteProducto)))
+                .addContainerGap(132, Short.MAX_VALUE))
+        );
+        jPanel24Layout.setVerticalGroup(
+            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel24Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_deleteProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel80))
+                .addGap(56, 56, 56)
+                .addComponent(jb_deleteProducto)
+                .addContainerGap(88, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jd_deleteProductoLayout = new javax.swing.GroupLayout(jd_deleteProducto.getContentPane());
+        jd_deleteProducto.getContentPane().setLayout(jd_deleteProductoLayout);
+        jd_deleteProductoLayout.setHorizontalGroup(
+            jd_deleteProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteProductoLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jd_deleteProductoLayout.setVerticalGroup(
+            jd_deleteProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteProductoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jLabel81.setText("Telefono");
+
+        jb_deleteTelefono.setText("DELETE");
+        jb_deleteTelefono.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_deleteTelefonoActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
+        jPanel25.setLayout(jPanel25Layout);
+        jPanel25Layout.setHorizontalGroup(
+            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel25Layout.createSequentialGroup()
+                .addGroup(jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel25Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel81)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(tf_deleteTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel25Layout.createSequentialGroup()
+                        .addGap(127, 127, 127)
+                        .addComponent(jb_deleteTelefono)))
+                .addContainerGap(145, Short.MAX_VALUE))
+        );
+        jPanel25Layout.setVerticalGroup(
+            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel25Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addGroup(jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_deleteTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel81))
+                .addGap(56, 56, 56)
+                .addComponent(jb_deleteTelefono)
+                .addContainerGap(88, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jd_deleteTelefonoLayout = new javax.swing.GroupLayout(jd_deleteTelefono.getContentPane());
+        jd_deleteTelefono.getContentPane().setLayout(jd_deleteTelefonoLayout);
+        jd_deleteTelefonoLayout.setHorizontalGroup(
+            jd_deleteTelefonoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteTelefonoLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jd_deleteTelefonoLayout.setVerticalGroup(
+            jd_deleteTelefonoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_deleteTelefonoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jp_menu.setBorder(border);
@@ -2021,10 +2493,10 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        jb_addEmpleado2.setText("Delete Employee");
-        jb_addEmpleado2.addActionListener(new java.awt.event.ActionListener() {
+        jb_deleteEmpleado.setText("Delete Employee");
+        jb_deleteEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jb_addEmpleado2ActionPerformed(evt);
+                jb_deleteEmpleadoActionPerformed(evt);
             }
         });
 
@@ -2083,7 +2555,7 @@ public class GUI extends javax.swing.JFrame {
                 .addGroup(jp_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jLabel38, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jb_addEmpleado2, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jb_deleteEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2100,7 +2572,7 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jButton27)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jb_addEmpleado2)
+                .addComponent(jb_deleteEmpleado)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton28)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -2240,7 +2712,7 @@ public class GUI extends javax.swing.JFrame {
 //        String query = "insert into usuario(id_user, first_name, second_name, last_name1, last_name2, address, other_details)"
 //                + "values ('" + tf_id.getText() + "','" + tf_name1.getText() + "','" + tf_name2.getText() + "','" + tf_lastname1.getText() + "','" + tf_lastname2.getText() + "','" + tf_address.getText() + "','" + tf_details.getText() + "')";
 
-<<<<<<< HEAD
+
         String query = "EXEC InsertarUsuario\n"
                 + "@ID_USER = \"" + tf_id.getText() + "\","
                 + "@FIRST_NAME = \"" +  tf_name1.getText() + "\","
@@ -2250,19 +2722,8 @@ public class GUI extends javax.swing.JFrame {
                 + "@USER_ADDRESS = \"" + tf_address.getText() + "\","
                 + "@ID_COMUNIDAD = \"" + tf_comunidad.getText() + "\","
                 + "@OTHER_DETAILS = \"" + tf_details.getText() + "\";";
-=======
-        String query = "EXEC ADD_USUARIO\n"
-                + "@ID = \"" + tf_id.getText() + "\","
-                + "@FNAME = \"" + tf_name1.getText() + "\","
-                + "@SNAME = \"" + tf_name2.getText() + "\","
-                + "@LNAME = \"" + tf_lastname1.getText() + "\","
-                + "@LNAME2 = \"" + tf_lastname2.getText() + "\","
-                + "@DIRECCION = \"" + tf_address.getText() + "\","
-                + "@OTHER_DETAILS = \"" + tf_details.getText() + "\","
-                + "@COMUNIDAD = \"" + tf_comunidad.getText() + "\";";
->>>>>>> cdc3fb42d7892c1dd383920707d8be23d07fe31f
         try {
-            ResultSet rs = databaseState.executeQuery(query);
+                databaseState.executeQuery(query);
         } catch (SQLException ex) {
             Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2520,48 +2981,64 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-        // TODO add your handling code here:
+        jd_deleteUsuario.setVisible(true);
+        jd_deleteUsuario.setLocationRelativeTo(null);
+        jd_deleteUsuario.pack();
     }//GEN-LAST:event_jButton27ActionPerformed
 
-    private void jb_addEmpleado2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_addEmpleado2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jb_addEmpleado2ActionPerformed
+    private void jb_deleteEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteEmpleadoActionPerformed
+        jd_deleteEmpleado.setVisible(true);
+        jd_deleteEmpleado.setLocationRelativeTo(null);
+        jd_deleteEmpleado.pack();
+    }//GEN-LAST:event_jb_deleteEmpleadoActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        // TODO add your handling code here:
+        jd_deleteComunidad.setVisible(true);
+        jd_deleteComunidad.setLocationRelativeTo(null);
+        jd_deleteComunidad.pack();
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        // TODO add your handling code here:
+        jd_deleteAlmacen.setVisible(true);
+        jd_deleteAlmacen.setLocationRelativeTo(null);
+        jd_deleteAlmacen.pack();
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
-        // TODO add your handling code here:
+        jd_deleteCOS.setVisible(true);
+        jd_deleteCOS.setLocationRelativeTo(null);
+        jd_deleteCOS.pack();
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        // TODO add your handling code here:
+        jd_deleteMovimiento.setVisible(true);
+        jd_deleteMovimiento.setLocationRelativeTo(null);
+        jd_deleteMovimiento.pack();
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
-        // TODO add your handling code here:
+        jd_deleteProducto.setVisible(true);
+        jd_deleteProducto.setLocationRelativeTo(null);
+        jd_deleteProducto.pack();
     }//GEN-LAST:event_jButton32ActionPerformed
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
-        // TODO add your handling code here:
+        jd_deleteTelefono.setVisible(true);
+        jd_deleteTelefono.setLocationRelativeTo(null);
+        jd_deleteTelefono.pack();
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
         // TODO add your handling code here:
-        String query = "EXEC ACTUALIZARUSUARIO\n"
-                + "@ID = \"" + tf_id1.getText() + "\","
-                + "@FNAME = \"" + tf_name3.getText() + "\","
-                + "@SNAME = \"" + tf_name4.getText() + "\","
-                + "@LNAME = \"" + tf_lastname3.getText() + "\","
-                + "@LNAME2 = \"" + tf_lastname4.getText() + "\","
-                + "@DIRECCION = \"" + tf_address1.getText() + "\","
-                + "@OTHER_DETAILS = \"" + tf_details1.getText() + "\","
-                + "@COMUNIDAD = \"" + tf_comunidad1.getText() + "\";";
+        String query = "EXEC ActualizarUsuario\n"
+                + "@ID_USER = \"" + tf_id1.getText() + "\","
+                + "@FIRST_NAME = \"" + tf_name3.getText() + "\","
+                + "@SECOND_NAME = \"" + tf_name4.getText() + "\","
+                + "@LAST_NAME = \"" + tf_lastname3.getText() + "\","
+                + "@LAST_NAME2 = \"" + tf_lastname4.getText() + "\","
+                + "@USER_ADDRESS = \"" + tf_address1.getText() + "\","
+                + "@ID_COMUNIDAD = \"" + tf_comunidad1.getText() + "\","
+                + "@OTHER_DETAILS = \"" + tf_details1.getText() + "\";";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -2669,6 +3146,82 @@ public class GUI extends javax.swing.JFrame {
             Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton41ActionPerformed
+
+    private void jb_deleteUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteUsuarioActionPerformed
+        String query = "EXEC deleteUsuario\n"
+                + "@ID = " + tf_deleteUsuario.getText() +";";
+        try {
+            ResultSet rs = databaseState.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jb_deleteUsuarioActionPerformed
+
+    private void jb_deleteEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteEmployeeActionPerformed
+        // TODO add your handling code here:
+        String query = "EXEC deleteEmpleado\n"
+                + "@ID = " + tf_deleteEmpleado.getText() +";";
+        try {
+            ResultSet rs = databaseState.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jb_deleteEmployeeActionPerformed
+
+    private void jb_deleteComunidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteComunidadActionPerformed
+        String query = "EXEC deleteComunidad\n"
+                + "@ID = " + tf_deleteComunidad.getText() +";";
+        try {
+            ResultSet rs = databaseState.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jb_deleteComunidadActionPerformed
+
+    private void jb_deleteAlmacenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteAlmacenActionPerformed
+        String query = "EXEC deleteAlmacen\n"
+                + "@ID = " + tf_deleteAlmacen.getText() +";";
+        try {
+            ResultSet rs = databaseState.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jb_deleteAlmacenActionPerformed
+
+    private void jb_deleteCOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteCOSActionPerformed
+        // TODO add your handling code here:
+        String query = "EXEC deleteCOS\n"
+                + "@ID = " + tf_deleteCOS.getText() +";";
+        try {
+            ResultSet rs = databaseState.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jb_deleteCOSActionPerformed
+
+    private void jb_deleteMovimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteMovimientoActionPerformed
+        
+    }//GEN-LAST:event_jb_deleteMovimientoActionPerformed
+
+    private void jb_deleteProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteProductoActionPerformed
+        String query = "EXEC deleteProducto\n"
+                + "@ID = " + tf_deleteProducto.getText() +";";
+        try {
+            ResultSet rs = databaseState.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jb_deleteProductoActionPerformed
+
+    private void jb_deleteTelefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteTelefonoActionPerformed
+        String query = "EXEC deleteTelefono\n"
+                + "@ID = " + tf_deleteTelefono.getText();
+        try {
+            ResultSet rs = databaseState.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jb_deleteTelefonoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2823,7 +3376,15 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
@@ -2838,6 +3399,14 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
+    private javax.swing.JPanel jPanel19;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel20;
+    private javax.swing.JPanel jPanel21;
+    private javax.swing.JPanel jPanel22;
+    private javax.swing.JPanel jPanel23;
+    private javax.swing.JPanel jPanel24;
+    private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -2850,7 +3419,15 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JButton jb_addEmpleado;
     private javax.swing.JButton jb_addEmpleado1;
-    private javax.swing.JButton jb_addEmpleado2;
+    private javax.swing.JButton jb_deleteAlmacen;
+    private javax.swing.JButton jb_deleteCOS;
+    private javax.swing.JButton jb_deleteComunidad;
+    private javax.swing.JButton jb_deleteEmpleado;
+    private javax.swing.JButton jb_deleteEmployee;
+    private javax.swing.JButton jb_deleteMovimiento;
+    private javax.swing.JButton jb_deleteProducto;
+    private javax.swing.JButton jb_deleteTelefono;
+    private javax.swing.JButton jb_deleteUsuario;
     private javax.swing.JDialog jd_AddUser;
     private javax.swing.JDialog jd_addAlmacen;
     private javax.swing.JDialog jd_addCOS;
@@ -2859,6 +3436,14 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JDialog jd_addMovement;
     private javax.swing.JDialog jd_addProducto;
     private javax.swing.JDialog jd_addTelefono;
+    private javax.swing.JDialog jd_deleteAlmacen;
+    private javax.swing.JDialog jd_deleteCOS;
+    private javax.swing.JDialog jd_deleteComunidad;
+    private javax.swing.JDialog jd_deleteEmpleado;
+    private javax.swing.JDialog jd_deleteMovimiento;
+    private javax.swing.JDialog jd_deleteProducto;
+    private javax.swing.JDialog jd_deleteTelefono;
+    private javax.swing.JDialog jd_deleteUsuario;
     private javax.swing.JDialog jd_updateAlmacen;
     private javax.swing.JDialog jd_updateCOS;
     private javax.swing.JDialog jd_updateCommunity;
@@ -2892,6 +3477,14 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField tf_communityName2;
     private javax.swing.JTextField tf_comunidad;
     private javax.swing.JTextField tf_comunidad1;
+    private javax.swing.JTextField tf_deleteAlmacen;
+    private javax.swing.JTextField tf_deleteCOS;
+    private javax.swing.JTextField tf_deleteComunidad;
+    private javax.swing.JTextField tf_deleteEmpleado;
+    private javax.swing.JTextField tf_deleteMovimiento;
+    private javax.swing.JTextField tf_deleteProducto;
+    private javax.swing.JTextField tf_deleteTelefono;
+    private javax.swing.JTextField tf_deleteUsuario;
     private javax.swing.JTextField tf_department;
     private javax.swing.JTextField tf_department2;
     private javax.swing.JTextField tf_details;
