@@ -298,6 +298,13 @@ public class GUI extends javax.swing.JFrame {
         tf_deleteTelefono = new javax.swing.JTextField();
         jLabel81 = new javax.swing.JLabel();
         jb_deleteTelefono = new javax.swing.JButton();
+        jd_login = new javax.swing.JDialog();
+        jPanel26 = new javax.swing.JPanel();
+        jLabel85 = new javax.swing.JLabel();
+        jLabel83 = new javax.swing.JLabel();
+        tf_username = new javax.swing.JTextField();
+        tf_password = new javax.swing.JPasswordField();
+        jButton42 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jp_menu = new javax.swing.JPanel();
         bt_connect = new javax.swing.JButton();
@@ -308,9 +315,6 @@ public class GUI extends javax.swing.JFrame {
         jButton18 = new javax.swing.JButton();
         jButton19 = new javax.swing.JButton();
         jp_main = new javax.swing.JPanel();
-        jp_list = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jt_list = new javax.swing.JTable();
         jp_add = new javax.swing.JPanel();
         jLabel37 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
@@ -341,6 +345,9 @@ public class GUI extends javax.swing.JFrame {
         jButton32 = new javax.swing.JButton();
         jButton33 = new javax.swing.JButton();
         jLabel38 = new javax.swing.JLabel();
+        jp_delete1 = new javax.swing.JPanel();
+        jLabel84 = new javax.swing.JLabel();
+        jButton43 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -2153,6 +2160,80 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        setDefaultCloseOperation(jd_login.EXIT_ON_CLOSE);
+
+        jPanel26.setBorder(border);
+
+        jLabel85.setFont(new java.awt.Font("Gotham Black", 1, 36)); // NOI18N
+        jLabel85.setText("USERNAME");
+
+        jLabel83.setFont(new java.awt.Font("Gotham Black", 1, 36)); // NOI18N
+        jLabel83.setText("PASSWORD");
+
+        tf_username.setFont(new java.awt.Font("Gotham Light", 0, 36)); // NOI18N
+
+        tf_password.setFont(new java.awt.Font("Gotham Light", 0, 36)); // NOI18N
+
+        jButton42.setFont(new java.awt.Font("Gotham Black", 0, 36)); // NOI18N
+        jButton42.setText("CONNECT");
+        jButton42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton42ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
+        jPanel26.setLayout(jPanel26Layout);
+        jPanel26Layout.setHorizontalGroup(
+            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel26Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel83)
+                    .addComponent(jLabel85))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tf_username)
+                    .addComponent(tf_password))
+                .addContainerGap())
+            .addGroup(jPanel26Layout.createSequentialGroup()
+                .addGap(159, 159, 159)
+                .addComponent(jButton42)
+                .addContainerGap(166, Short.MAX_VALUE))
+        );
+        jPanel26Layout.setVerticalGroup(
+            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel26Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(tf_username)
+                    .addComponent(jLabel85, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel83, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(tf_password))
+                .addGap(18, 18, 18)
+                .addComponent(jButton42)
+                .addContainerGap(42, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jd_loginLayout = new javax.swing.GroupLayout(jd_login.getContentPane());
+        jd_login.getContentPane().setLayout(jd_loginLayout);
+        jd_loginLayout.setHorizontalGroup(
+            jd_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_loginLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jd_loginLayout.setVerticalGroup(
+            jd_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_loginLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jp_menu.setBorder(border);
@@ -2248,39 +2329,6 @@ public class GUI extends javax.swing.JFrame {
         );
 
         jp_main.setBorder(border);
-
-        jp_list.setBorder(border);
-        jp_list.setVisible(false);
-
-        jt_list.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {},
-                {},
-                {},
-                {}
-            },
-            new String [] {
-
-            }
-        ));
-        jScrollPane1.setViewportView(jt_list);
-
-        javax.swing.GroupLayout jp_listLayout = new javax.swing.GroupLayout(jp_list);
-        jp_list.setLayout(jp_listLayout);
-        jp_listLayout.setHorizontalGroup(
-            jp_listLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_listLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(91, 91, 91))
-        );
-        jp_listLayout.setVerticalGroup(
-            jp_listLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jp_listLayout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(58, Short.MAX_VALUE))
-        );
 
         jp_add.setVisible(false);
         jp_add.setBorder(border);
@@ -2384,7 +2432,7 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jButton7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton9)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
 
         jp_update.setVisible(false);
@@ -2563,7 +2611,7 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(jp_deleteLayout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addGroup(jp_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jLabel38, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel38, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
                     .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jb_deleteEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2572,7 +2620,7 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(jButton31)
                     .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         jp_deleteLayout.setVerticalGroup(
             jp_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2595,7 +2643,46 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jButton32)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton33)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(35, Short.MAX_VALUE))
+        );
+
+        jp_update.setVisible(false);
+        jp_delete1.setBorder(border);
+        jp_delete.setVisible(false);
+
+        jLabel84.setFont(new java.awt.Font("Roboto Medium", 1, 36)); // NOI18N
+        jLabel84.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel84.setText("VIEWS");
+
+        jButton43.setText("View TEL USER");
+        jButton43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton43ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jp_delete1Layout = new javax.swing.GroupLayout(jp_delete1);
+        jp_delete1.setLayout(jp_delete1Layout);
+        jp_delete1Layout.setHorizontalGroup(
+            jp_delete1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jp_delete1Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jp_delete1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jp_delete1Layout.createSequentialGroup()
+                        .addComponent(jButton43)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jp_delete1Layout.createSequentialGroup()
+                        .addComponent(jLabel84, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap(30, Short.MAX_VALUE))))
+        );
+        jp_delete1Layout.setVerticalGroup(
+            jp_delete1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jp_delete1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel84)
+                .addGap(18, 18, 18)
+                .addComponent(jButton43)
+                .addContainerGap(266, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jp_mainLayout = new javax.swing.GroupLayout(jp_main);
@@ -2609,21 +2696,21 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jp_update, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jp_delete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
-                .addComponent(jp_list, javax.swing.GroupLayout.PREFERRED_SIZE, 518, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jp_delete1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(185, Short.MAX_VALUE))
         );
         jp_mainLayout.setVerticalGroup(
             jp_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jp_mainLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jp_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jp_list, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jp_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jp_add, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jp_update, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jp_delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(248, Short.MAX_VALUE))
+                        .addComponent(jp_delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jp_delete1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(299, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -2694,8 +2781,9 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_bt_connectActionPerformed
 
     private void bt_listActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_listActionPerformed
-        jp_list.setVisible(true);
+        //jp_list.setVisible(true);
         ResultSet rs;
+        JTable jt_list = null;
         try {
             rs = databaseState.executeQuery("select * from Usuario");
             // It creates and displays the table
@@ -2722,10 +2810,9 @@ public class GUI extends javax.swing.JFrame {
 //        String query = "insert into usuario(id_user, first_name, second_name, last_name1, last_name2, address, other_details)"
 //                + "values ('" + tf_id.getText() + "','" + tf_name1.getText() + "','" + tf_name2.getText() + "','" + tf_lastname1.getText() + "','" + tf_lastname2.getText() + "','" + tf_address.getText() + "','" + tf_details.getText() + "')";
 
-
         String query = "EXEC InsertarUsuario\n"
                 + "@ID_USER = \"" + tf_id.getText() + "\","
-                + "@FIRST_NAME = \"" +  tf_name1.getText() + "\","
+                + "@FIRST_NAME = \"" + tf_name1.getText() + "\","
                 + "@SECOND_NAME = \"" + tf_name2.getText() + "\","
                 + "@LAST_NAME = \"" + tf_lastname1.getText() + "\","
                 + "@LAST_NAME2 = \"" + tf_lastname2.getText() + "\","
@@ -2733,7 +2820,7 @@ public class GUI extends javax.swing.JFrame {
                 + "@ID_COMUNIDAD = \"" + tf_comunidad.getText() + "\","
                 + "@OTHER_DETAILS = \"" + tf_details.getText() + "\";";
         try {
-                databaseState.executeQuery(query);
+            databaseState.executeQuery(query);
         } catch (SQLException ex) {
             Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2776,11 +2863,11 @@ public class GUI extends javax.swing.JFrame {
                     + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 6)
                     + "','" + "TEMPORAL')");
             rs = databaseState.executeQuery("select * from Empleado");
-            jt_list = new JTable(buildTableModel(rs));
+            //jt_list = new JTable(buildTableModel(rs));
         } catch (SQLException ex) {
             Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
         }
-        JOptionPane.showMessageDialog(null, new JScrollPane(jt_list));
+        //JOptionPane.showMessageDialog(null, new JScrollPane(jt_list));
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -2954,14 +3041,14 @@ public class GUI extends javax.swing.JFrame {
         jd_updateCommunity.setVisible(true);
         jd_updateCommunity.setLocationRelativeTo(null);
         jd_updateCommunity.pack();
-        
+
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         // TODO add your handling code here:
         jd_updateAlmacen.setVisible(true);
         jd_updateAlmacen.setLocationRelativeTo(null);
-        jd_updateAlmacen.pack();               
+        jd_updateAlmacen.pack();
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
@@ -3107,7 +3194,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
         // TODO add your handling code here:
-                String query = "EXEC ActualizarMovimiento\n"
+        String query = "EXEC ActualizarMovimiento\n"
                 + "@FECHA_INGRESO = \"" + tf_entryDateMov1.getText() + "\","
                 + "@OTHER_DETAILS = \"" + tf_otherDetailsMov1.getText() + "\","
                 + "@FECHA_EGRESO = \"" + tf_egressDateMov1.getText() + "\","
@@ -3127,7 +3214,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
         // TODO add your handling code here:
-                String query = "EXEC ActualizarProducto\n"
+        String query = "EXEC ActualizarProducto\n"
                 + "@ID_PRODUCTO = " + tf_idProduct1.getText() + ","
                 + "@P_NAME = \"" + tf_productName1.getText() + "\","
                 + "@DESCRIPCION =\"" + tf_productDescription1.getText() + "\',"
@@ -3146,7 +3233,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
         // TODO add your handling code here:
-                String query = "EXEC ActualizarTelefono\n"
+        String query = "EXEC ActualizarTelefono\n"
                 + "@TEL_NUMBER = " + tf_telNumber1.getText() + ","
                 + "@CKTO = \"" + tf_CKTO1.getText() + "\","
                 + "@PAR_INTERNO= \"" + tf_parInterno1.getText() + "\","
@@ -3161,7 +3248,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void jb_deleteUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteUsuarioActionPerformed
         String query = "EXEC deleteUsuario\n"
-                + "@ID = " + tf_deleteUsuario.getText() +";";
+                + "@ID = " + tf_deleteUsuario.getText() + ";";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -3172,7 +3259,7 @@ public class GUI extends javax.swing.JFrame {
     private void jb_deleteEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteEmployeeActionPerformed
         // TODO add your handling code here:
         String query = "EXEC deleteEmpleado\n"
-                + "@ID = " + tf_deleteEmpleado.getText() +";";
+                + "@ID = " + tf_deleteEmpleado.getText() + ";";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -3182,7 +3269,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void jb_deleteComunidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteComunidadActionPerformed
         String query = "EXEC deleteComunidad\n"
-                + "@ID = " + tf_deleteComunidad.getText() +";";
+                + "@ID = " + tf_deleteComunidad.getText() + ";";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -3192,7 +3279,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void jb_deleteAlmacenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteAlmacenActionPerformed
         String query = "EXEC deleteAlmacen\n"
-                + "@ID = " + tf_deleteAlmacen.getText() +";";
+                + "@ID = " + tf_deleteAlmacen.getText() + ";";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -3203,7 +3290,7 @@ public class GUI extends javax.swing.JFrame {
     private void jb_deleteCOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteCOSActionPerformed
         // TODO add your handling code here:
         String query = "EXEC deleteCOS\n"
-                + "@ID = " + tf_deleteCOS.getText() +";";
+                + "@ID = " + tf_deleteCOS.getText() + ";";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -3212,12 +3299,12 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jb_deleteCOSActionPerformed
 
     private void jb_deleteMovimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteMovimientoActionPerformed
-        
+
     }//GEN-LAST:event_jb_deleteMovimientoActionPerformed
 
     private void jb_deleteProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteProductoActionPerformed
         String query = "EXEC deleteProducto\n"
-                + "@ID = " + tf_deleteProducto.getText() +";";
+                + "@ID = " + tf_deleteProducto.getText() + ";";
         try {
             ResultSet rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
@@ -3234,6 +3321,47 @@ public class GUI extends javax.swing.JFrame {
             Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jb_deleteTelefonoActionPerformed
+
+    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
+        // TODO add your handling code here:
+        boolean connected = false;
+        while (connected == false) {
+            int i = 0;
+            try {
+                databaseCon = DriverManager.getConnection("jdbc:sqlserver://FENIX-PC\\SQLEXPRESS:1433;databaseName=BaseRedomsat", tf_username.getText(), tf_password.getText());
+                databaseState = databaseCon.createStatement();
+                databaseRes = databaseState.executeQuery("select id_user from usuario");
+                while (databaseRes.next()) {
+                    String result = databaseRes.getString("id_user");
+                    System.out.println(result);
+                }
+
+                connected = true;
+            } catch (SQLException e) {
+                connected = false;
+            }
+            if (connected) {
+                this.setVisible(true);
+                jd_login.setVisible(false);
+                jd_login.dispose();
+                JOptionPane.showMessageDialog(this, "Conectado con éxito");
+            }
+            System.out.println(connected);
+        }
+    }//GEN-LAST:event_jButton42ActionPerformed
+
+    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+        // TODO add your handling code here:
+        ResultSet rs;
+        try {
+            rs = databaseState.executeQuery("SELECT * FROM SP_VINFO_TEL");
+            // It creates and displays the table
+            JTable jt_list = new JTable(buildTableModel(rs));
+            JOptionPane.showMessageDialog(null, new JScrollPane(jt_list));
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton43ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -3267,7 +3395,10 @@ public class GUI extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new GUI().setVisible(true);
+                new GUI().setVisible(false);
+                jd_login.setLocationRelativeTo(null);
+                jd_login.pack();
+                jd_login.setVisible(true);
             }
         });
     }
@@ -3312,6 +3443,8 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton40;
     private javax.swing.JButton jButton41;
+    private javax.swing.JButton jButton42;
+    private javax.swing.JButton jButton43;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
@@ -3398,6 +3531,9 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
@@ -3420,6 +3556,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel24;
     private javax.swing.JPanel jPanel25;
+    private javax.swing.JPanel jPanel26;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -3427,7 +3564,6 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JButton jb_addEmpleado;
@@ -3457,6 +3593,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JDialog jd_deleteProducto;
     private javax.swing.JDialog jd_deleteTelefono;
     private javax.swing.JDialog jd_deleteUsuario;
+    private static javax.swing.JDialog jd_login;
     private javax.swing.JDialog jd_updateAlmacen;
     private javax.swing.JDialog jd_updateCOS;
     private javax.swing.JDialog jd_updateCommunity;
@@ -3467,13 +3604,12 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JDialog jd_updateUser;
     private javax.swing.JPanel jp_add;
     private javax.swing.JPanel jp_delete;
-    private javax.swing.JPanel jp_list;
+    private javax.swing.JPanel jp_delete1;
     private javax.swing.JPanel jp_main;
     private javax.swing.JPanel jp_menu;
     private javax.swing.JPanel jp_update;
     private javax.swing.JTable jt_addEmpleado;
     private javax.swing.JTable jt_addEmpleado1;
-    private javax.swing.JTable jt_list;
     private javax.swing.JTextField tf_CKTO;
     private javax.swing.JTextField tf_CKTO1;
     private javax.swing.JTextField tf_COSDescription;
@@ -3543,6 +3679,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField tf_parExterno1;
     private javax.swing.JTextField tf_parInterno;
     private javax.swing.JTextField tf_parInterno1;
+    private javax.swing.JPasswordField tf_password;
     private javax.swing.JTextField tf_productDescription;
     private javax.swing.JTextField tf_productDescription1;
     private javax.swing.JTextField tf_productName;
@@ -3553,6 +3690,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField tf_telNumber1;
     private javax.swing.JTextField tf_telNumberCOS;
     private javax.swing.JTextField tf_telNumberCOS1;
+    private javax.swing.JTextField tf_username;
     // End of variables declaration//GEN-END:variables
 DropShadowBorder border = new DropShadowBorder();
 
