@@ -303,6 +303,7 @@
                           <Component id="jLabel11" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel10" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel9" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel82" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -313,6 +314,7 @@
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="tf_idProducto" min="-2" pref="90" max="-2" attributes="0"/>
                                   <Component id="tf_idCommunity" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
                                   <Component id="tf_communityName" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
                                   <Component id="tf_department" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
@@ -354,7 +356,12 @@
                           <Component id="tf_capinstalada" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jButton10" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="tf_idProducto" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel82" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="20" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -402,6 +409,13 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton10ActionPerformed"/>
               </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="tf_idProducto">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel82">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ID PRODUCTO"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
