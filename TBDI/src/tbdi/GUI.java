@@ -428,7 +428,9 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(tf_lastname1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tf_lastname2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tf_address, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addContainerGap(139, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton5)
                 .addContainerGap())
         );
@@ -466,9 +468,10 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tf_comunidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
-                    .addComponent(jButton5))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton5)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jd_AddUserLayout = new javax.swing.GroupLayout(jd_AddUser.getContentPane());
@@ -684,13 +687,23 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel6.setBorder(border);
 
+        jLabel14.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jLabel14.setText("ID_ALMACEN");
 
+        jLabel15.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jLabel15.setText("NAME");
 
-        jLabel16.setText("DESCRIPCTION");
+        jLabel16.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+        jLabel16.setText("DESCRIPTION");
 
-        jButton11.setText("ADD");
+        tf_idAlmacen.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_almacenName.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_almacenDescription.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jButton11.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+        jButton11.setText("A D D");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
@@ -702,28 +715,26 @@ public class GUI extends javax.swing.JFrame {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton11)
+                .addContainerGap())
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(74, 74, 74)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel16)
                     .addComponent(jLabel15)
                     .addComponent(jLabel14))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(tf_almacenDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
-                        .addComponent(jButton11))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tf_idAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_almacenName, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                    .addComponent(tf_almacenDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tf_idAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tf_almacenName, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(147, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(38, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
                     .addComponent(tf_idAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -734,9 +745,10 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16)
-                    .addComponent(tf_almacenDescription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton11))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(tf_almacenDescription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton11)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jd_addAlmacenLayout = new javax.swing.GroupLayout(jd_addAlmacen.getContentPane());
@@ -747,20 +759,35 @@ public class GUI extends javax.swing.JFrame {
         );
         jd_addAlmacenLayout.setVerticalGroup(
             jd_addAlmacenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jd_addAlmacenLayout.createSequentialGroup()
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jPanel7.setBorder(border);
 
+        jLabel17.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jLabel17.setText("ID CLASS");
 
+        jLabel18.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jLabel18.setText("DESCRIPTION");
 
+        jLabel20.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jLabel20.setText("OTHER_DETAILS");
 
+        jLabel21.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jLabel21.setText("TEL NUMBER");
 
-        jButton12.setText("ADD");
+        tf_idClass.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_COSDescription.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_otherdetailsCOS.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_telNumberCOS.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jButton12.setFont(new java.awt.Font("Gotham Medium", 0, 11)); // NOI18N
+        jButton12.setText("A D D");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
@@ -772,35 +799,39 @@ public class GUI extends javax.swing.JFrame {
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel18)
-                    .addComponent(jLabel17))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tf_idClass, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tf_COSDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(204, Short.MAX_VALUE))
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel21)
-                    .addComponent(jLabel20))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(tf_telNumberCOS, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton12))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(tf_otherdetailsCOS, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton12)
                 .addContainerGap())
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(58, 58, 58)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel17))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tf_idClass, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_COSDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel21)
+                            .addComponent(jLabel20))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addComponent(tf_telNumberCOS, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(1, 1, 1))
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addComponent(tf_otherdetailsCOS, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(1, 1, 1)))))
+                .addContainerGap(150, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addContainerGap(48, Short.MAX_VALUE)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17)
                     .addComponent(tf_idClass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -815,9 +846,10 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel21)
-                    .addComponent(tf_telNumberCOS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton12))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(tf_telNumberCOS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(1, 1, 1)
+                .addComponent(jButton12)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jd_addCOSLayout = new javax.swing.GroupLayout(jd_addCOS.getContentPane());
@@ -833,19 +865,34 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel8.setBorder(border);
 
+        jLabel19.setFont(new java.awt.Font("Gotham Bold", 0, 11)); // NOI18N
         jLabel19.setText("ENTRY DATE");
 
+        jLabel22.setFont(new java.awt.Font("Gotham Bold", 0, 11)); // NOI18N
         jLabel22.setText("EGRESS DATE");
 
+        jLabel23.setFont(new java.awt.Font("Gotham Bold", 0, 11)); // NOI18N
         jLabel23.setText("ID PRODUCTO");
 
+        jLabel24.setFont(new java.awt.Font("Gotham Bold", 0, 11)); // NOI18N
         jLabel24.setText("OTHER_DETAILS");
 
+        jLabel25.setFont(new java.awt.Font("Gotham Bold", 0, 11)); // NOI18N
         jLabel25.setText("STATE");
 
+        tf_entryDateMov.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_egressDateMov.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_idProductoMov.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         tf_idProductoMov.setText("Agregar boton que muestre las tablas para seleccionar el producto");
 
-        jButton13.setText("ADD");
+        tf_otherDetailsMov.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_stateMov.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jButton13.setFont(new java.awt.Font("Gotham Medium", 0, 11)); // NOI18N
+        jButton13.setText("A D D");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton13ActionPerformed(evt);
@@ -857,7 +904,7 @@ public class GUI extends javax.swing.JFrame {
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(54, 54, 54)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel23)
@@ -879,9 +926,9 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(jLabel25)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(tf_stateMov, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 125, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
                 .addComponent(jButton13)
-                .addGap(23, 23, 23))
+                .addContainerGap())
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -905,9 +952,12 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel23)
-                    .addComponent(tf_idProductoMov, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton13))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(tf_idProductoMov, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(43, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton13)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jd_addMovementLayout = new javax.swing.GroupLayout(jd_addMovement.getContentPane());
@@ -923,16 +973,26 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel9.setBorder(border);
 
+        jLabel26.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel26.setText("ID PRODUCT");
 
+        jLabel27.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel27.setText("DESCRIPTION");
 
+        jLabel28.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel28.setText("ID COMUNIDAD");
 
+        jLabel29.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel29.setText("PRODUCT NAME");
 
+        jLabel30.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel30.setText("OTHER DETAILS");
 
+        tf_idProduct.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_productDescription.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_idComunidadProd.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         tf_idComunidadProd.setText("Agregar boton que muestre las tablas para seleccionar LA COMUNIDAD");
         tf_idComunidadProd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -940,7 +1000,12 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        jButton14.setText("ADD");
+        tf_productName.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_otherDetailsProducts.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jButton14.setFont(new java.awt.Font("Gotham Medium", 0, 11)); // NOI18N
+        jButton14.setText("A D D");
         jButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton14ActionPerformed(evt);
@@ -952,7 +1017,7 @@ public class GUI extends javax.swing.JFrame {
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(63, 63, 63)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addComponent(jLabel28)
@@ -974,9 +1039,9 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(jLabel30)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(tf_otherDetailsProducts, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 127, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                 .addComponent(jButton14)
-                .addGap(23, 23, 23))
+                .addContainerGap())
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1000,9 +1065,12 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel28)
-                    .addComponent(tf_idComunidadProd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton14))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(tf_idComunidadProd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(46, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton14)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jd_addProductoLayout = new javax.swing.GroupLayout(jd_addProducto.getContentPane());
@@ -1018,22 +1086,36 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel10.setBorder(border);
 
+        jLabel31.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel31.setText("TEL NUMBER");
 
+        jLabel32.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel32.setText("PAR INTERNO");
 
+        jLabel33.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel33.setText("ID USER");
 
+        jLabel34.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel34.setText("CKTO");
 
+        jLabel35.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel35.setText("PAR EXTERNO");
 
+        tf_telNumber.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_parInterno.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_idUserTel.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         tf_idUserTel.setText("Agregar boton que muestre las tablas para seleccionar EL USUARIO");
         tf_idUserTel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_idUserTelActionPerformed(evt);
             }
         });
+
+        tf_CKTO.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_parExterno.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
 
         jButton15.setText("ADD");
         jButton15.addActionListener(new java.awt.event.ActionListener() {
@@ -1047,7 +1129,7 @@ public class GUI extends javax.swing.JFrame {
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(58, 58, 58)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addComponent(jLabel33)
@@ -1069,9 +1151,11 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(jLabel35)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(tf_parExterno, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 136, Short.MAX_VALUE)
+                .addContainerGap(154, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton15)
-                .addGap(23, 23, 23))
+                .addContainerGap())
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1095,9 +1179,10 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel33)
-                    .addComponent(tf_idUserTel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton15))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(tf_idUserTel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addComponent(jButton15)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jd_addTelefonoLayout = new javax.swing.GroupLayout(jd_addTelefono.getContentPane());
@@ -1113,27 +1198,52 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel11.setBorder(border);
 
+        jLabel39.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel39.setText("ID USER");
 
+        jLabel40.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel40.setText("FIRST NAME");
 
+        jLabel41.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel41.setText("SECOND NAME");
 
+        jLabel42.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel42.setText("LAST NAME");
 
+        jLabel43.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel43.setText("LAST NAME 2");
 
+        jLabel44.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel44.setText("ADDRESS");
 
+        jLabel45.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel45.setText("OTHER DETAILS");
 
-        jButton34.setText("ADD");
+        tf_id1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_name3.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_name4.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_lastname3.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_lastname4.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_address1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_details1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jButton34.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+        jButton34.setText("U P D A T E");
         jButton34.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton34ActionPerformed(evt);
             }
         });
 
+        tf_comunidad1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jLabel46.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel46.setText("COMUNIDAD");
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
@@ -1141,7 +1251,7 @@ public class GUI extends javax.swing.JFrame {
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(57, 57, 57)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel44)
                     .addComponent(jLabel45)
@@ -1155,7 +1265,7 @@ public class GUI extends javax.swing.JFrame {
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(tf_comunidad1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 140, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                         .addComponent(jButton34))
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1172,7 +1282,7 @@ public class GUI extends javax.swing.JFrame {
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(22, 22, 22)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel39)
                     .addComponent(tf_id1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1203,9 +1313,12 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tf_comunidad1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel46)
-                    .addComponent(jButton34))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel46))
+                .addContainerGap(41, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton34)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jd_updateUserLayout = new javax.swing.GroupLayout(jd_updateUser.getContentPane());
@@ -1234,7 +1347,7 @@ public class GUI extends javax.swing.JFrame {
         ));
         jScrollPane3.setViewportView(jt_addEmpleado1);
 
-        jButton35.setText("Promote");
+        jButton35.setText("P R O M O T E");
         jButton35.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton35ActionPerformed(evt);
@@ -1252,8 +1365,8 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(45, 45, 45))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
-                        .addComponent(jButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(199, 199, 199))))
+                        .addComponent(jButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(172, 172, 172))))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1284,17 +1397,33 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel13.setBorder(border);
 
+        jLabel47.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel47.setText("ID COMMUNITY");
 
+        jLabel48.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel48.setText("COMMUNITY NAME");
 
+        jLabel49.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel49.setText("DEPARTMENT");
 
+        jLabel50.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel50.setText("OTHER_DETAILS");
 
+        jLabel51.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel51.setText("CAP_INSTALLED");
 
-        jButton36.setText("ADD");
+        tf_idCommunity2.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_communityName2.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_department2.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_otherdetails1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_capinstalada1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jButton36.setText("U P D A T E");
+        jButton36.setToolTipText("");
         jButton36.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton36ActionPerformed(evt);
@@ -1306,7 +1435,11 @@ public class GUI extends javax.swing.JFrame {
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton36)
+                .addContainerGap())
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addGap(51, 51, 51)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel51)
                     .addComponent(jLabel50)
@@ -1315,23 +1448,17 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(jLabel47))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel13Layout.createSequentialGroup()
-                        .addComponent(tf_capinstalada1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 126, Short.MAX_VALUE)
-                        .addComponent(jButton36))
-                    .addGroup(jPanel13Layout.createSequentialGroup()
-                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tf_idCommunity2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_communityName2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_department2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_otherdetails1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                    .addComponent(tf_capinstalada1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tf_idCommunity2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tf_communityName2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tf_department2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tf_otherdetails1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(149, Short.MAX_VALUE))
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(26, Short.MAX_VALUE)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel47)
                     .addComponent(tf_idCommunity2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1350,9 +1477,10 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel51)
-                    .addComponent(tf_capinstalada1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton36))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(tf_capinstalada1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton36)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jd_updateCommunityLayout = new javax.swing.GroupLayout(jd_updateCommunity.getContentPane());
@@ -1368,13 +1496,23 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel14.setBorder(border);
 
+        jLabel52.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel52.setText("ID_ALMACEN");
 
+        jLabel53.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel53.setText("NAME");
 
+        jLabel54.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel54.setText("DESCRIPCTION");
 
-        jButton37.setText("ADD");
+        tf_idAlmacen1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_almacenName1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_almacenDescription1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jButton37.setFont(new java.awt.Font("Gotham Medium", 0, 11)); // NOI18N
+        jButton37.setText("U P D A T E");
         jButton37.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton37ActionPerformed(evt);
@@ -1386,28 +1524,26 @@ public class GUI extends javax.swing.JFrame {
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel14Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton37)
+                .addContainerGap())
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addGap(68, 68, 68)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel54)
                     .addComponent(jLabel53)
                     .addComponent(jLabel52))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addComponent(tf_almacenDescription1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
-                        .addComponent(jButton37))
-                    .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tf_idAlmacen1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_almacenName1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                    .addComponent(tf_almacenDescription1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tf_idAlmacen1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tf_almacenName1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(155, Short.MAX_VALUE))
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel14Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(41, Short.MAX_VALUE)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel52)
                     .addComponent(tf_idAlmacen1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1418,9 +1554,10 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel54)
-                    .addComponent(tf_almacenDescription1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton37))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(tf_almacenDescription1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton37)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jd_updateAlmacenLayout = new javax.swing.GroupLayout(jd_updateAlmacen.getContentPane());
@@ -1436,15 +1573,28 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel15.setBorder(border);
 
+        jLabel55.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel55.setText("ID CLASS");
 
+        jLabel56.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel56.setText("DESCRIPTION");
 
+        jLabel57.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel57.setText("OTHER_DETAILS");
 
+        jLabel58.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel58.setText("TEL NUMBER");
 
-        jButton38.setText("ADD");
+        tf_idClass1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_COSDescription1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_otherdetailsCOS1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_telNumberCOS1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jButton38.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+        jButton38.setText("U P D A T E");
         jButton38.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton38ActionPerformed(evt);
@@ -1456,35 +1606,41 @@ public class GUI extends javax.swing.JFrame {
         jPanel15Layout.setHorizontalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel15Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel56)
-                    .addComponent(jLabel55))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tf_idClass1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tf_COSDescription1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(204, Short.MAX_VALUE))
-            .addGroup(jPanel15Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel58)
-                    .addComponent(jLabel57))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(49, 49, 49)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addComponent(tf_telNumberCOS1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton38))
+                        .addGap(17, 17, 17)
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel56)
+                            .addComponent(jLabel55))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tf_idClass1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_COSDescription1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addComponent(tf_otherdetailsCOS1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel58)
+                            .addComponent(jLabel57))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel15Layout.createSequentialGroup()
+                                .addComponent(tf_telNumberCOS1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(1, 1, 1))
+                            .addGroup(jPanel15Layout.createSequentialGroup()
+                                .addComponent(tf_otherdetailsCOS1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(1, 1, 1)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addComponent(jButton38)
                 .addContainerGap())
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel15Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton38)
+                .addContainerGap())
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel55)
                     .addComponent(tf_idClass1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1499,9 +1655,8 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel58)
-                    .addComponent(tf_telNumberCOS1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton38))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(tf_telNumberCOS1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jd_updateCOSLayout = new javax.swing.GroupLayout(jd_updateCOS.getContentPane());
@@ -1517,19 +1672,34 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel16.setBorder(border);
 
+        jLabel59.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel59.setText("ENTRY DATE");
 
+        jLabel60.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel60.setText("EGRESS DATE");
 
+        jLabel61.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel61.setText("ID PRODUCTO");
 
+        jLabel62.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel62.setText("OTHER_DETAILS");
 
+        jLabel63.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel63.setText("STATE");
 
+        tf_entryDateMov1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_egressDateMov1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_idProductoMov1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         tf_idProductoMov1.setText("Agregar boton que muestre las tablas para seleccionar el producto");
 
-        jButton39.setText("ADD");
+        tf_otherDetailsMov1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_stateMov1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jButton39.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+        jButton39.setText("U P D A T E");
         jButton39.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton39ActionPerformed(evt);
@@ -1541,7 +1711,11 @@ public class GUI extends javax.swing.JFrame {
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel16Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton39)
+                .addContainerGap())
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addGap(74, 74, 74)
                 .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel16Layout.createSequentialGroup()
                         .addComponent(jLabel61)
@@ -1563,14 +1737,12 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(jLabel63)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(tf_stateMov1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 125, Short.MAX_VALUE)
-                .addComponent(jButton39)
-                .addGap(23, 23, 23))
+                .addContainerGap(135, Short.MAX_VALUE))
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+                .addContainerGap(24, Short.MAX_VALUE)
                 .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel59)
                     .addComponent(tf_entryDateMov1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1589,9 +1761,10 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel61)
-                    .addComponent(tf_idProductoMov1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton39))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(tf_idProductoMov1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton39)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jd_updateMovementLayout = new javax.swing.GroupLayout(jd_updateMovement.getContentPane());
@@ -1607,16 +1780,26 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel17.setBorder(border);
 
+        jLabel64.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel64.setText("ID PRODUCT");
 
+        jLabel65.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel65.setText("DESCRIPTION");
 
+        jLabel66.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel66.setText("ID COMUNIDAD");
 
+        jLabel67.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel67.setText("PRODUCT NAME");
 
+        jLabel68.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel68.setText("OTHER DETAILS");
 
+        tf_idProduct1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_productDescription1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_idComunidadProd1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         tf_idComunidadProd1.setText("Agregar boton que muestre las tablas para seleccionar LA COMUNIDAD");
         tf_idComunidadProd1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1624,7 +1807,13 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        jButton40.setText("ADD");
+        tf_productName1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_otherDetailsProducts1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jButton40.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
+        jButton40.setText("U P D A T E");
+        jButton40.setToolTipText("");
         jButton40.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton40ActionPerformed(evt);
@@ -1635,8 +1824,12 @@ public class GUI extends javax.swing.JFrame {
         jPanel17.setLayout(jPanel17Layout);
         jPanel17Layout.setHorizontalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton40)
+                .addContainerGap())
             .addGroup(jPanel17Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(67, 67, 67)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addComponent(jLabel66)
@@ -1658,14 +1851,12 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(jLabel68)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(tf_otherDetailsProducts1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 127, Short.MAX_VALUE)
-                .addComponent(jButton40)
-                .addGap(23, 23, 23))
+                .addContainerGap(138, Short.MAX_VALUE))
         );
         jPanel17Layout.setVerticalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel17Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(24, Short.MAX_VALUE)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel64)
                     .addComponent(tf_idProduct1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1684,9 +1875,10 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel66)
-                    .addComponent(tf_idComunidadProd1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton40))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(tf_idComunidadProd1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton40)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jd_updateProductoLayout = new javax.swing.GroupLayout(jd_updateProducto.getContentPane());
@@ -1702,22 +1894,36 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel18.setBorder(border);
 
+        jLabel69.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel69.setText("TEL NUMBER");
 
+        jLabel70.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel70.setText("PAR INTERNO");
 
+        jLabel71.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel71.setText("ID USER");
 
+        jLabel72.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel72.setText("CKTO");
 
+        jLabel73.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel73.setText("PAR EXTERNO");
 
+        tf_telNumber1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_parInterno1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_idUserTel1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         tf_idUserTel1.setText("Agregar boton que muestre las tablas para seleccionar EL USUARIO");
         tf_idUserTel1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_idUserTel1ActionPerformed(evt);
             }
         });
+
+        tf_CKTO1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        tf_parExterno1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
 
         jButton41.setText("ADD");
         jButton41.addActionListener(new java.awt.event.ActionListener() {
@@ -1730,8 +1936,8 @@ public class GUI extends javax.swing.JFrame {
         jPanel18.setLayout(jPanel18Layout);
         jPanel18Layout.setHorizontalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
+                .addGap(66, 66, 66)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel18Layout.createSequentialGroup()
                         .addComponent(jLabel71)
@@ -1753,14 +1959,18 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(jLabel73)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(tf_parExterno1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 136, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
                 .addComponent(jButton41)
-                .addGap(23, 23, 23))
+                .addContainerGap())
         );
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel18Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton41)
+                .addContainerGap())
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel69)
                     .addComponent(tf_telNumber1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1779,9 +1989,8 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel71)
-                    .addComponent(tf_idUserTel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton41))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(tf_idUserTel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jd_updateTelefonoLayout = new javax.swing.GroupLayout(jd_updateTelefono.getContentPane());
@@ -1795,9 +2004,13 @@ public class GUI extends javax.swing.JFrame {
             .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        tf_deleteUsuario.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jLabel74.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel74.setText("ID USUARIO");
 
-        jb_deleteUsuario.setText("DELETE");
+        jb_deleteUsuario.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+        jb_deleteUsuario.setText("D E L E T E");
         jb_deleteUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_deleteUsuarioActionPerformed(evt);
@@ -1811,14 +2024,14 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
+                        .addGap(48, 48, 48)
                         .addComponent(jLabel74)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(tf_deleteUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(127, 127, 127)
+                        .addGap(122, 122, 122)
                         .addComponent(jb_deleteUsuario)))
-                .addContainerGap(129, Short.MAX_VALUE))
+                .addContainerGap(99, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1829,7 +2042,7 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(jLabel74))
                 .addGap(56, 56, 56)
                 .addComponent(jb_deleteUsuario)
-                .addContainerGap(88, Short.MAX_VALUE))
+                .addContainerGap(92, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jd_deleteUsuarioLayout = new javax.swing.GroupLayout(jd_deleteUsuario.getContentPane());
@@ -1849,9 +2062,13 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        tf_deleteEmpleado.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jLabel75.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel75.setText("ID Empleado");
 
-        jb_deleteEmployee.setText("DELETE");
+        jb_deleteEmployee.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+        jb_deleteEmployee.setText("D E L E T E");
         jb_deleteEmployee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_deleteEmployeeActionPerformed(evt);
@@ -1863,27 +2080,24 @@ public class GUI extends javax.swing.JFrame {
         jPanel19Layout.setHorizontalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel19Layout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addComponent(jLabel75)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel19Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jLabel75)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(tf_deleteEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel19Layout.createSequentialGroup()
-                        .addGap(127, 127, 127)
-                        .addComponent(jb_deleteEmployee)))
-                .addContainerGap(129, Short.MAX_VALUE))
+                    .addComponent(jb_deleteEmployee)
+                    .addComponent(tf_deleteEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(85, Short.MAX_VALUE))
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel19Layout.createSequentialGroup()
-                .addGap(88, 88, 88)
+                .addGap(98, 98, 98)
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tf_deleteEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel75))
-                .addGap(56, 56, 56)
+                .addGap(48, 48, 48)
                 .addComponent(jb_deleteEmployee)
-                .addContainerGap(88, Short.MAX_VALUE))
+                .addContainerGap(90, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jd_deleteEmpleadoLayout = new javax.swing.GroupLayout(jd_deleteEmpleado.getContentPane());
@@ -1903,9 +2117,13 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        tf_deleteComunidad.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jLabel76.setFont(new java.awt.Font("Gotham Bold", 0, 11)); // NOI18N
         jLabel76.setText("ID Comunidad");
 
-        jb_deleteComunidad.setText("DELETE");
+        jb_deleteComunidad.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+        jb_deleteComunidad.setText("D E L E T E");
         jb_deleteComunidad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_deleteComunidadActionPerformed(evt);
@@ -1917,27 +2135,24 @@ public class GUI extends javax.swing.JFrame {
         jPanel20Layout.setHorizontalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel20Layout.createSequentialGroup()
+                .addGap(53, 53, 53)
+                .addComponent(jLabel76)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel20Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jLabel76)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(tf_deleteComunidad, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel20Layout.createSequentialGroup()
-                        .addGap(127, 127, 127)
-                        .addComponent(jb_deleteComunidad)))
-                .addContainerGap(122, Short.MAX_VALUE))
+                    .addComponent(jb_deleteComunidad)
+                    .addComponent(tf_deleteComunidad, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(90, Short.MAX_VALUE))
         );
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel20Layout.createSequentialGroup()
-                .addGap(88, 88, 88)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
+                .addContainerGap(104, Short.MAX_VALUE)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tf_deleteComunidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel76))
                 .addGap(56, 56, 56)
                 .addComponent(jb_deleteComunidad)
-                .addContainerGap(88, Short.MAX_VALUE))
+                .addGap(76, 76, 76))
         );
 
         javax.swing.GroupLayout jd_deleteComunidadLayout = new javax.swing.GroupLayout(jd_deleteComunidad.getContentPane());
@@ -1957,9 +2172,13 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        tf_deleteAlmacen.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jLabel77.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel77.setText("ID ALMACEN");
 
-        jb_deleteAlmacen.setText("DELETE");
+        jb_deleteAlmacen.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+        jb_deleteAlmacen.setText("D E L E T E");
         jb_deleteAlmacen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_deleteAlmacenActionPerformed(evt);
@@ -1971,27 +2190,24 @@ public class GUI extends javax.swing.JFrame {
         jPanel21Layout.setHorizontalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel21Layout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(jLabel77)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel21Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jLabel77)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(tf_deleteAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel21Layout.createSequentialGroup()
-                        .addGap(127, 127, 127)
-                        .addComponent(jb_deleteAlmacen)))
-                .addContainerGap(125, Short.MAX_VALUE))
+                    .addComponent(jb_deleteAlmacen)
+                    .addComponent(tf_deleteAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(92, Short.MAX_VALUE))
         );
         jPanel21Layout.setVerticalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel21Layout.createSequentialGroup()
-                .addGap(88, 88, 88)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
+                .addContainerGap(105, Short.MAX_VALUE)
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tf_deleteAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel77))
                 .addGap(56, 56, 56)
                 .addComponent(jb_deleteAlmacen)
-                .addContainerGap(88, Short.MAX_VALUE))
+                .addGap(75, 75, 75))
         );
 
         javax.swing.GroupLayout jd_deleteAlmacenLayout = new javax.swing.GroupLayout(jd_deleteAlmacen.getContentPane());
@@ -2011,8 +2227,12 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        tf_deleteCOS.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jLabel78.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel78.setText("ID COS");
 
+        jb_deleteCOS.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jb_deleteCOS.setText("DELETE");
         jb_deleteCOS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2027,25 +2247,25 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(jPanel22Layout.createSequentialGroup()
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel22Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
+                        .addGap(127, 127, 127)
+                        .addComponent(jb_deleteCOS))
+                    .addGroup(jPanel22Layout.createSequentialGroup()
+                        .addGap(57, 57, 57)
                         .addComponent(jLabel78)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(tf_deleteCOS, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel22Layout.createSequentialGroup()
-                        .addGap(127, 127, 127)
-                        .addComponent(jb_deleteCOS)))
-                .addContainerGap(153, Short.MAX_VALUE))
+                        .addComponent(tf_deleteCOS, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
         jPanel22Layout.setVerticalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel22Layout.createSequentialGroup()
-                .addGap(88, 88, 88)
+                .addGap(98, 98, 98)
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tf_deleteCOS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel78))
-                .addGap(56, 56, 56)
+                .addGap(46, 46, 46)
                 .addComponent(jb_deleteCOS)
-                .addContainerGap(88, Short.MAX_VALUE))
+                .addContainerGap(92, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jd_deleteCOSLayout = new javax.swing.GroupLayout(jd_deleteCOS.getContentPane());
@@ -2065,9 +2285,13 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        tf_deleteMovimiento.setFont(new java.awt.Font("Gotham Medium", 0, 11)); // NOI18N
+
+        jLabel79.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel79.setText("ID Movimiento");
 
-        jb_deleteMovimiento.setText("DELETE");
+        jb_deleteMovimiento.setFont(new java.awt.Font("Gotham Medium", 0, 11)); // NOI18N
+        jb_deleteMovimiento.setText("D E L E T E");
         jb_deleteMovimiento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_deleteMovimientoActionPerformed(evt);
@@ -2079,27 +2303,24 @@ public class GUI extends javax.swing.JFrame {
         jPanel23Layout.setHorizontalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel23Layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addComponent(jLabel79)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel23Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jLabel79)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(tf_deleteMovimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel23Layout.createSequentialGroup()
-                        .addGap(127, 127, 127)
-                        .addComponent(jb_deleteMovimiento)))
-                .addContainerGap(122, Short.MAX_VALUE))
+                    .addComponent(jb_deleteMovimiento)
+                    .addComponent(tf_deleteMovimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(91, Short.MAX_VALUE))
         );
         jPanel23Layout.setVerticalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel23Layout.createSequentialGroup()
-                .addGap(88, 88, 88)
+                .addGap(95, 95, 95)
                 .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tf_deleteMovimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel79))
-                .addGap(56, 56, 56)
+                .addGap(50, 50, 50)
                 .addComponent(jb_deleteMovimiento)
-                .addContainerGap(88, Short.MAX_VALUE))
+                .addContainerGap(93, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jd_deleteMovimientoLayout = new javax.swing.GroupLayout(jd_deleteMovimiento.getContentPane());
@@ -2119,9 +2340,13 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        tf_deleteProducto.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jLabel80.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel80.setText("ID Producto");
 
-        jb_deleteProducto.setText("DELETE");
+        jb_deleteProducto.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+        jb_deleteProducto.setText("D E L E T E");
         jb_deleteProducto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_deleteProductoActionPerformed(evt);
@@ -2133,27 +2358,24 @@ public class GUI extends javax.swing.JFrame {
         jPanel24Layout.setHorizontalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel24Layout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(jLabel80)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel24Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jLabel80)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(tf_deleteProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel24Layout.createSequentialGroup()
-                        .addGap(127, 127, 127)
-                        .addComponent(jb_deleteProducto)))
-                .addContainerGap(132, Short.MAX_VALUE))
+                    .addComponent(jb_deleteProducto)
+                    .addComponent(tf_deleteProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(100, Short.MAX_VALUE))
         );
         jPanel24Layout.setVerticalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel24Layout.createSequentialGroup()
-                .addGap(88, 88, 88)
+                .addGap(101, 101, 101)
                 .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tf_deleteProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel80))
-                .addGap(56, 56, 56)
+                .addGap(44, 44, 44)
                 .addComponent(jb_deleteProducto)
-                .addContainerGap(88, Short.MAX_VALUE))
+                .addContainerGap(91, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jd_deleteProductoLayout = new javax.swing.GroupLayout(jd_deleteProducto.getContentPane());
@@ -2173,9 +2395,13 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        tf_deleteTelefono.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+
+        jLabel81.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
         jLabel81.setText("Telefono");
 
-        jb_deleteTelefono.setText("DELETE");
+        jb_deleteTelefono.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+        jb_deleteTelefono.setText("D E L E T E");
         jb_deleteTelefono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_deleteTelefonoActionPerformed(evt);
@@ -2187,27 +2413,24 @@ public class GUI extends javax.swing.JFrame {
         jPanel25Layout.setHorizontalGroup(
             jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel25Layout.createSequentialGroup()
+                .addGap(54, 54, 54)
+                .addComponent(jLabel81)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel25Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jLabel81)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(tf_deleteTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel25Layout.createSequentialGroup()
-                        .addGap(127, 127, 127)
-                        .addComponent(jb_deleteTelefono)))
-                .addContainerGap(145, Short.MAX_VALUE))
+                    .addComponent(jb_deleteTelefono)
+                    .addComponent(tf_deleteTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(108, Short.MAX_VALUE))
         );
         jPanel25Layout.setVerticalGroup(
             jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel25Layout.createSequentialGroup()
-                .addGap(88, 88, 88)
+                .addGap(105, 105, 105)
                 .addGroup(jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tf_deleteTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel81))
-                .addGap(56, 56, 56)
+                .addGap(42, 42, 42)
                 .addComponent(jb_deleteTelefono)
-                .addContainerGap(88, Short.MAX_VALUE))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jd_deleteTelefonoLayout = new javax.swing.GroupLayout(jd_deleteTelefono.getContentPane());
