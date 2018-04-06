@@ -88,6 +88,9 @@ public class GUI extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jt_addEmpleado = new javax.swing.JTable();
         jButton4 = new javax.swing.JButton();
+        jButton44 = new javax.swing.JButton();
+        jButton45 = new javax.swing.JButton();
+        jButton46 = new javax.swing.JButton();
         jd_addCommunity = new javax.swing.JDialog();
         jPanel5 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
@@ -473,10 +476,31 @@ public class GUI extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(jt_addEmpleado);
 
-        jButton4.setText("Promote");
+        jButton4.setText("Jefatura");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
+            }
+        });
+
+        jButton44.setText("Administrador");
+        jButton44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton44ActionPerformed(evt);
+            }
+        });
+
+        jButton45.setText("Supervisor");
+        jButton45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton45ActionPerformed(evt);
+            }
+        });
+
+        jButton46.setText("Tecnico");
+        jButton46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton46ActionPerformed(evt);
             }
         });
 
@@ -484,15 +508,19 @@ public class GUI extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(52, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(45, 45, 45))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(199, 199, 199))))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jButton4)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton44, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton45, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton46, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(45, 45, 45))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -500,7 +528,11 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton4)
+                    .addComponent(jButton44)
+                    .addComponent(jButton45)
+                    .addComponent(jButton46))
                 .addGap(17, 17, 17))
         );
 
@@ -2852,24 +2884,20 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        String direccion = JOptionPane.showInputDialog(this, "Ingrese una direccion");
+        addEmpleado("Jefatura", direccion);
+        System.out.println(direccion);
         ResultSet rs;
-
+        String query = "insert into Jefatura(descripcion, otros_detalles, empleado_ID) "
+                + "values('" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 6)
+                + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 6)
+                + "'," + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 0) + ")";
         try {
-            rs = databaseState.executeQuery("insert into empleado(nombre, segundo_nombre, apellido, segundo_apellido, id_empleado, puesto, otros_detalles, direccion)"
-                    + "values('" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 1)
-                    + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 2)
-                    + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 3)
-                    + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 4)
-                    + "','" + "10" //jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 0)
-                    + "','" + "TEMPORAL"
-                    + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 6)
-                    + "','" + "TEMPORAL')");
-            rs = databaseState.executeQuery("select * from Empleado");
-            //jt_list = new JTable(buildTableModel(rs));
+            rs = databaseState.executeQuery(query);
         } catch (SQLException ex) {
             Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
         }
-        //JOptionPane.showMessageDialog(null, new JScrollPane(jt_list));
+                 //JOptionPane.showMessageDialog(null, new JScrollPane(jt_list));
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -2883,6 +2911,7 @@ public class GUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         int id = 0;
         try {
+
             id = Integer.parseInt(tf_idCommunity.getText());
 
             String query = "EXEC InsertarComunidad\n"
@@ -2901,7 +2930,8 @@ public class GUI extends javax.swing.JFrame {
 
         } catch (NumberFormatException e) {
             System.out.println("el id de la comunidad debe ser un numero");
-        }
+
+        } 
 
     }//GEN-LAST:event_jButton10ActionPerformed
 
@@ -3537,6 +3567,57 @@ public class GUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton43ActionPerformed
 
+    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+        // TODO add your handling code here:
+        String direccion = JOptionPane.showInputDialog(this, "Ingrese una direccion");
+        addEmpleado("Administracion", direccion);
+        System.out.println(direccion);
+        ResultSet rs;
+        String query = "insert into Administrador(descripcion, otros_detalles, empleado_ID) "
+                + "values('" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 6)
+                + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 6)
+                + "'," + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 0) + ")";
+        try {
+            rs = databaseState.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton44ActionPerformed
+
+    private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
+        // TODO add your handling code here:
+        String direccion = JOptionPane.showInputDialog(this, "Ingrese una direccion");
+        addEmpleado("Supervisor", direccion);
+        System.out.println(direccion);
+        ResultSet rs;
+        String query = "insert into Supervisor(descripcion, otros_detalles, empleado_ID) "
+                + "values('" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 6)
+                + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 6)
+                + "'," + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 0) + ")";
+        try {
+            rs = databaseState.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton45ActionPerformed
+
+    private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
+        // TODO add your handling code here:
+        String direccion = JOptionPane.showInputDialog(this, "Ingrese una direccion");
+        addEmpleado("Tecnico", direccion);
+        System.out.println(direccion);
+        ResultSet rs;
+        String query = "insert into Tecnico(descripcion, otros_detalles, empleado_ID) "
+                + "values('" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 6)
+                + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 6)
+                + "'," + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 0) + ")";
+        try {
+            rs = databaseState.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton46ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -3619,6 +3700,9 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton41;
     private javax.swing.JButton jButton42;
     private javax.swing.JButton jButton43;
+    private javax.swing.JButton jButton44;
+    private javax.swing.JButton jButton45;
+    private javax.swing.JButton jButton46;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
@@ -3894,5 +3978,25 @@ DropShadowBorder border = new DropShadowBorder();
 
         return new DefaultTableModel(data, columnNames);
 
+    }
+
+    public void addEmpleado(String puesto, String direccion) {
+        ResultSet rs;
+
+        try {
+            rs = databaseState.executeQuery("insert into empleado(nombre, segundo_nombre, apellido, segundo_apellido, id_empleado, puesto, otros_detalles, direccion)"
+                    + "values('" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 1)
+                    + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 2)
+                    + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 3)
+                    + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 4)
+                    + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 0)
+                    + "','" + puesto
+                    + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 6)
+                    + "','" + direccion+ "')");
+            rs = databaseState.executeQuery("select * from Empleado");
+            //jt_list = new JTable(buildTableModel(rs));
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }
