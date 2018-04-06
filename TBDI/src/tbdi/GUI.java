@@ -339,6 +339,9 @@ public class GUI extends javax.swing.JFrame {
         jp_delete1 = new javax.swing.JPanel();
         jLabel84 = new javax.swing.JLabel();
         jButton43 = new javax.swing.JButton();
+        jButton47 = new javax.swing.JButton();
+        jButton48 = new javax.swing.JButton();
+        jButton49 = new javax.swing.JButton();
         jp_delete = new javax.swing.JPanel();
         jButton27 = new javax.swing.JButton();
         jb_deleteEmpleado = new javax.swing.JButton();
@@ -2481,7 +2484,7 @@ public class GUI extends javax.swing.JFrame {
         jPanel26.setLayout(jPanel26Layout);
         jPanel26Layout.setHorizontalGroup(
             jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel82, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(jLabel82, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
             .addGroup(jPanel26Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(jLabel86)
@@ -2906,6 +2909,33 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton47.setBackground(new java.awt.Color(101, 130, 136));
+        jButton47.setFont(new java.awt.Font("Gotham Medium", 1, 12)); // NOI18N
+        jButton47.setText("View Productos");
+        jButton47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton47ActionPerformed(evt);
+            }
+        });
+
+        jButton48.setBackground(new java.awt.Color(101, 130, 136));
+        jButton48.setFont(new java.awt.Font("Gotham Medium", 1, 12)); // NOI18N
+        jButton48.setText("View Marcas");
+        jButton48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton48ActionPerformed(evt);
+            }
+        });
+
+        jButton49.setBackground(new java.awt.Color(101, 130, 136));
+        jButton49.setFont(new java.awt.Font("Gotham Medium", 1, 12)); // NOI18N
+        jButton49.setText("View Class");
+        jButton49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton49ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jp_delete1Layout = new javax.swing.GroupLayout(jp_delete1);
         jp_delete1.setLayout(jp_delete1Layout);
         jp_delete1Layout.setHorizontalGroup(
@@ -2914,7 +2944,10 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(jp_delete1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jButton43)
-                    .addComponent(jLabel84, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE))
+                    .addComponent(jLabel84, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
+                    .addComponent(jButton47)
+                    .addComponent(jButton48, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton49, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
         jp_delete1Layout.setVerticalGroup(
@@ -2924,7 +2957,13 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jLabel84)
                 .addGap(42, 42, 42)
                 .addComponent(jButton43, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(241, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton47, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton48, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton49, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(91, Short.MAX_VALUE))
         );
 
         jp_update.setVisible(false);
@@ -3239,7 +3278,7 @@ public class GUI extends javax.swing.JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
         }
-                 //JOptionPane.showMessageDialog(null, new JScrollPane(jt_list));
+        //JOptionPane.showMessageDialog(null, new JScrollPane(jt_list));
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -3273,7 +3312,7 @@ public class GUI extends javax.swing.JFrame {
         } catch (NumberFormatException e) {
             System.out.println("el id de la comunidad debe ser un numero");
 
-        } 
+        }
 
     }//GEN-LAST:event_jButton10ActionPerformed
 
@@ -3853,7 +3892,7 @@ public class GUI extends javax.swing.JFrame {
 
         try {
             tel = Integer.parseInt(tf_deleteTelefono.getText());
-                    
+
             String query = "EXEC deleteTelefono\n"
                     + "@ID = " + tel + ";";
             try {
@@ -3960,6 +3999,45 @@ public class GUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton46ActionPerformed
 
+    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
+        // TODO add your handling code here:
+        ResultSet rs;
+        try {
+            rs = databaseState.executeQuery("SELECT * FROM SP_VINFO_PRODUCTO");
+            // It creates and displays the table
+            JTable jt_list = new JTable(buildTableModel(rs));
+            JOptionPane.showMessageDialog(null, new JScrollPane(jt_list));
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton47ActionPerformed
+
+    private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+        // TODO add your handling code here:
+        ResultSet rs;
+        try {
+            rs = databaseState.executeQuery("SELECT * FROM SP_VINFO_MARCA");
+            // It creates and displays the table
+            JTable jt_list = new JTable(buildTableModel(rs));
+            JOptionPane.showMessageDialog(null, new JScrollPane(jt_list));
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton48ActionPerformed
+
+    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+        // TODO add your handling code here:
+        ResultSet rs;
+        try {
+            rs = databaseState.executeQuery("SELECT * FROM SP_VCLASS");
+            // It creates and displays the table
+            JTable jt_list = new JTable(buildTableModel(rs));
+            JOptionPane.showMessageDialog(null, new JScrollPane(jt_list));
+        } catch (SQLException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton49ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -4043,6 +4121,9 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton44;
     private javax.swing.JButton jButton45;
     private javax.swing.JButton jButton46;
+    private javax.swing.JButton jButton47;
+    private javax.swing.JButton jButton48;
+    private javax.swing.JButton jButton49;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
@@ -4333,7 +4414,7 @@ DropShadowBorder border = new DropShadowBorder();
                     + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 0)
                     + "','" + puesto
                     + "','" + jt_addEmpleado.getValueAt(jt_addEmpleado.getSelectedColumn(), 6)
-                    + "','" + direccion+ "')");
+                    + "','" + direccion + "')");
             rs = databaseState.executeQuery("select * from Empleado");
             //jt_list = new JTable(buildTableModel(rs));
         } catch (SQLException ex) {
