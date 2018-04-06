@@ -2308,7 +2308,14 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Add");
+        jButton1.setBackground(new java.awt.Color(101, 130, 136));
+        jButton1.setFont(new java.awt.Font("Gotham Bold", 0, 18)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/images/ic_add_circle_white_36dp_2x.png"))); // NOI18N
+        jButton1.setText("A D D");
+        jButton1.setBorderPainted(false);
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setOpaque(false);
+        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -2374,6 +2381,8 @@ public class GUI extends javax.swing.JFrame {
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel37.setText("A D D");
 
+        jButton2.setBackground(new java.awt.Color(101, 130, 136));
+        jButton2.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton2.setText("Add User");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2381,6 +2390,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jb_addEmpleado.setBackground(new java.awt.Color(101, 130, 136));
+        jb_addEmpleado.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jb_addEmpleado.setText("Add Employee");
         jb_addEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2388,6 +2399,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton6.setBackground(new java.awt.Color(101, 130, 136));
+        jButton6.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton6.setText("Add Community");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2395,6 +2408,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton16.setBackground(new java.awt.Color(101, 130, 136));
+        jButton16.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton16.setText("Add Almacen");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2402,6 +2417,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton8.setBackground(new java.awt.Color(101, 130, 136));
+        jButton8.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton8.setText("Add COS");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2409,6 +2426,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton17.setBackground(new java.awt.Color(101, 130, 136));
+        jButton17.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton17.setText("Add Movimiento");
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2416,6 +2435,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton7.setBackground(new java.awt.Color(101, 130, 136));
+        jButton7.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton7.setText("Add Product");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2423,6 +2444,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton9.setBackground(new java.awt.Color(101, 130, 136));
+        jButton9.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton9.setText("Add Telephone");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2440,10 +2463,10 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jb_addEmpleado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
+                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton17, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
                     .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(66, 66, 66))
@@ -2454,7 +2477,7 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel37)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jb_addEmpleado)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -2469,12 +2492,14 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jButton7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton9)
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addContainerGap(83, Short.MAX_VALUE))
         );
 
         jp_update.setVisible(false);
         jp_update.setBorder(border);
 
+        jButton20.setBackground(new java.awt.Color(101, 130, 136));
+        jButton20.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton20.setText("Update User");
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2482,6 +2507,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jb_addEmpleado1.setBackground(new java.awt.Color(101, 130, 136));
+        jb_addEmpleado1.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jb_addEmpleado1.setText("Update Employee");
         jb_addEmpleado1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2489,6 +2516,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton21.setBackground(new java.awt.Color(101, 130, 136));
+        jButton21.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton21.setText("Update Community");
         jButton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2496,6 +2525,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton22.setBackground(new java.awt.Color(101, 130, 136));
+        jButton22.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton22.setText("Update Almacen");
         jButton22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2503,6 +2534,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton23.setBackground(new java.awt.Color(101, 130, 136));
+        jButton23.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton23.setText("Update COS");
         jButton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2510,6 +2543,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton24.setBackground(new java.awt.Color(101, 130, 136));
+        jButton24.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton24.setText("Update Movimiento");
         jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2517,6 +2552,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton25.setBackground(new java.awt.Color(101, 130, 136));
+        jButton25.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton25.setText("Update Product");
         jButton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2524,6 +2561,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton26.setBackground(new java.awt.Color(101, 130, 136));
+        jButton26.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton26.setText("Update Telephone");
         jButton26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2553,6 +2592,9 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
+
+        jp_updateLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton20, jButton21, jButton22, jButton23, jButton24, jButton25, jButton26, jb_addEmpleado1});
+
         jp_updateLayout.setVerticalGroup(
             jp_updateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jp_updateLayout.createSequentialGroup()
@@ -2574,7 +2616,7 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jButton25)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton26)
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jp_update.setVisible(false);
@@ -2617,6 +2659,8 @@ public class GUI extends javax.swing.JFrame {
         jp_delete.setBorder(border);
         jp_delete.setVisible(false);
 
+        jButton27.setBackground(new java.awt.Color(101, 130, 136));
+        jButton27.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton27.setText("Delete User");
         jButton27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2624,6 +2668,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jb_deleteEmpleado.setBackground(new java.awt.Color(101, 130, 136));
+        jb_deleteEmpleado.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jb_deleteEmpleado.setText("Delete Employee");
         jb_deleteEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2631,6 +2677,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton28.setBackground(new java.awt.Color(101, 130, 136));
+        jButton28.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton28.setText("Delete Community");
         jButton28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2638,6 +2686,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton29.setBackground(new java.awt.Color(101, 130, 136));
+        jButton29.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton29.setText("Delete Almacen");
         jButton29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2645,6 +2695,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton30.setBackground(new java.awt.Color(101, 130, 136));
+        jButton30.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton30.setText("Delete COS");
         jButton30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2652,6 +2704,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton31.setBackground(new java.awt.Color(101, 130, 136));
+        jButton31.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton31.setText("Delete Movimiento");
         jButton31.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2659,6 +2713,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton32.setBackground(new java.awt.Color(101, 130, 136));
+        jButton32.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton32.setText("Delete Product");
         jButton32.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2666,6 +2722,8 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        jButton33.setBackground(new java.awt.Color(101, 130, 136));
+        jButton33.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
         jButton33.setText("Delete Telephone");
         jButton33.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2695,12 +2753,15 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(46, Short.MAX_VALUE))
         );
+
+        jp_deleteLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton27, jButton28, jButton29, jButton30, jButton31, jButton32, jButton33, jb_deleteEmpleado});
+
         jp_deleteLayout.setVerticalGroup(
             jp_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jp_deleteLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel38)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton27)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jb_deleteEmpleado)
@@ -2716,7 +2777,7 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jButton32)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton33)
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addContainerGap(91, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jp_mainLayout = new javax.swing.GroupLayout(jp_main);
@@ -2741,16 +2802,16 @@ public class GUI extends javax.swing.JFrame {
             jp_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jp_mainLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jp_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jp_add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jp_update, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jp_delete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jp_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jp_add, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jp_delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jp_update, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
                 .addComponent(jp_delete1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        jp_mainLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jp_add, jp_delete, jp_update});
+        jp_mainLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jp_add, jp_delete});
 
         jLabel87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/images/Gradient.png"))); // NOI18N
 
@@ -2769,7 +2830,7 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(113, 113, 113)
                 .addComponent(jLabel88)
-                .addContainerGap(95, Short.MAX_VALUE))
+                .addContainerGap(357, Short.MAX_VALUE))
             .addComponent(jLabel87, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
@@ -2778,7 +2839,7 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jLabel87, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel88, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 102, Short.MAX_VALUE)
+                .addGap(18, 87, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jp_menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jp_main, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -2789,7 +2850,7 @@ public class GUI extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1550, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
