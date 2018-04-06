@@ -1,4 +1,8 @@
-
+IF OBJECT_ID('deleteAlmacen') IS NOT NULL
+BEGIN 
+DROP PROC deleteAlmacen
+END 
+GO
 CREATE PROCEDURE deleteAlmacen
 	@ID int
 	
@@ -12,7 +16,12 @@ CREATE PROCEDURE deleteAlmacen
 	
 GO
 
-CREATE PROCEDURE deleteCLASS
+IF OBJECT_ID('deleteClass') IS NOT NULL
+BEGIN 
+DROP PROC deleteClass
+END 
+GO
+CREATE PROCEDURE deleteClass
 	@ID int
 	
 	AS
@@ -25,7 +34,12 @@ CREATE PROCEDURE deleteCLASS
 
 GO
 	
-CREATE PROCEDURE deleteCOMUNIDAD
+IF OBJECT_ID('deleteComunidad') IS NOT NULL
+BEGIN 
+DROP PROC deleteComunidad
+END 
+GO
+CREATE PROCEDURE deleteComunidad
 	@ID int
 	
 	AS
@@ -38,8 +52,12 @@ CREATE PROCEDURE deleteCOMUNIDAD
 	
 GO
 	
-	
-CREATE PROCEDURE deleteEMPLEADO
+IF OBJECT_ID('deleteEmpleado') IS NOT NULL
+BEGIN 
+DROP PROC deleteEmpleado
+END 
+GO	
+CREATE PROCEDURE deleteEmpleado
 	@ID int
 	
 	AS
@@ -51,8 +69,13 @@ CREATE PROCEDURE deleteEMPLEADO
 	END
 
 GO	
-	
-CREATE PROCEDURE deletePRODUCTO
+
+IF OBJECT_ID('deleteProducto') IS NOT NULL
+BEGIN 
+DROP PROC deleteProducto
+END 
+GO	
+CREATE PROCEDURE deleteProducto
 	@ID int
 	
 	AS
@@ -65,6 +88,11 @@ CREATE PROCEDURE deletePRODUCTO
 	
 GO	
 	
+IF OBJECT_ID('deleteAlmacen') IS NOT NULL
+BEGIN 
+DROP PROC deleteAlmacen
+END 
+GO
 CREATE PROCEDURE deleteAlmacen
 	@ID int
 	
@@ -78,8 +106,12 @@ CREATE PROCEDURE deleteAlmacen
 	
 GO	
 	
-	
-CREATE PROCEDURE deleteTELEFONO
+IF OBJECT_ID('deleteTelefono') IS NOT NULL
+BEGIN 
+DROP PROC deleteTelefono
+END 
+GO	
+CREATE PROCEDURE deleteTelefono
 	@ID int
 	
 	AS
@@ -92,8 +124,12 @@ CREATE PROCEDURE deleteTELEFONO
 	
 GO	
 	
-	
-CREATE PROCEDURE deleteUSUARIO
+IF OBJECT_ID('deleteUsuario') IS NOT NULL
+BEGIN 
+DROP PROC deleteUsuario
+END 
+GO	
+CREATE PROCEDURE deleteUsuario
 	@ID int
 	
 	AS
