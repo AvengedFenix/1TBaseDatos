@@ -3241,7 +3241,7 @@ public class GUI extends javax.swing.JFrame {
 
         try {
             idCom = Integer.parseInt(tf_idCommunity2.getText());
-            String query = "EXEC ActualizaarComunidad\n"
+            String query = "EXEC ActualizarComunidad\n"
                     + "@ID_COMUNIDAD = " + idCom + ", "
                     + "@C_NAME = '" + tf_communityName2.getText() + "', "
                     + "@DEPARTAMENTO = '" + tf_department2.getText() + "', "
