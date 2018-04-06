@@ -101,8 +101,6 @@ public class GUI extends javax.swing.JFrame {
         tf_otherdetails = new javax.swing.JTextField();
         tf_capinstalada = new javax.swing.JTextField();
         jButton10 = new javax.swing.JButton();
-        tf_idProducto = new javax.swing.JTextField();
-        jLabel82 = new javax.swing.JLabel();
         jd_addAlmacen = new javax.swing.JDialog();
         jPanel6 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
@@ -542,8 +540,6 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel82.setText("ID PRODUCTO");
-
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -555,8 +551,7 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(jLabel12)
                     .addComponent(jLabel11)
                     .addComponent(jLabel10)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel82))
+                    .addComponent(jLabel9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5Layout.createSequentialGroup()
@@ -565,7 +560,6 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(jButton10))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tf_idProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tf_idCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tf_communityName, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tf_department, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -597,11 +591,7 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(jLabel13)
                     .addComponent(tf_capinstalada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton10))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tf_idProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel82))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jd_addCommunityLayout = new javax.swing.GroupLayout(jd_addCommunity.getContentPane());
@@ -2810,20 +2800,32 @@ public class GUI extends javax.swing.JFrame {
 //        String query = "insert into usuario(id_user, first_name, second_name, last_name1, last_name2, address, other_details)"
 //                + "values ('" + tf_id.getText() + "','" + tf_name1.getText() + "','" + tf_name2.getText() + "','" + tf_lastname1.getText() + "','" + tf_lastname2.getText() + "','" + tf_address.getText() + "','" + tf_details.getText() + "')";
 
-        String query = "EXEC InsertarUsuario\n"
-                + "@ID_USER = \"" + tf_id.getText() + "\","
-                + "@FIRST_NAME = \"" + tf_name1.getText() + "\","
-                + "@SECOND_NAME = \"" + tf_name2.getText() + "\","
-                + "@LAST_NAME = \"" + tf_lastname1.getText() + "\","
-                + "@LAST_NAME2 = \"" + tf_lastname2.getText() + "\","
-                + "@USER_ADDRESS = \"" + tf_address.getText() + "\","
-                + "@ID_COMUNIDAD = \"" + tf_comunidad.getText() + "\","
-                + "@OTHER_DETAILS = \"" + tf_details.getText() + "\";";
+        int id;
+        int idCom;
         try {
-            databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            id = Integer.parseInt(tf_id.getText());
+            idCom = Integer.parseInt(tf_comunidad.getText());
+
+            String query = "EXEC InsertarUsuario\n"
+                    + "@ID_USER = \"" + id + "\","
+                    + "@FIRST_NAME = \"" + tf_name1.getText() + "\","
+                    + "@SECOND_NAME = \"" + tf_name2.getText() + "\","
+                    + "@LAST_NAME = \"" + tf_lastname1.getText() + "\","
+                    + "@LAST_NAME2 = \"" + tf_lastname2.getText() + "\","
+                    + "@USER_ADDRESS = \"" + tf_address.getText() + "\","
+                    + "@ID_COMUNIDAD = \"" + idCom + "\","
+                    + "@OTHER_DETAILS = \"" + tf_details.getText() + "\";";
+
+            try {
+                databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (NumberFormatException e) {
+
+            System.out.println("error, el id debe ser un int");
         }
+
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -2879,20 +2881,28 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
-        String query = "EXEC InsertarComunidad\n"
-                + "@ID_COMUNIDAD = " + Integer.parseInt(tf_idCommunity.getText()) + ", "
-                + "@C_NAME = '" + tf_communityName.getText() + "', "
-                + "@DEPARTAMENTO = '" + tf_department.getText() + "', "
-                + "@OTHER_DETAILS = '" + tf_otherdetails.getText() + "', "
-                + "@CAP_INSTALADA = '" + tf_capinstalada.getText() + "', "
-                + "@ID_PRODUCTO = '" + tf_idProducto.getText() + "';";
-        System.out.println(query);
+        int id = 0;
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-            
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            id = Integer.parseInt(tf_idCommunity.getText());
+
+            String query = "EXEC InsertarComunidad\n"
+                    + "@ID_COMUNIDAD = " + id + ", "
+                    + "@C_NAME = '" + tf_communityName.getText() + "', "
+                    + "@DEPARTAMENTO = '" + tf_department.getText() + "', "
+                    + "@OTHER_DETAILS = '" + tf_otherdetails.getText() + "', "
+                    + "@CAP_INSTALADA = '" + tf_capinstalada.getText() + "'; ";
+            System.out.println(query);
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        } catch (NumberFormatException e) {
+            System.out.println("el id de la comunidad debe ser un numero");
         }
+
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
@@ -2909,48 +2919,76 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
-        String query = "EXEC InsertarCOS\n"
-                + "@ID_CLASS = " + tf_idClass.getText() + ","
-                + "@DESCRIP = \"" + tf_COSDescription.getText() + "\","
-                + "@OTHER_DETAILS = \"" + tf_otherdetailsCOS.getText() + "\","
-                + "@TEL_NUMBER = " + tf_telNumberCOS.getText() + ";";
+        int id;
+        int idNumber;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            id = Integer.parseInt(tf_idClass.getText());
+            idNumber = Integer.parseInt(tf_telNumberCOS.getText());
+            String query = "EXEC InsertarCOS\n"
+                    + "@ID_CLASS = " + id + ","
+                    + "@DESCRIP = \"" + tf_COSDescription.getText() + "\","
+                    + "@OTHER_DETAILS = \"" + tf_otherdetailsCOS.getText() + "\","
+                    + "@TEL_NUMBER = " + idNumber + ";";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("el ID tiene que ser un numero");
         }
+
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
-        String query = "EXEC InsertarMovimiento\n"
-                + "@FECHA_INGRESO = \"" + tf_entryDateMov.getText() + "\","
-                + "@OTHER_DETAILS = \"" + tf_otherDetailsMov.getText() + "\","
-                + "@FECHA_EGRESO = \"" + tf_egressDateMov.getText() + "\","
-                + "@ESTADO = \"" + tf_stateMov.getText() + "\","
-                + "@ID_PRODUCTO = \"" + tf_idProductoMov.getText() + "\";";
+        int idProducto;
 
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            idProducto = Integer.parseInt(tf_idProductoMov.getText());
+            String query = "EXEC InsertarMovimiento\n"
+                    + "@FECHA_INGRESO = \"" + tf_entryDateMov.getText() + "\","
+                    + "@OTHER_DETAILS = \"" + tf_otherDetailsMov.getText() + "\","
+                    + "@FECHA_EGRESO = \"" + tf_egressDateMov.getText() + "\","
+                    + "@ESTADO = \"" + tf_stateMov.getText() + "\","
+                    + "@ID_PRODUCTO = \"" + idProducto + "\";";
+
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+                System.out.println("el id del producto debe ser un numero");
+            }
+
+        } catch (NumberFormatException e) {
         }
+
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        // TODO add your handling code here:
-        String query = "EXEC InsertarProducto\n"
-                + "@ID_PRODUCTO = \"" + tf_idProduct.getText() + "\","
-                + "@P_NAME = \"" + tf_productName.getText() + "\","
-                + "@DESCRIPCION =\"" + tf_productDescription.getText() + "\","
-                + "@OTHER_DETAILS = \"" + tf_otherDetailsProducts.getText() + "\","
-                + "@ID_COMUNIDAD = \"" + tf_idComunidadProd.getText() + "\";";
+        int idProd;
+        int idCom;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            idProd = Integer.parseInt(tf_idProduct.getText());
+            idCom = Integer.parseInt(tf_idComunidadProd.getText());
+
+            String query = "EXEC InsertarProducto\n"
+                    + "@ID_PRODUCTO = \"" + idProd + "\","
+                    + "@P_NAME = \"" + tf_productName.getText() + "\","
+                    + "@DESCRIPCION =\"" + tf_productDescription.getText() + "\","
+                    + "@OTHER_DETAILS = \"" + tf_otherDetailsProducts.getText() + "\","
+                    + "@ID_COMUNIDAD = \"" + idCom + "\";";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+                System.out.println("El ID debe ser un numero");
+            }
+        } catch (NumberFormatException e) {
         }
+
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void tf_idComunidadProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_idComunidadProdActionPerformed
@@ -2962,18 +3000,27 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_tf_idUserTelActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        // TODO add your handling code here:
-        String query = "EXEC InsertarTelefono\n"
-                + "@TEL_NUMBER = " + tf_telNumber.getText() + ","
-                + "@CKTO = \"" + tf_CKTO.getText() + "\","
-                + "@PAR_INTERNO = \"" + tf_parInterno.getText() + "\","
-                + "@PAR_EXTERNO = \"" + tf_parExterno.getText() + "\";"
-                + "@ID_USER = " + tf_idUserTel.getText() + ";";
+        int idTel, idUser;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+
+            idTel = Integer.parseInt(tf_telNumber.getText());
+            idUser = Integer.parseInt(tf_idUserTel.getText());
+            String query = "EXEC InsertarTelefono\n"
+                    + "@TEL_NUMBER = " + idTel + ","
+                    + "@CKTO = \"" + tf_CKTO.getText() + "\","
+                    + "@PAR_INTERNO = \"" + tf_parInterno.getText() + "\","
+                    + "@PAR_EXTERNO = \"" + tf_parExterno.getText() + "\";"
+                    + "@ID_USER = " + idUser + ";";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+                System.out.println("El ID debe ser un numero");
+            }
+        } catch (NumberFormatException e) {
         }
+
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
@@ -3128,21 +3175,31 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
-        // TODO add your handling code here:
-        String query = "EXEC ActualizarUsuario\n"
-                + "@ID_USER = \"" + tf_id1.getText() + "\","
-                + "@FIRST_NAME = \"" + tf_name3.getText() + "\","
-                + "@SECOND_NAME = \"" + tf_name4.getText() + "\","
-                + "@LAST_NAME = \"" + tf_lastname3.getText() + "\","
-                + "@LAST_NAME2 = \"" + tf_lastname4.getText() + "\","
-                + "@USER_ADDRESS = \"" + tf_address1.getText() + "\","
-                + "@ID_COMUNIDAD = \"" + tf_comunidad1.getText() + "\","
-                + "@OTHER_DETAILS = \"" + tf_details1.getText() + "\";";
+        int id, idCom;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            id = Integer.parseInt(tf_id1.getText());
+            idCom = Integer.parseInt(tf_comunidad1.getText());
+
+            String query = "EXEC ActualizarUsuario\n"
+                    + "@ID_USER = \"" + id + "\","
+                    + "@FIRST_NAME = \"" + tf_name3.getText() + "\","
+                    + "@SECOND_NAME = \"" + tf_name4.getText() + "\","
+                    + "@LAST_NAME = \"" + tf_lastname3.getText() + "\","
+                    + "@LAST_NAME2 = \"" + tf_lastname4.getText() + "\","
+                    + "@USER_ADDRESS = \"" + tf_address1.getText() + "\","
+                    + "@ID_COMUNIDAD = \"" + idCom + "\","
+                    + "@OTHER_DETAILS = \"" + tf_details1.getText() + "\";";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
+
     }//GEN-LAST:event_jButton34ActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
@@ -3150,62 +3207,95 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton35ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
-        // TODO add your handling code here:
-        String query = "EXEC ActualizaarComunidad\n"
-                + "@ID_COMUNIDAD = " + Integer.parseInt(tf_idCommunity2.getText()) + ", "
-                + "@C_NAME = '" + tf_communityName2.getText() + "', "
-                + "@DEPARTAMENTO = '" + tf_department2.getText() + "', "
-                + "@OTHER_DETAILS = '" + tf_otherdetails1.getText() + "', "
-                + "@CAP_INSTALADA = '" + tf_capinstalada1.getText() + "';";
-        System.out.println(query);
+        int idCom;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            idCom = Integer.parseInt(tf_idCommunity2.getText());
+            String query = "EXEC ActualizaarComunidad\n"
+                    + "@ID_COMUNIDAD = " + idCom + ", "
+                    + "@C_NAME = '" + tf_communityName2.getText() + "', "
+                    + "@DEPARTAMENTO = '" + tf_department2.getText() + "', "
+                    + "@OTHER_DETAILS = '" + tf_otherdetails1.getText() + "', "
+                    + "@CAP_INSTALADA = '" + tf_capinstalada1.getText() + "';";
+            System.out.println(query);
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
+
     }//GEN-LAST:event_jButton36ActionPerformed
 
     private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
-        // TODO add your handling code here:
-        String query = "EXEC ActualizarAlmacen\n"
-                + "@ID_ALMACEN = " + tf_id1.getText() + ","
-                + "@NOMBRE = \"" + tf_almacenName1.getText() + "\","
-                + "@DESCRIPCION= \"" + tf_almacenDescription1.getText() + "\",";
+        int idAlm;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            idAlm = Integer.parseInt(tf_idAlmacen1.getText());
+
+            String query = "EXEC ActualizarAlmacen\n"
+                    + "@ID_ALMACEN = " + idAlm + "\","
+                    + "@NOMBRE = \"" + tf_almacenName1.getText() + "\","
+                    + "@DESCRIPCION= \"" + tf_almacenDescription1.getText() + "\",";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
+
     }//GEN-LAST:event_jButton37ActionPerformed
 
     private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
         // TODO add your handling code here:
-        String query = "EXEC ActualizarCOS\n"
-                + "@ID_CLASS = " + tf_idClass1.getText() + ","
-                + "@DESCRIP = \"" + tf_COSDescription1.getText() + "\","
-                + "@OTHER_DETAILS = \"" + tf_otherdetailsCOS1.getText() + "\","
-                + "@TEL_NUMBER = " + tf_telNumberCOS1.getText() + ";";
+        int idClass, idNumber;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            idClass = Integer.parseInt(tf_idClass1.getText());
+            idNumber = Integer.parseInt(tf_telNumberCOS1.getText());
+
+            String query = "EXEC ActualizarCOS\n"
+                    + "@ID_CLASS = " + idClass + "\","
+                    + "@DESCRIP = \"" + tf_COSDescription1.getText() + "\","
+                    + "@OTHER_DETAILS = \"" + tf_otherdetailsCOS1.getText() + "\","
+                    + "@TEL_NUMBER = " + idNumber + "\";";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
+
     }//GEN-LAST:event_jButton38ActionPerformed
 
     private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
-        // TODO add your handling code here:
-        String query = "EXEC ActualizarMovimiento\n"
-                + "@FECHA_INGRESO = \"" + tf_entryDateMov1.getText() + "\","
-                + "@OTHER_DETAILS = \"" + tf_otherDetailsMov1.getText() + "\","
-                + "@FECHA_EGRESO = \"" + tf_egressDateMov1.getText() + "\","
-                + "@ESTADO = \"" + tf_stateMov1.getText() + "\","
-                + "@ID_PRODUCTO = \"" + tf_idProductoMov1.getText() + "\",";
+        int idProd;
 
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            idProd = Integer.parseInt(tf_idProductoMov1.getText());
+
+            String query = "EXEC ActualizarMovimiento\n"
+                    + "@FECHA_INGRESO = \"" + tf_entryDateMov1.getText() + "\","
+                    + "@OTHER_DETAILS = \"" + tf_otherDetailsMov1.getText() + "\","
+                    + "@FECHA_EGRESO = \"" + tf_egressDateMov1.getText() + "\","
+                    + "@ESTADO = \"" + tf_stateMov1.getText() + "\","
+                    + "@ID_PRODUCTO = \"" + idProd + "\",";
+
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
+
     }//GEN-LAST:event_jButton39ActionPerformed
 
     private void tf_idComunidadProd1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_idComunidadProd1ActionPerformed
@@ -3213,18 +3303,27 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_tf_idComunidadProd1ActionPerformed
 
     private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
-        // TODO add your handling code here:
-        String query = "EXEC ActualizarProducto\n"
-                + "@ID_PRODUCTO = " + tf_idProduct1.getText() + ","
-                + "@P_NAME = \"" + tf_productName1.getText() + "\","
-                + "@DESCRIPCION =\"" + tf_productDescription1.getText() + "\',"
-                + "@OTHER_DETAILS = \"" + tf_otherDetailsProducts1.getText() + "\","
-                + "@ID_COMUNIDAD = " + tf_idComunidadProd1.getText() + ";";
+        int idProd, idCom;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            idProd = Integer.parseInt(tf_idProduct1.getText());
+            idCom = Integer.parseInt(tf_idComunidadProd1.getText());
+
+            String query = "EXEC ActualizarProducto\n"
+                    + "@ID_PRODUCTO = " + idProd + ","
+                    + "@P_NAME = \"" + tf_productName1.getText() + "\","
+                    + "@DESCRIPCION =\"" + tf_productDescription1.getText() + "\',"
+                    + "@OTHER_DETAILS = \"" + tf_otherDetailsProducts1.getText() + "\","
+                    + "@ID_COMUNIDAD = " + idCom + ";";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
+
     }//GEN-LAST:event_jButton40ActionPerformed
 
     private void tf_idUserTel1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_idUserTel1ActionPerformed
@@ -3232,70 +3331,125 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_tf_idUserTel1ActionPerformed
 
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
-        // TODO add your handling code here:
-        String query = "EXEC ActualizarTelefono\n"
-                + "@TEL_NUMBER = " + tf_telNumber1.getText() + ","
-                + "@CKTO = \"" + tf_CKTO1.getText() + "\","
-                + "@PAR_INTERNO= \"" + tf_parInterno1.getText() + "\","
-                + "@PAR_EXTERNO = \"" + tf_parExterno1.getText() + "\";"
-                + "@ID_USER = " + tf_idUserTel1.getText() + ";";
+        int Tel;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            Tel = Integer.parseInt(tf_telNumber1.getText());
+
+            String query = "EXEC ActualizarTelefono\n"
+                    + "@TEL_NUMBER = " + tf_telNumber1.getText() + ","
+                    + "@CKTO = \"" + tf_CKTO1.getText() + "\","
+                    + "@PAR_INTERNO= \"" + tf_parInterno1.getText() + "\","
+                    + "@PAR_EXTERNO = \"" + tf_parExterno1.getText() + "\";"
+                    + "@ID_USER = " + tf_idUserTel1.getText() + ";";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        } catch (NumberFormatException e) {
+            System.out.println("el id debe ser un numero");
         }
+
     }//GEN-LAST:event_jButton41ActionPerformed
 
     private void jb_deleteUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteUsuarioActionPerformed
-        String query = "EXEC deleteUsuario\n"
-                + "@ID = " + tf_deleteUsuario.getText() + ";";
+        int ID;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            ID = Integer.parseInt(tf_deleteUsuario.getText());
+
+            String query = "EXEC deleteUsuario\n"
+                    + "@ID = " + ID + ";";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
+
     }//GEN-LAST:event_jb_deleteUsuarioActionPerformed
 
     private void jb_deleteEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteEmployeeActionPerformed
-        // TODO add your handling code here:
-        String query = "EXEC deleteEmpleado\n"
-                + "@ID = " + tf_deleteEmpleado.getText() + ";";
+        int idEmp;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            idEmp = Integer.parseInt(tf_deleteEmpleado.getText());
+
+            String query = "EXEC deleteEmpleado\n"
+                    + "@ID = " + idEmp + ";";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
+
     }//GEN-LAST:event_jb_deleteEmployeeActionPerformed
 
     private void jb_deleteComunidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteComunidadActionPerformed
-        String query = "EXEC deleteComunidad\n"
-                + "@ID = " + tf_deleteComunidad.getText() + ";";
+        int idCom;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            idCom = Integer.parseInt(tf_deleteComunidad.getText());
+
+            String query = "EXEC deleteComunidad\n"
+                    + "@ID = " + idCom + ";";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
+
     }//GEN-LAST:event_jb_deleteComunidadActionPerformed
 
     private void jb_deleteAlmacenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteAlmacenActionPerformed
-        String query = "EXEC deleteAlmacen\n"
-                + "@ID = " + tf_deleteAlmacen.getText() + ";";
+        int idAlm;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            idAlm = Integer.parseInt(tf_deleteAlmacen.getText());
+
+            String query = "EXEC deleteAlmacen\n"
+                    + "@ID = " + idAlm + ";";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
+
+
     }//GEN-LAST:event_jb_deleteAlmacenActionPerformed
 
     private void jb_deleteCOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteCOSActionPerformed
-        // TODO add your handling code here:
-        String query = "EXEC deleteCOS\n"
-                + "@ID = " + tf_deleteCOS.getText() + ";";
+        int idCos;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            idCos = Integer.parseInt(tf_deleteCOS.getText());
+
+            String query = "EXEC deleteCOS\n"
+                    + "@ID = " + idCos + ";";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
+
+
     }//GEN-LAST:event_jb_deleteCOSActionPerformed
 
     private void jb_deleteMovimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteMovimientoActionPerformed
@@ -3303,35 +3457,55 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jb_deleteMovimientoActionPerformed
 
     private void jb_deleteProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteProductoActionPerformed
-        String query = "EXEC deleteProducto\n"
-                + "@ID = " + tf_deleteProducto.getText() + ";";
+        int idProd;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            idProd = Integer.parseInt(tf_deleteProducto.getText());
+
+            String query = "EXEC deleteProducto\n"
+                    + "@ID = " + idProd + ";";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
+
+
     }//GEN-LAST:event_jb_deleteProductoActionPerformed
 
     private void jb_deleteTelefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deleteTelefonoActionPerformed
-        String query = "EXEC deleteTelefono\n"
-                + "@ID = " + tf_deleteTelefono.getText();
+        int tel;
+
         try {
-            ResultSet rs = databaseState.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            tel = Integer.parseInt(tf_deleteTelefono.getText());
+                    
+            String query = "EXEC deleteTelefono\n"
+                    + "@ID = " + tel + ";";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
+
+
     }//GEN-LAST:event_jb_deleteTelefonoActionPerformed
 
     private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
         // TODO add your handling code here:
         boolean connected = false;
-        while (connected == false) {
+        if (connected == false) {
             int i = 0;
             try {
-                databaseCon = DriverManager.getConnection("jdbc:sqlserver://FENIX-PC\\SQLEXPRESS:1433;databaseName=BaseRedomsat", tf_username.getText(), tf_password.getText());
+                databaseCon = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BaseRedomsat", tf_username.getText(), tf_password.getText());
                 databaseState = databaseCon.createStatement();
                 databaseRes = databaseState.executeQuery("select id_user from usuario");
-                while (databaseRes.next()) {
+                if (databaseRes.next()) {
                     String result = databaseRes.getString("id_user");
                     System.out.println(result);
                 }
@@ -3530,7 +3704,6 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
-    private javax.swing.JLabel jLabel82;
     private javax.swing.JLabel jLabel83;
     private javax.swing.JLabel jLabel84;
     private javax.swing.JLabel jLabel85;
@@ -3654,7 +3827,6 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField tf_idComunidadProd1;
     private javax.swing.JTextField tf_idProduct;
     private javax.swing.JTextField tf_idProduct1;
-    private javax.swing.JTextField tf_idProducto;
     private javax.swing.JTextField tf_idProductoMov;
     private javax.swing.JTextField tf_idProductoMov1;
     private javax.swing.JTextField tf_idUserTel;
