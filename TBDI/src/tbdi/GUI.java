@@ -2476,19 +2476,19 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/Gradient.png"))); // NOI18N
+        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/images/Gradient.png"))); // NOI18N
 
-        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/REDOMSAT2.png"))); // NOI18N
+        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/images/REDOMSAT2.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
         jPanel26.setLayout(jPanel26Layout);
         jPanel26Layout.setHorizontalGroup(
             jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel82, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(jLabel82, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(jPanel26Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(jLabel86)
-                .addGap(0, 48, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel26Layout.createSequentialGroup()
                 .addGap(224, 224, 224)
                 .addComponent(jButton42)
@@ -2518,7 +2518,7 @@ public class GUI extends javax.swing.JFrame {
                 .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jLabel83, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tf_password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton42)
                 .addGap(34, 34, 34))
         );
@@ -2851,7 +2851,7 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(jp_updateLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(jp_updateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, 203, Short.MAX_VALUE)
                     .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jb_addEmpleado1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2860,7 +2860,7 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(jButton24)
                     .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
 
         jp_updateLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton20, jButton21, jButton22, jButton23, jButton24, jButton25, jButton26, jb_addEmpleado1});
@@ -3290,7 +3290,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
-        int id = 0;
+        int id;
         try {
 
             id = Integer.parseInt(tf_idCommunity.getText());
@@ -3301,7 +3301,7 @@ public class GUI extends javax.swing.JFrame {
                     + "@DEPARTAMENTO = '" + tf_department.getText() + "', "
                     + "@OTHER_DETAILS = '" + tf_otherdetails.getText() + "', "
                     + "@CAP_INSTALADA = '" + tf_capinstalada.getText() + "'; ";
-            System.out.println(query);
+            //System.out.println(query);
             try {
                 ResultSet rs = databaseState.executeQuery(query);
 
@@ -3369,10 +3369,10 @@ public class GUI extends javax.swing.JFrame {
                 ResultSet rs = databaseState.executeQuery(query);
             } catch (SQLException ex) {
                 Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
-                System.out.println("el id del producto debe ser un numero");
             }
 
         } catch (NumberFormatException e) {
+            System.out.println("el id del producto debe ser un numero");
         }
 
     }//GEN-LAST:event_jButton13ActionPerformed
@@ -3386,18 +3386,18 @@ public class GUI extends javax.swing.JFrame {
             idCom = Integer.parseInt(tf_idComunidadProd.getText());
 
             String query = "EXEC InsertarProducto\n"
-                    + "@ID_PRODUCTO = \"" + idProd + "\","
+                    + "@ID_PRODUCTO = " + idProd + ","
                     + "@P_NAME = \"" + tf_productName.getText() + "\","
                     + "@DESCRIPCION =\"" + tf_productDescription.getText() + "\","
                     + "@OTHER_DETAILS = \"" + tf_otherDetailsProducts.getText() + "\","
-                    + "@ID_COMUNIDAD = \"" + idCom + "\";";
+                    + "@ID_COMUNIDAD = " + idCom + ";";
             try {
                 ResultSet rs = databaseState.executeQuery(query);
             } catch (SQLException ex) {
                 Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
-                System.out.println("El ID debe ser un numero");
             }
         } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
 
     }//GEN-LAST:event_jButton14ActionPerformed
@@ -3421,15 +3421,15 @@ public class GUI extends javax.swing.JFrame {
                     + "@TEL_NUMBER = " + idTel + ","
                     + "@CKTO = \"" + tf_CKTO.getText() + "\","
                     + "@PAR_INTERNO = \"" + tf_parInterno.getText() + "\","
-                    + "@PAR_EXTERNO = \"" + tf_parExterno.getText() + "\";"
+                    + "@PAR_EXTERNO = \"" + tf_parExterno.getText() + "\","
                     + "@ID_USER = " + idUser + ";";
             try {
                 ResultSet rs = databaseState.executeQuery(query);
             } catch (SQLException ex) {
                 Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
-                System.out.println("El ID debe ser un numero");
             }
         } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
 
     }//GEN-LAST:event_jButton15ActionPerformed
@@ -3593,13 +3593,13 @@ public class GUI extends javax.swing.JFrame {
             idCom = Integer.parseInt(tf_comunidad1.getText());
 
             String query = "EXEC ActualizarUsuario\n"
-                    + "@ID_USER = \"" + id + "\","
+                    + "@ID_USER = " + id + ","
                     + "@FIRST_NAME = \"" + tf_name3.getText() + "\","
                     + "@SECOND_NAME = \"" + tf_name4.getText() + "\","
                     + "@LAST_NAME = \"" + tf_lastname3.getText() + "\","
                     + "@LAST_NAME2 = \"" + tf_lastname4.getText() + "\","
                     + "@USER_ADDRESS = \"" + tf_address1.getText() + "\","
-                    + "@ID_COMUNIDAD = \"" + idCom + "\","
+                    + "@ID_COMUNIDAD = " + idCom + ","
                     + "@OTHER_DETAILS = \"" + tf_details1.getText() + "\";";
             try {
                 ResultSet rs = databaseState.executeQuery(query);
@@ -3624,11 +3624,11 @@ public class GUI extends javax.swing.JFrame {
             idCom = Integer.parseInt(tf_idCommunity2.getText());
             String query = "EXEC ActualizarComunidad\n"
                     + "@ID_COMUNIDAD = " + idCom + ", "
-                    + "@C_NAME = '" + tf_communityName2.getText() + "', "
-                    + "@DEPARTAMENTO = '" + tf_department2.getText() + "', "
-                    + "@OTHER_DETAILS = '" + tf_otherdetails1.getText() + "', "
-                    + "@CAP_INSTALADA = '" + tf_capinstalada1.getText() + "';";
-            System.out.println(query);
+                    + "@C_NAME = \"" + tf_communityName2.getText() + "\","
+                    + "@DEPARTAMENTO = \"" + tf_department2.getText() + "\","
+                    + "@OTHER_DETAILS = \"" + tf_otherdetails1.getText() + "\","
+                    + "@CAP_INSTALADA = \"" + tf_capinstalada1.getText() + "\";";
+            //System.out.println(query);
             try {
                 ResultSet rs = databaseState.executeQuery(query);
             } catch (SQLException ex) {
@@ -3647,7 +3647,7 @@ public class GUI extends javax.swing.JFrame {
             idAlm = Integer.parseInt(tf_idAlmacen1.getText());
 
             String query = "EXEC ActualizarAlmacen\n"
-                    + "@ID_ALMACEN = " + idAlm + "\","
+                    + "@ID_ALMACEN = " + idAlm + ","
                     + "@NOMBRE = \"" + tf_almacenName1.getText() + "\","
                     + "@DESCRIPCION= \"" + tf_almacenDescription1.getText() + "\",";
             try {
@@ -3670,10 +3670,10 @@ public class GUI extends javax.swing.JFrame {
             idNumber = Integer.parseInt(tf_telNumberCOS1.getText());
 
             String query = "EXEC ActualizarCOS\n"
-                    + "@ID_CLASS = " + idClass + "\","
+                    + "@ID_CLASS = " + idClass + ","
                     + "@DESCRIP = \"" + tf_COSDescription1.getText() + "\","
                     + "@OTHER_DETAILS = \"" + tf_otherdetailsCOS1.getText() + "\","
-                    + "@TEL_NUMBER = " + idNumber + "\";";
+                    + "@TEL_NUMBER = " + idNumber + ";";
             try {
                 ResultSet rs = databaseState.executeQuery(query);
             } catch (SQLException ex) {
@@ -3696,7 +3696,7 @@ public class GUI extends javax.swing.JFrame {
                     + "@OTHER_DETAILS = \"" + tf_otherDetailsMov1.getText() + "\","
                     + "@FECHA_EGRESO = \"" + tf_egressDateMov1.getText() + "\","
                     + "@ESTADO = \"" + tf_stateMov1.getText() + "\","
-                    + "@ID_PRODUCTO = \"" + idProd + "\",";
+                    + "@ID_PRODUCTO = " + idProd + ";";
 
             try {
                 ResultSet rs = databaseState.executeQuery(query);
@@ -3748,10 +3748,10 @@ public class GUI extends javax.swing.JFrame {
             Tel = Integer.parseInt(tf_telNumber1.getText());
 
             String query = "EXEC ActualizarTelefono\n"
-                    + "@TEL_NUMBER = " + tf_telNumber1.getText() + ","
+                    + "@TEL_NUMBER = " + Tel + ","
                     + "@CKTO = \"" + tf_CKTO1.getText() + "\","
-                    + "@PAR_INTERNO= \"" + tf_parInterno1.getText() + "\","
-                    + "@PAR_EXTERNO = \"" + tf_parExterno1.getText() + "\";"
+                    + "@PAR_INTERNO= " + tf_parInterno1.getText() + ","
+                    + "@PAR_EXTERNO = " + tf_parExterno1.getText() + ","
                     + "@ID_USER = " + tf_idUserTel1.getText() + ";";
             try {
                 ResultSet rs = databaseState.executeQuery(query);
