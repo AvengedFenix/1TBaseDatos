@@ -2484,11 +2484,11 @@ public class GUI extends javax.swing.JFrame {
         jPanel26.setLayout(jPanel26Layout);
         jPanel26Layout.setHorizontalGroup(
             jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel82, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(jLabel82, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(jPanel26Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(jLabel86)
-                .addGap(0, 48, Short.MAX_VALUE))
+                .addGap(0, 37, Short.MAX_VALUE))
             .addGroup(jPanel26Layout.createSequentialGroup()
                 .addGap(224, 224, 224)
                 .addComponent(jButton42)
@@ -2498,11 +2498,11 @@ public class GUI extends javax.swing.JFrame {
                 .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel85)
                     .addComponent(jLabel83))
-                .addGap(28, 28, 28)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(tf_username, javax.swing.GroupLayout.DEFAULT_SIZE, 316, Short.MAX_VALUE)
                     .addComponent(tf_password))
-                .addGap(84, 84, 84))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel26Layout.setVerticalGroup(
             jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2510,7 +2510,7 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jLabel82, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39)
                 .addComponent(jLabel86)
-                .addGap(48, 48, 48)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tf_username, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel85, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -2527,7 +2527,7 @@ public class GUI extends javax.swing.JFrame {
         jd_login.getContentPane().setLayout(jd_loginLayout);
         jd_loginLayout.setHorizontalGroup(
             jd_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jd_loginLayout.setVerticalGroup(
             jd_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2555,7 +2555,7 @@ public class GUI extends javax.swing.JFrame {
         });
 
         bt_list.setBackground(new java.awt.Color(101, 130, 136));
-        bt_list.setFont(new java.awt.Font("Gotham Medium", 1, 18)); // NOI18N
+        bt_list.setFont(new java.awt.Font("Gotham Bold", 1, 18)); // NOI18N
         bt_list.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/images/ic_view_quilt_white_36dp_2x.png"))); // NOI18N
         bt_list.setText("V I E W  I N F O");
         bt_list.setBorderPainted(false);
@@ -2583,7 +2583,7 @@ public class GUI extends javax.swing.JFrame {
         });
 
         jButton18.setBackground(new java.awt.Color(101, 130, 136));
-        jButton18.setFont(new java.awt.Font("Gotham Medium", 1, 18)); // NOI18N
+        jButton18.setFont(new java.awt.Font("Gotham Bold", 1, 18)); // NOI18N
         jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/images/ic_update_white_36dp_2x.png"))); // NOI18N
         jButton18.setText("U P D A T E");
         jButton18.setBorderPainted(false);
@@ -2597,7 +2597,7 @@ public class GUI extends javax.swing.JFrame {
         });
 
         jButton19.setBackground(new java.awt.Color(101, 130, 136));
-        jButton19.setFont(new java.awt.Font("Gotham Medium", 1, 18)); // NOI18N
+        jButton19.setFont(new java.awt.Font("Gotham Bold", 1, 18)); // NOI18N
         jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/images/ic_delete_white_36dp_2x.png"))); // NOI18N
         jButton19.setText("D E L E T E");
         jButton19.setBorderPainted(false);
