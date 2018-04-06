@@ -306,6 +306,8 @@ public class GUI extends javax.swing.JFrame {
         tf_username = new javax.swing.JTextField();
         tf_password = new javax.swing.JPasswordField();
         jButton42 = new javax.swing.JButton();
+        jLabel82 = new javax.swing.JLabel();
+        jLabel86 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jp_menu = new javax.swing.JPanel();
         bt_connect = new javax.swing.JButton();
@@ -2186,72 +2188,81 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel26.setBorder(border);
 
-        jLabel85.setFont(new java.awt.Font("Gotham Black", 1, 36)); // NOI18N
-        jLabel85.setText("USERNAME");
+        jLabel85.setFont(new java.awt.Font("Gotham Black", 1, 18)); // NOI18N
+        jLabel85.setText("U S E R N A M E");
 
-        jLabel83.setFont(new java.awt.Font("Gotham Black", 1, 36)); // NOI18N
-        jLabel83.setText("PASSWORD");
+        jLabel83.setFont(new java.awt.Font("Gotham Black", 1, 18)); // NOI18N
+        jLabel83.setText("P A S S W O R D");
 
-        tf_username.setFont(new java.awt.Font("Gotham Light", 0, 36)); // NOI18N
+        tf_username.setFont(new java.awt.Font("Gotham Light", 0, 30)); // NOI18N
 
-        tf_password.setFont(new java.awt.Font("Gotham Light", 0, 36)); // NOI18N
+        tf_password.setFont(new java.awt.Font("Gotham Light", 0, 30)); // NOI18N
 
-        jButton42.setFont(new java.awt.Font("Gotham Black", 0, 36)); // NOI18N
-        jButton42.setText("CONNECT");
+        jButton42.setBackground(new java.awt.Color(101, 130, 136));
+        jButton42.setFont(new java.awt.Font("Gotham Black", 0, 24)); // NOI18N
+        jButton42.setText("C O N N E C T");
         jButton42.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton42ActionPerformed(evt);
             }
         });
 
+        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/Gradient.png"))); // NOI18N
+
+        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/REDOMSAT2.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
         jPanel26.setLayout(jPanel26Layout);
         jPanel26Layout.setHorizontalGroup(
             jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel82, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(jPanel26Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel83)
-                    .addComponent(jLabel85))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tf_username)
-                    .addComponent(tf_password))
-                .addContainerGap())
+                .addGap(33, 33, 33)
+                .addComponent(jLabel86)
+                .addGap(0, 48, Short.MAX_VALUE))
             .addGroup(jPanel26Layout.createSequentialGroup()
-                .addGap(159, 159, 159)
+                .addGap(224, 224, 224)
                 .addComponent(jButton42)
-                .addContainerGap(166, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel26Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel85)
+                    .addComponent(jLabel83))
+                .addGap(28, 28, 28)
+                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(tf_username, javax.swing.GroupLayout.DEFAULT_SIZE, 316, Short.MAX_VALUE)
+                    .addComponent(tf_password))
+                .addGap(84, 84, 84))
         );
         jPanel26Layout.setVerticalGroup(
             jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel26Layout.createSequentialGroup()
-                .addGap(75, 75, 75)
-                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(tf_username)
-                    .addComponent(jLabel85, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel83, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(tf_password))
-                .addGap(18, 18, 18)
+                .addComponent(jLabel82, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(jLabel86)
+                .addGap(48, 48, 48)
+                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_username, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel85, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jLabel83, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tf_password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
                 .addComponent(jButton42)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addGap(34, 34, 34))
         );
 
         javax.swing.GroupLayout jd_loginLayout = new javax.swing.GroupLayout(jd_login.getContentPane());
         jd_login.getContentPane().setLayout(jd_loginLayout);
         jd_loginLayout.setHorizontalGroup(
             jd_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jd_loginLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         jd_loginLayout.setVerticalGroup(
             jd_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jd_loginLayout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jPanel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
@@ -2424,7 +2435,7 @@ public class GUI extends javax.swing.JFrame {
                 .addGroup(jp_addLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton17, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
+                    .addComponent(jButton17, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -3788,9 +3799,11 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
     private javax.swing.JLabel jLabel83;
     private javax.swing.JLabel jLabel84;
     private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
