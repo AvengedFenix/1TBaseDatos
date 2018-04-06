@@ -149,7 +149,7 @@ public class GUI extends javax.swing.JFrame {
         tf_idComunidadProd = new javax.swing.JTextField();
         tf_productName = new javax.swing.JTextField();
         tf_otherDetailsProducts = new javax.swing.JTextField();
-        jButton14 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jd_addTelefono = new javax.swing.JDialog();
         jPanel10 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
@@ -308,6 +308,13 @@ public class GUI extends javax.swing.JFrame {
         jButton42 = new javax.swing.JButton();
         jLabel82 = new javax.swing.JLabel();
         jLabel86 = new javax.swing.JLabel();
+        jd_addMarca = new javax.swing.JDialog();
+        jLabel89 = new javax.swing.JLabel();
+        jLabel90 = new javax.swing.JLabel();
+        tf_fabricante = new javax.swing.JTextField();
+        tf_modelo = new javax.swing.JTextField();
+        jButton50 = new javax.swing.JButton();
+        jLabel91 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jp_menu = new javax.swing.JPanel();
         bt_connect = new javax.swing.JButton();
@@ -1007,11 +1014,11 @@ public class GUI extends javax.swing.JFrame {
 
         tf_otherDetailsProducts.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
 
-        jButton14.setFont(new java.awt.Font("Gotham Medium", 0, 11)); // NOI18N
-        jButton14.setText("A D D");
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
+        jButton3.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+        jButton3.setText("M A R C A");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
+                jButton3ActionPerformed(evt);
             }
         });
 
@@ -1042,8 +1049,8 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(jLabel30)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(tf_otherDetailsProducts, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
-                .addComponent(jButton14)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addComponent(jButton3)
                 .addContainerGap())
         );
         jPanel9Layout.setVerticalGroup(
@@ -1061,7 +1068,7 @@ public class GUI extends javax.swing.JFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel27)
                     .addComponent(tf_productDescription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(13, 13, 13)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel30)
                     .addComponent(tf_otherDetailsProducts, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1069,10 +1076,10 @@ public class GUI extends javax.swing.JFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel28)
                     .addComponent(tf_idComunidadProd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(51, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton14)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -2476,9 +2483,9 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/Gradient.png"))); // NOI18N
+        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/images/Gradient.png"))); // NOI18N
 
-        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/REDOMSAT2.png"))); // NOI18N
+        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tbdi/images/REDOMSAT2.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
         jPanel26.setLayout(jPanel26Layout);
@@ -2488,7 +2495,7 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(jPanel26Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(jLabel86)
-                .addGap(0, 37, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel26Layout.createSequentialGroup()
                 .addGap(224, 224, 224)
                 .addComponent(jButton42)
@@ -2518,7 +2525,7 @@ public class GUI extends javax.swing.JFrame {
                 .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jLabel83, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tf_password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton42)
                 .addGap(34, 34, 34))
         );
@@ -2533,6 +2540,68 @@ public class GUI extends javax.swing.JFrame {
             jd_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jd_loginLayout.createSequentialGroup()
                 .addComponent(jPanel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jLabel89.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
+        jLabel89.setText("FABRICANTE");
+
+        jLabel90.setFont(new java.awt.Font("Gotham Bold", 0, 12)); // NOI18N
+        jLabel90.setText("MODELO");
+
+        tf_modelo.setToolTipText("");
+
+        jButton50.setFont(new java.awt.Font("Gotham Medium", 0, 12)); // NOI18N
+        jButton50.setText("A D D");
+        jButton50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton50ActionPerformed(evt);
+            }
+        });
+
+        jLabel91.setFont(new java.awt.Font("Gotham Bold", 0, 18)); // NOI18N
+        jLabel91.setText("M A R C A");
+
+        javax.swing.GroupLayout jd_addMarcaLayout = new javax.swing.GroupLayout(jd_addMarca.getContentPane());
+        jd_addMarca.getContentPane().setLayout(jd_addMarcaLayout);
+        jd_addMarcaLayout.setHorizontalGroup(
+            jd_addMarcaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_addMarcaLayout.createSequentialGroup()
+                .addGroup(jd_addMarcaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_addMarcaLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton50))
+                    .addGroup(jd_addMarcaLayout.createSequentialGroup()
+                        .addGap(98, 98, 98)
+                        .addGroup(jd_addMarcaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel90)
+                            .addComponent(jLabel89))
+                        .addGap(34, 34, 34)
+                        .addGroup(jd_addMarcaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tf_fabricante, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_modelo, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 105, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(jd_addMarcaLayout.createSequentialGroup()
+                .addGap(164, 164, 164)
+                .addComponent(jLabel91)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jd_addMarcaLayout.setVerticalGroup(
+            jd_addMarcaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_addMarcaLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jLabel91)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                .addGroup(jd_addMarcaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel89)
+                    .addComponent(tf_fabricante, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_addMarcaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel90)
+                    .addComponent(tf_modelo, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(59, 59, 59)
+                .addComponent(jButton50)
                 .addContainerGap())
         );
 
@@ -2851,7 +2920,7 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(jp_updateLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(jp_updateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 203, Short.MAX_VALUE)
                     .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jb_addEmpleado1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2860,7 +2929,7 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(jButton24)
                     .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
 
         jp_updateLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton20, jButton21, jButton22, jButton23, jButton24, jButton25, jButton26, jb_addEmpleado1});
@@ -2886,7 +2955,7 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jButton25)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
 
         jp_updateLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton20, jButton21, jButton22, jButton23, jButton24, jButton25, jButton26, jb_addEmpleado1});
@@ -3183,7 +3252,7 @@ public class GUI extends javax.swing.JFrame {
             }
 
         } catch (SQLException e) {
-            e.printStackTrace();
+           // e.printStackTrace();
         }
     }//GEN-LAST:event_bt_connectActionPerformed
 
@@ -3290,7 +3359,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
-        int id = 0;
+        int id;
         try {
 
             id = Integer.parseInt(tf_idCommunity.getText());
@@ -3301,7 +3370,7 @@ public class GUI extends javax.swing.JFrame {
                     + "@DEPARTAMENTO = '" + tf_department.getText() + "', "
                     + "@OTHER_DETAILS = '" + tf_otherdetails.getText() + "', "
                     + "@CAP_INSTALADA = '" + tf_capinstalada.getText() + "'; ";
-            System.out.println(query);
+            //System.out.println(query);
             try {
                 ResultSet rs = databaseState.executeQuery(query);
 
@@ -3369,38 +3438,13 @@ public class GUI extends javax.swing.JFrame {
                 ResultSet rs = databaseState.executeQuery(query);
             } catch (SQLException ex) {
                 Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
-                System.out.println("el id del producto debe ser un numero");
             }
 
         } catch (NumberFormatException e) {
+            System.out.println("el id del producto debe ser un numero");
         }
 
     }//GEN-LAST:event_jButton13ActionPerformed
-
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        int idProd;
-        int idCom;
-
-        try {
-            idProd = Integer.parseInt(tf_idProduct.getText());
-            idCom = Integer.parseInt(tf_idComunidadProd.getText());
-
-            String query = "EXEC InsertarProducto\n"
-                    + "@ID_PRODUCTO = \"" + idProd + "\","
-                    + "@P_NAME = \"" + tf_productName.getText() + "\","
-                    + "@DESCRIPCION =\"" + tf_productDescription.getText() + "\","
-                    + "@OTHER_DETAILS = \"" + tf_otherDetailsProducts.getText() + "\","
-                    + "@ID_COMUNIDAD = \"" + idCom + "\";";
-            try {
-                ResultSet rs = databaseState.executeQuery(query);
-            } catch (SQLException ex) {
-                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
-                System.out.println("El ID debe ser un numero");
-            }
-        } catch (NumberFormatException e) {
-        }
-
-    }//GEN-LAST:event_jButton14ActionPerformed
 
     private void tf_idComunidadProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_idComunidadProdActionPerformed
         // TODO add your handling code here:
@@ -3421,15 +3465,15 @@ public class GUI extends javax.swing.JFrame {
                     + "@TEL_NUMBER = " + idTel + ","
                     + "@CKTO = \"" + tf_CKTO.getText() + "\","
                     + "@PAR_INTERNO = \"" + tf_parInterno.getText() + "\","
-                    + "@PAR_EXTERNO = \"" + tf_parExterno.getText() + "\";"
+                    + "@PAR_EXTERNO = \"" + tf_parExterno.getText() + "\","
                     + "@ID_USER = " + idUser + ";";
             try {
                 ResultSet rs = databaseState.executeQuery(query);
             } catch (SQLException ex) {
                 Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
-                System.out.println("El ID debe ser un numero");
             }
         } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
 
     }//GEN-LAST:event_jButton15ActionPerformed
@@ -3593,13 +3637,13 @@ public class GUI extends javax.swing.JFrame {
             idCom = Integer.parseInt(tf_comunidad1.getText());
 
             String query = "EXEC ActualizarUsuario\n"
-                    + "@ID_USER = \"" + id + "\","
+                    + "@ID_USER = " + id + ","
                     + "@FIRST_NAME = \"" + tf_name3.getText() + "\","
                     + "@SECOND_NAME = \"" + tf_name4.getText() + "\","
                     + "@LAST_NAME = \"" + tf_lastname3.getText() + "\","
                     + "@LAST_NAME2 = \"" + tf_lastname4.getText() + "\","
                     + "@USER_ADDRESS = \"" + tf_address1.getText() + "\","
-                    + "@ID_COMUNIDAD = \"" + idCom + "\","
+                    + "@ID_COMUNIDAD = " + idCom + ","
                     + "@OTHER_DETAILS = \"" + tf_details1.getText() + "\";";
             try {
                 ResultSet rs = databaseState.executeQuery(query);
@@ -3622,13 +3666,13 @@ public class GUI extends javax.swing.JFrame {
 
         try {
             idCom = Integer.parseInt(tf_idCommunity2.getText());
-            String query = "EXEC ActualizaarComunidad\n"
+            String query = "EXEC ActualizarComunidad\n"
                     + "@ID_COMUNIDAD = " + idCom + ", "
-                    + "@C_NAME = '" + tf_communityName2.getText() + "', "
-                    + "@DEPARTAMENTO = '" + tf_department2.getText() + "', "
-                    + "@OTHER_DETAILS = '" + tf_otherdetails1.getText() + "', "
-                    + "@CAP_INSTALADA = '" + tf_capinstalada1.getText() + "';";
-            System.out.println(query);
+                    + "@C_NAME = \"" + tf_communityName2.getText() + "\","
+                    + "@DEPARTAMENTO = \"" + tf_department2.getText() + "\","
+                    + "@OTHER_DETAILS = \"" + tf_otherdetails1.getText() + "\","
+                    + "@CAP_INSTALADA = \"" + tf_capinstalada1.getText() + "\";";
+            //System.out.println(query);
             try {
                 ResultSet rs = databaseState.executeQuery(query);
             } catch (SQLException ex) {
@@ -3647,7 +3691,7 @@ public class GUI extends javax.swing.JFrame {
             idAlm = Integer.parseInt(tf_idAlmacen1.getText());
 
             String query = "EXEC ActualizarAlmacen\n"
-                    + "@ID_ALMACEN = " + idAlm + "\","
+                    + "@ID_ALMACEN = " + idAlm + ","
                     + "@NOMBRE = \"" + tf_almacenName1.getText() + "\","
                     + "@DESCRIPCION= \"" + tf_almacenDescription1.getText() + "\",";
             try {
@@ -3670,10 +3714,10 @@ public class GUI extends javax.swing.JFrame {
             idNumber = Integer.parseInt(tf_telNumberCOS1.getText());
 
             String query = "EXEC ActualizarCOS\n"
-                    + "@ID_CLASS = " + idClass + "\","
+                    + "@ID_CLASS = " + idClass + ","
                     + "@DESCRIP = \"" + tf_COSDescription1.getText() + "\","
                     + "@OTHER_DETAILS = \"" + tf_otherdetailsCOS1.getText() + "\","
-                    + "@TEL_NUMBER = " + idNumber + "\";";
+                    + "@TEL_NUMBER = " + idNumber + ";";
             try {
                 ResultSet rs = databaseState.executeQuery(query);
             } catch (SQLException ex) {
@@ -3696,7 +3740,7 @@ public class GUI extends javax.swing.JFrame {
                     + "@OTHER_DETAILS = \"" + tf_otherDetailsMov1.getText() + "\","
                     + "@FECHA_EGRESO = \"" + tf_egressDateMov1.getText() + "\","
                     + "@ESTADO = \"" + tf_stateMov1.getText() + "\","
-                    + "@ID_PRODUCTO = \"" + idProd + "\",";
+                    + "@ID_PRODUCTO = " + idProd + ";";
 
             try {
                 ResultSet rs = databaseState.executeQuery(query);
@@ -3748,10 +3792,10 @@ public class GUI extends javax.swing.JFrame {
             Tel = Integer.parseInt(tf_telNumber1.getText());
 
             String query = "EXEC ActualizarTelefono\n"
-                    + "@TEL_NUMBER = " + tf_telNumber1.getText() + ","
+                    + "@TEL_NUMBER = " + Tel + ","
                     + "@CKTO = \"" + tf_CKTO1.getText() + "\","
-                    + "@PAR_INTERNO= \"" + tf_parInterno1.getText() + "\","
-                    + "@PAR_EXTERNO = \"" + tf_parExterno1.getText() + "\";"
+                    + "@PAR_INTERNO= " + tf_parInterno1.getText() + ","
+                    + "@PAR_EXTERNO = " + tf_parExterno1.getText() + ","
                     + "@ID_USER = " + tf_idUserTel1.getText() + ";";
             try {
                 ResultSet rs = databaseState.executeQuery(query);
@@ -4038,6 +4082,21 @@ public class GUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton49ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        addProducto();
+        
+        jd_addMarca.setVisible(true);
+        jd_addMarca.setLocationRelativeTo(null);
+        jd_addMarca.pack();
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jButton50ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -4045,7 +4104,7 @@ public class GUI extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             UIManager.setLookAndFeel(new MaterialLookAndFeel());
@@ -4063,7 +4122,7 @@ public class GUI extends javax.swing.JFrame {
 //            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-            ex.printStackTrace();
+           // ex.printStackTrace();
         }
         //</editor-fold>
 
@@ -4086,7 +4145,6 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
@@ -4103,6 +4161,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
+    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton30;
     private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton32;
@@ -4125,6 +4184,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton48;
     private javax.swing.JButton jButton49;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton50;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
@@ -4216,7 +4276,10 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -4261,6 +4324,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JDialog jd_addCOS;
     private javax.swing.JDialog jd_addCommunity;
     private javax.swing.JDialog jd_addEmpleado;
+    private javax.swing.JDialog jd_addMarca;
     private javax.swing.JDialog jd_addMovement;
     private javax.swing.JDialog jd_addProducto;
     private javax.swing.JDialog jd_addTelefono;
@@ -4321,6 +4385,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField tf_egressDateMov1;
     private javax.swing.JTextField tf_entryDateMov;
     private javax.swing.JTextField tf_entryDateMov1;
+    private javax.swing.JTextField tf_fabricante;
     private javax.swing.JTextField tf_id;
     private javax.swing.JTextField tf_id1;
     private javax.swing.JTextField tf_idAlmacen;
@@ -4341,6 +4406,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField tf_lastname2;
     private javax.swing.JTextField tf_lastname3;
     private javax.swing.JTextField tf_lastname4;
+    private javax.swing.JTextField tf_modelo;
     private javax.swing.JTextField tf_name1;
     private javax.swing.JTextField tf_name2;
     private javax.swing.JTextField tf_name3;
@@ -4419,6 +4485,36 @@ DropShadowBorder border = new DropShadowBorder();
             //jt_list = new JTable(buildTableModel(rs));
         } catch (SQLException ex) {
             Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public void addProducto()
+    {
+        int idProd;
+        int idCom;
+
+        try {
+            idProd = Integer.parseInt(tf_idProduct.getText());
+            idCom = Integer.parseInt(tf_idComunidadProd.getText());
+
+            String query = "EXEC InsertarProducto\n"
+                    + "@ID_PRODUCTO = " + idProd + ","
+                    + "@P_NAME = \"" + tf_productName.getText() + "\","
+                    + "@DESCRIPCION =\"" + tf_productDescription.getText() + "\","
+                    + "@OTHER_DETAILS = \"" + tf_otherDetailsProducts.getText() + "\","
+                    + "@ID_COMUNIDAD = " + idCom + ";";
+            
+            String query2 = "insert into Marca(fabricante, modelo, id_producto) "
+                + "values('" + tf_fabricante
+                + "','" + tf_modelo
+                + "'," + idProd + ")";
+            try {
+                ResultSet rs = databaseState.executeQuery(query);
+            } catch (SQLException ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("El ID debe ser un numero");
         }
     }
 }
